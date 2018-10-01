@@ -19,23 +19,20 @@ temp_list=[]
 # 	print i ,":",conversations[i]
 for i in range(len(movie_conversations_df)):
 	try:
-		conversations[movie_conversations_df.Character_Id1[i]]["dialogs"][movie_conversations_df.Character_Id2[i]].append(movie_conversations_df.List_of_Utterance[i])
+		j=movie_conversations_df.List_of_Utterance[i]
+		j=j.replace('[',"")
+		j=j.replace(']',"")
+		j=j.replace("'","")
+		j=j.split(", ")
+		# print "---" ,movie_conversations_df.List_of_Utterance[i] 
+
+		conversations[movie_conversations_df.Character_Id1[i]]["dialogs"][movie_conversations_df.Character_Id2[i]].append(j)
 	except:
 		continue
 	# conversations[movie_conversations_df.Character_Id1[i]]["dialogs"]["to"][movie_conversations_df.Character_Id2[i]]["dialog_numbers_list"].append(movie_conversations_df.List_of_Utterance[i])
-	temp_list.append([movie_conversations_df.List_of_Utterance[i]])
+	
 
-for i in range(len(temp_list)):
-	temp_list[i]=[j.replace('[',"")for j in temp_list[i]]
-	temp_list[i]=[j.replace(']',"")for j in temp_list[i]]
-	temp_list[i]=[j.replace("'","")for j in temp_list[i]]
-	temp_list[i]=[j.split(", ") for j in temp_list[i]]
-	temp_list[i]=temp_list[i][0]
 
-# for i in range(len(movie_conversations_df)):
-# 	conversations[movie_conversations_df.Character_Id1[i]]["dialogs"]["dialog_numbers_list"]=temp_list[i]
-
-# print conversations
-# print conversations['u1809']
 for i in conversations:
 	print i ,":",conversations[i]
+	
