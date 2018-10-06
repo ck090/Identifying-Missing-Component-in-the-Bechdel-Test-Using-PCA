@@ -1,0 +1,2123 @@
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="The-New-Bechdel-test!">The New Bechdel test!<a class="anchor-link" href="#The-New-Bechdel-test!">&#182;</a></h1><p>Analysis on the new Bechdel test using the Cornell Movie-Dialog Corpus</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">plotly.plotly</span> <span class="kn">as</span> <span class="nn">py</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objs</span> <span class="kn">as</span> <span class="nn">go</span>
+<span class="kn">from</span> <span class="nn">unidecode</span> <span class="kn">import</span> <span class="n">unidecode</span>
+<span class="kn">import</span> <span class="nn">pickle</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction</span> <span class="kn">import</span> <span class="n">DictVectorizer</span>
+<span class="kn">from</span> <span class="nn">sklearn.utils</span> <span class="kn">import</span> <span class="n">shuffle</span>
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import all the datasets first</span>
+<span class="c1"># Movie Titles Metadata.txt</span>
+<span class="n">mtm</span> <span class="o">=</span> <span class="s1">&#39;cornell movie-dialogs corpus/movie_titles_metadata.txt&#39;</span>
+<span class="c1"># CSV for transforming the data</span>
+<span class="n">mtm_csv</span> <span class="o">=</span> <span class="s1">&#39;mtm_csv.csv&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Add header rows</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">mtm_csv</span><span class="p">,</span> <span class="s1">&#39;wt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
+    <span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictWriter</span><span class="p">(</span><span class="n">csv_file</span><span class="p">,</span> <span class="n">fieldnames</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Movie_Number&quot;</span><span class="p">,</span> <span class="s2">&quot;Movie_Name&quot;</span><span class="p">,</span> <span class="s2">&quot;Year_of_Release&quot;</span><span class="p">,</span> 
+                                                   <span class="s2">&quot;IMDB_Rating&quot;</span><span class="p">,</span> <span class="s2">&quot;Number_of_Votes&quot;</span><span class="p">,</span> <span class="s2">&quot;Genres&quot;</span><span class="p">])</span>
+    <span class="n">writer</span><span class="o">.</span><span class="n">writeheader</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Open the .txt file and write it onto the dataframe</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">mtm</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">mtmeta</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">lines</span> <span class="ow">in</span> <span class="n">mtmeta</span><span class="p">:</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+        <span class="n">line_list</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;+++$+++&#39;</span><span class="p">)</span>
+        
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">mtm_csv</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">write_csv</span><span class="p">:</span>
+            <span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">write_csv</span><span class="p">)</span>
+            <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="n">line_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">line_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">line_list</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span>
+                            <span class="n">line_list</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">line_list</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">line_list</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Check the content of the csv file</span>
+<span class="n">mtm_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">mtm_csv</span><span class="p">,</span> <span class="n">index_col</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">mtm_df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">mtm_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(617, 6)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[5]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Movie_Number</th>
+      <th>Movie_Name</th>
+      <th>Year_of_Release</th>
+      <th>IMDB_Rating</th>
+      <th>Number_of_Votes</th>
+      <th>Genres</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>1999</td>
+      <td>6.9</td>
+      <td>62847</td>
+      <td>['comedy', 'romance']</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>m1</td>
+      <td>1492: conquest of paradise</td>
+      <td>1992</td>
+      <td>6.2</td>
+      <td>10421</td>
+      <td>['adventure', 'biography', 'drama', 'history']</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>m2</td>
+      <td>15 minutes</td>
+      <td>2001</td>
+      <td>6.1</td>
+      <td>25854</td>
+      <td>['action', 'crime', 'drama', 'thriller']</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>m3</td>
+      <td>2001: a space odyssey</td>
+      <td>1968</td>
+      <td>8.4</td>
+      <td>163227</td>
+      <td>['adventure', 'mystery', 'sci-fi']</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>m4</td>
+      <td>48 hrs.</td>
+      <td>1982</td>
+      <td>6.9</td>
+      <td>22289</td>
+      <td>['action', 'comedy', 'crime', 'drama', 'thrill...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">mtm_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">mtm_csv</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Saved to csv..&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Saved to csv..
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Movie Characters Metadata.txt</span>
+<span class="n">mcm</span> <span class="o">=</span> <span class="s1">&#39;cornell movie-dialogs corpus/movie_characters_metadata.txt&#39;</span>
+<span class="c1"># CSV for transforming the data</span>
+<span class="n">mcm_csv</span> <span class="o">=</span> <span class="s1">&#39;mcm_csv.csv&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Add header rows</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">mcm_csv</span><span class="p">,</span> <span class="s1">&#39;wt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
+    <span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictWriter</span><span class="p">(</span><span class="n">csv_file</span><span class="p">,</span> <span class="n">fieldnames</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Character_Id&quot;</span><span class="p">,</span> <span class="s2">&quot;Character_Name&quot;</span><span class="p">,</span> <span class="s2">&quot;Movie_Number&quot;</span><span class="p">,</span> 
+                                                   <span class="s2">&quot;Movie_Title&quot;</span><span class="p">,</span> <span class="s2">&quot;Gender&quot;</span><span class="p">,</span> <span class="s2">&quot;Position_in_Credits&quot;</span><span class="p">])</span>
+    <span class="n">writer</span><span class="o">.</span><span class="n">writeheader</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Open the second .txt file and write it onto the next dataframe</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">mcm</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">mcmeta</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">lines</span> <span class="ow">in</span> <span class="n">mcmeta</span><span class="p">:</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+        <span class="n">line_list</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;+++$+++&#39;</span><span class="p">)</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">mcm_csv</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">write_csv</span><span class="p">:</span>
+            <span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">write_csv</span><span class="p">)</span>
+            <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="n">line_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">line_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">line_list</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span>
+                            <span class="n">line_list</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">line_list</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">line_list</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">mcm_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">mcm_csv</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">mcm_df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">mcm_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(9035, 6)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[10]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Character_Id</th>
+      <th>Character_Name</th>
+      <th>Movie_Number</th>
+      <th>Movie_Title</th>
+      <th>Gender</th>
+      <th>Position_in_Credits</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>u0</td>
+      <td>BIANCA</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>f</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>u1</td>
+      <td>BRUCE</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>u2</td>
+      <td>CAMERON</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>m</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>u3</td>
+      <td>CHASTITY</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>u4</td>
+      <td>JOEY</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>m</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">mcm_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">mcm_csv</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Saved to csv..&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Saved to csv..
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Movie Characters Metadata.txt</span>
+<span class="n">ml</span> <span class="o">=</span> <span class="s1">&#39;cornell movie-dialogs corpus/movie_lines.txt&#39;</span>
+<span class="c1"># CSV for transforming the data</span>
+<span class="n">ml_csv</span> <span class="o">=</span> <span class="s1">&#39;ml_csv.csv&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Add header rows</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">ml_csv</span><span class="p">,</span> <span class="s1">&#39;wt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
+    <span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictWriter</span><span class="p">(</span><span class="n">csv_file</span><span class="p">,</span> <span class="n">fieldnames</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Line_Id&quot;</span><span class="p">,</span> <span class="s2">&quot;Character_Id&quot;</span><span class="p">,</span> <span class="s2">&quot;Movie_Number&quot;</span><span class="p">,</span> 
+                                                   <span class="s2">&quot;Character_Name&quot;</span><span class="p">,</span> <span class="s2">&quot;Dialogue&quot;</span><span class="p">])</span>
+    <span class="n">writer</span><span class="o">.</span><span class="n">writeheader</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Open the second .txt file and write it onto the next dataframe</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">ml</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">mlines</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">lines</span> <span class="ow">in</span> <span class="n">mlines</span><span class="p">:</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+        <span class="n">line_list</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;+++$+++&#39;</span><span class="p">)</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">ml_csv</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">write_csv</span><span class="p">:</span>
+            <span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">write_csv</span><span class="p">)</span>
+            <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="n">line_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">line_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">line_list</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span>
+                            <span class="n">line_list</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">line_list</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">ml_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;ml_csv.csv&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">ml_df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">ml_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(304713, 5)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[15]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Line_Id</th>
+      <th>Character_Id</th>
+      <th>Movie_Number</th>
+      <th>Character_Name</th>
+      <th>Dialogue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>L1045</td>
+      <td>u0</td>
+      <td>m0</td>
+      <td>BIANCA</td>
+      <td>They do not!</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>L1044</td>
+      <td>u2</td>
+      <td>m0</td>
+      <td>CAMERON</td>
+      <td>They do to!</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>L985</td>
+      <td>u0</td>
+      <td>m0</td>
+      <td>BIANCA</td>
+      <td>I hope so.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>L984</td>
+      <td>u2</td>
+      <td>m0</td>
+      <td>CAMERON</td>
+      <td>She okay?</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>L925</td>
+      <td>u0</td>
+      <td>m0</td>
+      <td>BIANCA</td>
+      <td>Let's go.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">ml_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">ml_csv</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Saved to csv...&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Saved to csv...
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Movie Conversations.txt</span>
+<span class="n">mc</span> <span class="o">=</span> <span class="s1">&#39;cornell movie-dialogs corpus/movie_conversations.txt&#39;</span>
+<span class="c1"># CSV for transforming the data</span>
+<span class="n">mc_csv</span> <span class="o">=</span> <span class="s1">&#39;mc_csv.csv&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Add header rows</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">mc_csv</span><span class="p">,</span> <span class="s1">&#39;wt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
+    <span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictWriter</span><span class="p">(</span><span class="n">csv_file</span><span class="p">,</span> <span class="n">fieldnames</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Character_Id1&#39;</span><span class="p">,</span> <span class="s1">&#39;Character_Id2&#39;</span><span class="p">,</span> <span class="s1">&#39;Movie_Number&#39;</span><span class="p">,</span>
+                                                   <span class="s1">&#39;List_of_Utterance&#39;</span><span class="p">])</span>
+    <span class="n">writer</span><span class="o">.</span><span class="n">writeheader</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Open the second .txt file and write it onto the next dataframe</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">mc</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">mconversations</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">lines</span> <span class="ow">in</span> <span class="n">mconversations</span><span class="p">:</span>
+        <span class="n">line</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+        <span class="n">line_list</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;+++$+++&#39;</span><span class="p">)</span>
+        
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">mc_csv</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">mconv</span><span class="p">:</span>
+            <span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">mconv</span><span class="p">)</span>
+            <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="n">line_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">line_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">line_list</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span>
+                            <span class="n">line_list</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">mc_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;mc_csv.csv&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">mc_df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">mc_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(83097, 4)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[20]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Character_Id1</th>
+      <th>Character_Id2</th>
+      <th>Movie_Number</th>
+      <th>List_of_Utterance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>u0</td>
+      <td>u2</td>
+      <td>m0</td>
+      <td>['L194', 'L195', 'L196', 'L197']</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>u0</td>
+      <td>u2</td>
+      <td>m0</td>
+      <td>['L198', 'L199']</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>u0</td>
+      <td>u2</td>
+      <td>m0</td>
+      <td>['L200', 'L201', 'L202', 'L203']</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>u0</td>
+      <td>u2</td>
+      <td>m0</td>
+      <td>['L204', 'L205', 'L206']</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>u0</td>
+      <td>u2</td>
+      <td>m0</td>
+      <td>['L207', 'L208']</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">mc_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">mc_csv</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Saved to csv...&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Saved to csv...
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Onto-Data-Cleaning">Onto Data Cleaning<a class="anchor-link" href="#Onto-Data-Cleaning">&#182;</a></h1><p>There are different aspects to this part and all the data in these csv files must be analysed in order for them to be of a consistent data</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Read all the csv files</span>
+<span class="n">mtm_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;mtm_csv.csv&#39;</span><span class="p">)</span>
+<span class="n">mcm_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;mcm_csv.csv&#39;</span><span class="p">)</span>
+<span class="n">mc_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;mc_csv.csv&#39;</span><span class="p">)</span>
+<span class="n">ml_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;ml_csv.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># On the mtm dataset</span>
+<span class="c1"># To check for any NULL values in the data</span>
+<span class="n">mtm_df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[23]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Movie_Number       0
+Movie_Name         0
+Year_of_Release    0
+IMDB_Rating        0
+Number_of_Votes    0
+Genres             0
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Convert the years to consistent format -- elegant way</span>
+<span class="n">st</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">mtm_df</span><span class="p">[</span><span class="s1">&#39;Year_of_Release&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mtm_df</span><span class="p">[</span><span class="s1">&#39;Year_of_Release&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">st</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[0-9]&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Convert them to Integers</span>
+<span class="n">mtm_df</span><span class="p">[</span><span class="s1">&#39;Year_of_Release&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mtm_df</span><span class="p">[</span><span class="s1">&#39;Year_of_Release&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">mtm_df</span><span class="p">[</span><span class="s1">&#39;IMDB_Rating&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mtm_df</span><span class="p">[</span><span class="s1">&#39;IMDB_Rating&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">mtm_df</span><span class="p">[</span><span class="s1">&#39;Number_of_Votes&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mtm_df</span><span class="p">[</span><span class="s1">&#39;Number_of_Votes&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Now describe the dataset</span>
+<span class="n">mtm_df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[26]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year_of_Release</th>
+      <th>IMDB_Rating</th>
+      <th>Number_of_Votes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>617.000000</td>
+      <td>617.000000</td>
+      <td>617.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>1988.575365</td>
+      <td>6.403566</td>
+      <td>49820.962723</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>16.589229</td>
+      <td>1.255192</td>
+      <td>61880.609145</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1927.000000</td>
+      <td>2.000000</td>
+      <td>9.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>1984.000000</td>
+      <td>6.000000</td>
+      <td>9919.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>1994.000000</td>
+      <td>7.000000</td>
+      <td>27112.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>1999.000000</td>
+      <td>7.000000</td>
+      <td>66781.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>2010.000000</td>
+      <td>9.000000</td>
+      <td>419312.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># More information on the dataframe</span>
+<span class="n">mtm_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 617 entries, 0 to 616
+Data columns (total 6 columns):
+Movie_Number       617 non-null object
+Movie_Name         617 non-null object
+Year_of_Release    617 non-null int64
+IMDB_Rating        617 non-null int64
+Number_of_Votes    617 non-null int64
+Genres             617 non-null object
+dtypes: int64(3), object(3)
+memory usage: 29.0+ KB
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">mtm_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">mtm_csv</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Saved to csv..&quot;</span><span class="p">)</span>
+<span class="c1"># Cleaning done on the mtm dataset</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Saved to csv..
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Onto the MCM dataset</span>
+<span class="n">mcm_df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[29]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Character_Id           0
+Character_Name         2
+Movie_Number           0
+Movie_Title            0
+Gender                 0
+Position_in_Credits    0
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># The rows which has NULL values</span>
+<span class="n">mcm_df</span><span class="p">[</span><span class="n">mcm_df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[30]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Character_Id</th>
+      <th>Character_Name</th>
+      <th>Movie_Number</th>
+      <th>Movie_Title</th>
+      <th>Gender</th>
+      <th>Position_in_Credits</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3764</th>
+      <td>u3764</td>
+      <td>NaN</td>
+      <td>m248</td>
+      <td>arctic blue</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <th>6558</th>
+      <td>u6558</td>
+      <td>NaN</td>
+      <td>m436</td>
+      <td>memento</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Drop NULL records</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Old size: </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">mcm_df</span><span class="p">))</span>
+<span class="n">mcm_df</span> <span class="o">=</span> <span class="n">mcm_df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">how</span> <span class="o">=</span> <span class="s1">&#39;any&#39;</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="s1">&#39;rows&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;New size: </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">mcm_df</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Old size: 9035
+New size: 9033
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">mcm_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Int64Index: 9033 entries, 0 to 9034
+Data columns (total 6 columns):
+Character_Id           9033 non-null object
+Character_Name         9033 non-null object
+Movie_Number           9033 non-null object
+Movie_Title            9033 non-null object
+Gender                 9033 non-null object
+Position_in_Credits    9033 non-null object
+dtypes: object(6)
+memory usage: 494.0+ KB
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Since, the data in the 'Gender' column has bad data, inorder to make the data consistent :-</p>
+<h1 id="A-quick-Gender-Recognition-model">A quick Gender Recognition model<a class="anchor-link" href="#A-quick-Gender-Recognition-model">&#182;</a></h1><p>Grabbed from <a href="https://nlpforhackers.io/introduction-machine-learning/">nlpforhackers</a> webpage.</p>
+<ol>
+<li>Firstly convert the dataset into a numpy array to keep only gender and names</li>
+<li>Set the feature parameters which takes in different parameters</li>
+<li>Vectorize the parametes</li>
+<li>Get varied train, test split and test it for validity by checking out the count of the train test split</li>
+<li>Transform lists of feature-value mappings to vectors. (When feature values are strings, this transformer will do a binary one-hot (aka one-of-K) coding: one boolean-valued feature is constructed for each of the possible string values that the feature can take on)</li>
+<li>Train a decision tree classifier on this and save the model as a pickle file</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;gender_recognition/names_dataset.csv&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">names</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+ 
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2"> names in dataset&quot;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>   index       name sex
+0      0       Mary   F
+1      1       Anna   F
+2      2       Emma   F
+3      3  Elizabeth   F
+4      4     Minnie   F
+5      5   Margaret   F
+6      6        Ida   F
+7      7      Alice   F
+8      8     Bertha   F
+9      9      Sarah   F
+95025 names in dataset
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Get the data out of the dataframe into a numpy matrix and keep only the name and gender columns</span>
+<span class="n">names</span> <span class="o">=</span> <span class="n">names</span><span class="o">.</span><span class="n">as_matrix</span><span class="p">()[:,</span> <span class="mi">1</span><span class="p">:]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+ 
+<span class="c1"># We&#39;re using 90% of the data for training</span>
+<span class="n">TRAIN_SPLIT</span> <span class="o">=</span> <span class="mf">0.90</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[&#39;Mary&#39; &#39;F&#39;]
+ [&#39;Anna&#39; &#39;F&#39;]
+ [&#39;Emma&#39; &#39;F&#39;]
+ ...
+ [&#39;Ziyu&#39; &#39;M&#39;]
+ [&#39;Zykir&#39; &#39;M&#39;]
+ [&#39;Zyus&#39; &#39;M&#39;]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">features</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s1">&#39;first-letter&#39;</span><span class="p">:</span> <span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="c1"># First letter</span>
+        <span class="s1">&#39;first2-letters&#39;</span><span class="p">:</span> <span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">],</span> <span class="c1"># First 2 letters</span>
+        <span class="s1">&#39;first3-letters&#39;</span><span class="p">:</span> <span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">],</span> <span class="c1"># First 3 letters</span>
+        <span class="s1">&#39;last-letter&#39;</span><span class="p">:</span> <span class="n">name</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="c1"># Last letter</span>
+        <span class="s1">&#39;last2-letters&#39;</span><span class="p">:</span> <span class="n">name</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:],</span> <span class="c1"># Last 2 letters</span>
+        <span class="s1">&#39;last3-letters&#39;</span><span class="p">:</span> <span class="n">name</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:],</span> <span class="c1"># Last 3 letters</span>
+    <span class="p">}</span>
+
+<span class="c1"># Feature Extraction</span>
+<span class="k">print</span><span class="p">(</span><span class="n">features</span><span class="p">(</span><span class="s2">&quot;Alex&quot;</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;first2-letters&#39;: &#39;al&#39;, &#39;last-letter&#39;: &#39;x&#39;, &#39;first-letter&#39;: &#39;a&#39;, &#39;last2-letters&#39;: &#39;ex&#39;, &#39;last3-letters&#39;: &#39;lex&#39;, &#39;first3-letters&#39;: &#39;ale&#39;}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Vectorize the features function</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vectorize</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">features</span><span class="p">([</span><span class="s2">&quot;Anna&quot;</span><span class="p">,</span> <span class="s2">&quot;Hannah&quot;</span><span class="p">,</span> <span class="s2">&quot;Paul&quot;</span><span class="p">]))</span>
+<span class="c1"># [ array({&#39;first2-letters&#39;: &#39;an&#39;, &#39;last-letter&#39;: &#39;a&#39;, &#39;first-letter&#39;: &#39;a&#39;, &#39;last2-letters&#39;: &#39;na&#39;, &#39;last3-letters&#39;: &#39;nna&#39;, &#39;first3-letters&#39;: &#39;ann&#39;}, dtype=object)</span>
+<span class="c1">#   array({&#39;first2-letters&#39;: &#39;ha&#39;, &#39;last-letter&#39;: &#39;h&#39;, &#39;first-letter&#39;: &#39;h&#39;, &#39;last2-letters&#39;: &#39;ah&#39;, &#39;last3-letters&#39;: &#39;nah&#39;, &#39;first3-letters&#39;: &#39;han&#39;}, dtype=object)</span>
+<span class="c1">#   array({&#39;first2-letters&#39;: &#39;pa&#39;, &#39;last-letter&#39;: &#39;l&#39;, &#39;first-letter&#39;: &#39;p&#39;, &#39;last2-letters&#39;: &#39;ul&#39;, &#39;last3-letters&#39;: &#39;aul&#39;, &#39;first3-letters&#39;: &#39;pau&#39;}, dtype=object)]</span>
+ 
+<span class="c1"># Extract the features for the whole dataset</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">features</span><span class="p">(</span><span class="n">names</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">])</span> <span class="c1"># X contains the features</span>
+ 
+<span class="c1"># Get the gender column</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">names</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>           <span class="c1"># y contains the targets</span>
+ 
+<span class="c1"># Test if we built the dataset correctly</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">Name: </span><span class="si">%s</span><span class="s2">, features=</span><span class="si">%s</span><span class="s2">, gender=</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{&#39;first2-letters&#39;: &#39;an&#39;, &#39;last-letter&#39;: &#39;a&#39;, &#39;first-letter&#39;: &#39;a&#39;, &#39;last2-letters&#39;: &#39;na&#39;, &#39;last3-letters&#39;: &#39;nna&#39;, &#39;first3-letters&#39;: &#39;ann&#39;}
+ {&#39;first2-letters&#39;: &#39;ha&#39;, &#39;last-letter&#39;: &#39;h&#39;, &#39;first-letter&#39;: &#39;h&#39;, &#39;last2-letters&#39;: &#39;ah&#39;, &#39;last3-letters&#39;: &#39;nah&#39;, &#39;first3-letters&#39;: &#39;han&#39;}
+ {&#39;first2-letters&#39;: &#39;pa&#39;, &#39;last-letter&#39;: &#39;l&#39;, &#39;first-letter&#39;: &#39;p&#39;, &#39;last2-letters&#39;: &#39;ul&#39;, &#39;last3-letters&#39;: &#39;aul&#39;, &#39;first3-letters&#39;: &#39;pau&#39;}]
+
+
+Name: Mary, features={&#39;first2-letters&#39;: &#39;ma&#39;, &#39;last-letter&#39;: &#39;y&#39;, &#39;first-letter&#39;: &#39;m&#39;, &#39;last2-letters&#39;: &#39;ry&#39;, &#39;last3-letters&#39;: &#39;ary&#39;, &#39;first3-letters&#39;: &#39;mar&#39;}, gender=F
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">shuffle</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:</span><span class="nb">int</span><span class="p">(</span><span class="n">TRAIN_SPLIT</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">))],</span> <span class="n">X</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">TRAIN_SPLIT</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">)):]</span>
+<span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">y</span><span class="p">[:</span><span class="nb">int</span><span class="p">(</span><span class="n">TRAIN_SPLIT</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">))],</span> <span class="n">y</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">TRAIN_SPLIT</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)):]</span>
+
+<span class="c1"># Check to see if the datasets add up</span>
+<span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="n">X_train</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">X_test</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">y_train</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>85522 9503 85522 9503
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Transforms lists of feature-value mappings to vectors.</span>
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">DictVectorizer</span><span class="p">()</span>
+<span class="n">vectorizer</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="n">transformed</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">features</span><span class="p">([</span><span class="s2">&quot;Mary&quot;</span><span class="p">,</span> <span class="s2">&quot;John&quot;</span><span class="p">]))</span>
+<span class="k">print</span> <span class="n">transformed</span>
+
+<span class="k">print</span> <span class="nb">type</span><span class="p">(</span><span class="n">transformed</span><span class="p">)</span> <span class="c1"># &lt;class &#39;scipy.sparse.csr.csr_matrix&#39;&gt;</span>
+<span class="k">print</span> <span class="n">transformed</span><span class="o">.</span><span class="n">toarray</span><span class="p">()[</span><span class="mi">0</span><span class="p">][</span><span class="mi">12</span><span class="p">]</span>    <span class="c1"># 1.0</span>
+<span class="k">print</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">feature_names_</span><span class="p">[</span><span class="mi">12</span><span class="p">]</span>   <span class="c1"># first-letter=m</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>  (0, 12)	1.0
+  (0, 244)	1.0
+  (0, 2768)	1.0
+  (0, 4618)	1.0
+  (0, 4932)	1.0
+  (0, 5264)	1.0
+  (1, 9)	1.0
+  (1, 199)	1.0
+  (1, 2303)	1.0
+  (1, 4607)	1.0
+  (1, 4742)	1.0
+  (1, 7372)	1.0
+&lt;class &#39;scipy.sparse.csr.csr_matrix&#39;&gt;
+1.0
+first-letter=m
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">clf</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">criterion</span> <span class="o">=</span> <span class="s1">&#39;gini&#39;</span><span class="p">)</span>
+<span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">),</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Accuracy on training set</span>
+<span class="k">print</span> <span class="n">clf</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">),</span> <span class="n">y_train</span><span class="p">)</span> 
+ 
+<span class="c1"># Accuracy on test set</span>
+<span class="k">print</span> <span class="n">clf</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">),</span> <span class="n">y_test</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.9868221042538762
+0.8718299484373356
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Therefore, we are getting a decent result from the names</span>
+<span class="k">print</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">features</span><span class="p">([</span><span class="s2">&quot;SMYSLOV&quot;</span><span class="p">,</span> <span class="s2">&quot;CHASTITY&quot;</span><span class="p">,</span> <span class="s2">&quot;MISS PERKY&quot;</span><span class="p">,</span> <span class="s2">&quot;SHARON&quot;</span><span class="p">,</span> <span class="s2">&quot;ALONSO&quot;</span><span class="p">,</span> <span class="s2">&quot;SECONDARY OFFICER&quot;</span><span class="p">])))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;M&#39; &#39;F&#39; &#39;F&#39; &#39;F&#39; &#39;M&#39; &#39;M&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Now since the model is built let&#39;s update the data in the dataframe</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Number of missing genders : &quot;</span> <span class="p">,</span> <span class="n">mcm_df</span><span class="p">[</span><span class="n">mcm_df</span><span class="o">.</span><span class="n">Gender</span> <span class="o">==</span> <span class="s1">&#39;?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">mcm_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(&#39;Number of missing genders : &#39;, 6018)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[41]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Character_Id</th>
+      <th>Character_Name</th>
+      <th>Movie_Number</th>
+      <th>Movie_Title</th>
+      <th>Gender</th>
+      <th>Position_in_Credits</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>u0</td>
+      <td>BIANCA</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>f</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>u1</td>
+      <td>BRUCE</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>u2</td>
+      <td>CAMERON</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>m</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>u3</td>
+      <td>CHASTITY</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>u4</td>
+      <td>JOEY</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>m</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>u5</td>
+      <td>KAT</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>f</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>u6</td>
+      <td>MANDELLA</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>f</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>u7</td>
+      <td>MICHAEL</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>m</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Let&#39;s convert all the ? with their appropriate genders by using the above trained model</span>
+<span class="k">for</span> <span class="n">items</span> <span class="ow">in</span> <span class="n">mcm_df</span><span class="o">.</span><span class="n">itertuples</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">items</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;?&#39;</span><span class="p">:</span>
+        <span class="n">pred_val</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">features</span><span class="p">([</span><span class="n">items</span><span class="p">[</span><span class="mi">2</span><span class="p">]])))</span>
+        <span class="n">prediction</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="n">prediction</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pred_val</span><span class="p">)</span>
+        <span class="n">mcm_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">items</span><span class="o">.</span><span class="n">Index</span><span class="p">,</span> <span class="s1">&#39;Gender&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">prediction</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Now check for the updated genders</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Number of missing genders : &quot;</span> <span class="p">,</span> <span class="n">mcm_df</span><span class="p">[</span><span class="n">mcm_df</span><span class="o">.</span><span class="n">Gender</span> <span class="o">==</span> <span class="s1">&#39;?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">mcm_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(&#39;Number of missing genders : &#39;, 0)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[43]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Character_Id</th>
+      <th>Character_Name</th>
+      <th>Movie_Number</th>
+      <th>Movie_Title</th>
+      <th>Gender</th>
+      <th>Position_in_Credits</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>u0</td>
+      <td>BIANCA</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>f</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>u1</td>
+      <td>BRUCE</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>m</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>u2</td>
+      <td>CAMERON</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>m</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>u3</td>
+      <td>CHASTITY</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>f</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>u4</td>
+      <td>JOEY</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>m</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>u5</td>
+      <td>KAT</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>f</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>u6</td>
+      <td>MANDELLA</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>f</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>u7</td>
+      <td>MICHAEL</td>
+      <td>m0</td>
+      <td>10 things i hate about you</td>
+      <td>m</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">mcm_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">mcm_csv</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Saved to csv..&quot;</span><span class="p">)</span>
+<span class="c1"># Cleaning done on the mcm dataset</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Saved to csv..
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Onto-Data-Exploration-&#128588;-&#128588;">Onto Data Exploration &#128588; &#128588;<a class="anchor-link" href="#Onto-Data-Exploration-&#128588;-&#128588;">&#182;</a></h1><p>Using plotly to do visualization of all the data so that we get meaningful info out of it</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Visualization on the year of realese to get the idea of movie years we are working with</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">go</span><span class="o">.</span><span class="n">Histogram</span><span class="p">(</span>
+            <span class="n">x</span><span class="o">=</span><span class="n">mtm_df</span><span class="p">[</span><span class="s1">&#39;Year_of_Release&#39;</span><span class="p">],</span>
+            <span class="n">marker</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;rgb(17, 157, 100)&#39;</span><span class="p">),</span>
+            <span class="n">hoverlabel</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">bordercolor</span> <span class="o">=</span> <span class="s1">&#39;rgb(0, 0, 0)&#39;</span><span class="p">)</span>
+        <span class="p">)]</span>
+<span class="n">layout</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Year of Releases&#39;</span><span class="p">,</span>
+    <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Years&#39;</span>
+    <span class="p">),</span>
+    <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Counts of Movie Releases&#39;</span>
+    <span class="p">),</span>
+    <span class="n">bargap</span><span class="o">=</span><span class="mf">0.2</span>
+<span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">layout</span><span class="p">)</span>
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;simple-histogram&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[46]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~canfindck/1.embed" height="525px" width="100%"></iframe>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Scatter plot on the same data</span>
+<span class="n">trace</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">mtm_df</span><span class="p">[</span><span class="s1">&#39;Year_of_Release&#39;</span><span class="p">],</span>
+    <span class="n">mode</span> <span class="o">=</span> <span class="s1">&#39;markers&#39;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">layout</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Year of Releases&#39;</span><span class="p">,</span>
+    <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Years&#39;</span>
+    <span class="p">),</span>
+    <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Counts of Movie Releases&#39;</span>
+    <span class="p">),</span>
+<span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">trace</span><span class="p">]</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">layout</span><span class="p">)</span>
+
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;basic-scatter&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[51]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~canfindck/3.embed" height="525px" width="100%"></iframe>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Visualization on the number of IMDB Ratings on these movies</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">go</span><span class="o">.</span><span class="n">Histogram</span><span class="p">(</span>
+            <span class="n">y</span><span class="o">=</span><span class="n">mtm_df</span><span class="p">[</span><span class="s1">&#39;IMDB_Rating&#39;</span><span class="p">],</span>
+            <span class="n">marker</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;rgb(17, 157, 255)&#39;</span><span class="p">),</span>
+            <span class="n">hoverlabel</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">bordercolor</span> <span class="o">=</span> <span class="s1">&#39;rgb(0, 0, 0)&#39;</span><span class="p">)</span>
+        <span class="p">)]</span>
+<span class="n">layout</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;IMDB Ratings&#39;</span><span class="p">,</span>
+    <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Number of Movies&#39;</span>
+    <span class="p">),</span>
+    <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Rating Scores&#39;</span>
+    <span class="p">),</span>
+    <span class="n">bargap</span><span class="o">=</span><span class="mf">0.2</span>
+<span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">layout</span><span class="p">)</span>
+<span class="n">py</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;simple-histogram&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[48]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~canfindck/1.embed" height="525px" width="100%"></iframe>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+ 
+
