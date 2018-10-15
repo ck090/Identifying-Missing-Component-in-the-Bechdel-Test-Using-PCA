@@ -7,7 +7,7 @@ u4,JOEY,m0,10 things i hate about you,m,6
 u5,KAT,m0,10 things i hate about you,f,2
 u6,MANDELLA,m0,10 things i hate about you,f,7
 u7,MICHAEL,m0,10 things i hate about you,m,5
-u8,MISS PERKY,m0,10 things i hate about you,f,?
+u8,MISS PERKY,m0,10 things i hate about you,m,?
 u9,PATRICK,m0,10 things i hate about you,m,1
 u10,SHARON,m0,10 things i hate about you,f,?
 u11,WALTER,m0,10 things i hate about you,m,9
@@ -19,7 +19,7 @@ u16,COLUMBUS,m1,1492: conquest of paradise,m,1
 u17,FERNANDO,m1,1492: conquest of paradise,m,?
 u18,ISABEL,m1,1492: conquest of paradise,f,?
 u19,MARCHENA,m1,1492: conquest of paradise,m,6
-u20,MENDEZ,m1,1492: conquest of paradise,f,?
+u20,MENDEZ,m1,1492: conquest of paradise,m,?
 u21,MOXICA,m1,1492: conquest of paradise,f,?
 u22,PINZON,m1,1492: conquest of paradise,m,?
 u23,SAILOR,m1,1492: conquest of paradise,m,?
@@ -74,8 +74,8 @@ u71,HAMMOND,m4,48 hrs.,m,2
 u72,HENRY,m4,48 hrs.,f,?
 u73,KEHOE,m4,48 hrs.,f,?
 u74,LISA,m4,48 hrs.,f,?
-u75,LUTHER,m4,48 hrs.,f,?
-u76,SOSNA,m4,48 hrs.,m,?
+u75,LUTHER,m4,48 hrs.,m,?
+u76,SOSNA,m4,48 hrs.,f,?
 u77,YOUNG COP,m4,48 hrs.,m,?
 u78,CORNELIUS,m5,the fifth element,m,3
 u79,DAVID,m5,the fifth element,m,?
@@ -95,10 +95,10 @@ u92,PRIEST,m5,the fifth element,m,?
 u93,PROFESSOR,m5,the fifth element,m,?
 u94,SECRETARY,m5,the fifth element,f,?
 u95,SHADOW,m5,the fifth element,f,?
-u96,STAEDERT,m5,the fifth element,f,?
+u96,STAEDERT,m5,the fifth element,m,?
 u97,THAI,m5,the fifth element,m,?
 u98,VOICE,m5,the fifth element,f,?
-u99,ZORG,m5,the fifth element,m,?
+u99,ZORG,m5,the fifth element,f,?
 u100,AMY,m6,8mm,f,7
 u101,ANGRY DEALER,m6,8mm,m,?
 u102,DINO,m6,8mm,m,?
@@ -136,7 +136,7 @@ u133,GRIFF,m9,the atomic submarine,m,?
 u134,KENT,m9,the atomic submarine,m,?
 u135,REEF,m9,the atomic submarine,m,1
 u136,SAUCER VOICE,m9,the atomic submarine,f,?
-u137,SIR IAN,m9,the atomic submarine,m,?
+u137,SIR IAN,m9,the atomic submarine,f,?
 u138,WENDOVER,m9,the atomic submarine,m,?
 u139,ALMA,m10,affliction,f,7
 u140,CHICK,m10,affliction,m,?
@@ -159,10 +159,10 @@ u156,CERALLOS,m11,air force one,m,?
 u157,CHIEF MECHANIC,m11,air force one,f,?
 u158,COL. CARLTON,m11,air force one,m,?
 u159,DEAN,m11,air force one,m,?
-u160,DOHERTY,m11,air force one,f,?
-u161,GENERAL NORTHWOOD,m11,air force one,f,?
+u160,DOHERTY,m11,air force one,m,?
+u161,GENERAL NORTHWOOD,m11,air force one,m,?
 u162,GIBBS,m11,air force one,m,?
-u163,IRAQI SOLDIER,m11,air force one,f,?
+u163,IRAQI SOLDIER,m11,air force one,m,?
 u164,KC-135 PILOT,m11,air force one,m,?
 u165,KC-LO PILOT,m11,air force one,m,?
 u166,KORSHUNOV,m11,air force one,m,?
@@ -193,7 +193,7 @@ u190,RUMACK,m12,airplane ii: the sequel,m,?
 u191,SIMON,m12,airplane ii: the sequel,m,4
 u192,STELLA,m12,airplane ii: the sequel,f,?
 u193,TED,m12,airplane ii: the sequel,m,1
-u194,WIFE,m12,airplane ii: the sequel,m,?
+u194,WIFE,m12,airplane ii: the sequel,f,?
 u195,BERNICE,m13,airplane!,f,?
 u196,CAREY,m13,airplane!,f,?
 u197,DR. RUMACK,m13,airplane!,m,?
@@ -201,11 +201,11 @@ u198,ELAINE,m13,airplane!,f,4
 u199,GIRL,m13,airplane!,f,?
 u200,GUNDERSON,m13,airplane!,m,?
 u201,JACK,m13,airplane!,m,?
-u202,JOEY,m13,airplane!,m,?
+u202,JOEY,m13,airplane!,f,?
 u203,KRAMER,m13,airplane!,m,?
 u204,LISA,m13,airplane!,f,?
 u205,MILTON,m13,airplane!,m,?
-u206,MRS. HAMMEN,m13,airplane!,m,?
+u206,MRS. HAMMEN,m13,airplane!,f,?
 u207,MRS. KRAMER,m13,airplane!,m,?
 u208,MURDOCK,m13,airplane!,m,?
 u209,OVEUR,m13,airplane!,m,?
@@ -220,11 +220,11 @@ u217,HARCOURT,m14,alien nation,m,?
 u218,JETSON,m14,alien nation,M,?
 u219,KIPLING,m14,alien nation,m,?
 u220,MAFFET,m14,alien nation,m,?
-u221,O'NEAL,m14,alien nation,m,?
+u221,O'NEAL,m14,alien nation,f,?
 u222,OPERATOR,m14,alien nation,m,?
 u223,PORTER,m14,alien nation,m,?
 u224,SYKES,m14,alien nation,m,1
-u225,TUGGLE,m14,alien nation,m,?
+u225,TUGGLE,m14,alien nation,f,?
 u226,WARNER,m14,alien nation,m,?
 u227,WINTER,m14,alien nation,f,?
 u228,APONE,m15,aliens,f,?
@@ -233,7 +233,7 @@ u230,BURKE,m15,aliens,m,5
 u231,GORMAN,m15,aliens,m,?
 u232,HICKS,m15,aliens,m,3
 u233,HUDSON,m15,aliens,m,?
-u234,LYDECKER,m15,aliens,f,?
+u234,LYDECKER,m15,aliens,m,?
 u235,MED-TECH,m15,aliens,m,?
 u236,NEWT,m15,aliens,f,2
 u237,RIPLEY,m15,aliens,f,1
@@ -247,7 +247,7 @@ u244,CAVALIERI,m16,amadeus,f,6
 u245,COLLOREDO,m16,amadeus,m,?
 u246,COMMENDATORE,m16,amadeus,m,?
 u247,CONSTANZE,m16,amadeus,f,3
-u248,FIRST LADY,m16,amadeus,f,?
+u248,FIRST LADY,m16,amadeus,m,?
 u249,FLUNKY,m16,amadeus,m,?
 u250,FRAU SCHLUMBERG,m16,amadeus,m,?
 u251,JOSEPH,m16,amadeus,m,7
@@ -288,7 +288,7 @@ u285,CHARLIE,m18,american madness,m,?
 u286,CLARK,m18,american madness,m,1000
 u287,CLUETT,m18,american madness,m,5
 u288,DICKSON,m18,american madness,m,1
-u289,DUDE,m18,american madness,f,?
+u289,DUDE,m18,american madness,m,?
 u290,GARDINER,m18,american madness,m,?
 u291,GUARD,m18,american madness,m,?
 u292,HELEN,m18,american madness,f,4
@@ -299,14 +299,14 @@ u296,LADY,m18,american madness,f,?
 u297,MATT,m18,american madness,m,2
 u298,MIKE,m18,american madness,m,?
 u299,MRS. DICKSON,m18,american madness,f,3
-u300,MRS. HALLIGAN,m18,american madness,m,?
-u301,MRS. PEMBROKE,m18,american madness,m,?
+u300,MRS. HALLIGAN,m18,american madness,f,?
+u301,MRS. PEMBROKE,m18,american madness,f,?
 u302,O'BRIEN,m18,american madness,m,?
 u303,OSCAR,m18,american madness,m,?
 u304,SAMPSON,m18,american madness,m,?
 u305,TELLER,m18,american madness,m,?
 u306,BOB,m19,american outlaws,m,9
-u307,BURLY DETECTIVE,m19,american outlaws,f,?
+u307,BURLY DETECTIVE,m19,american outlaws,m,?
 u308,COLE,m19,american outlaws,m,2
 u309,COMANCHE TOM,m19,american outlaws,m,?
 u310,DEPUTY,m19,american outlaws,f,?
@@ -337,7 +337,7 @@ u334,EVELYN,m20,american psycho,f,6
 u335,HOMELESS MAN,m20,american psycho,m,?
 u336,JEAN,m20,american psycho,f,5
 u337,KIMBALL,m20,american psycho,m,10
-u338,MAITRE D',m20,american psycho,f,?
+u338,MAITRE D',m20,american psycho,m,?
 u339,MRS. WOLFE,m20,american psycho,f,?
 u340,OWEN,m20,american psycho,m,?
 u341,PRICE,m20,american psycho,m,?
@@ -346,7 +346,7 @@ u343,VICTORIA,m20,american psycho,f,?
 u344,ALICE,m21,antitrust,f,3
 u345,BARTON,m21,antitrust,m,?
 u346,BRIAN,m21,antitrust,m,?
-u347,CYBER PUNDIT,m21,antitrust,m,?
+u347,CYBER PUNDIT,m21,antitrust,f,?
 u348,DANNY,m21,antitrust,m,?
 u349,GARY,m21,antitrust,m,4
 u350,LARRY,m21,antitrust,m,?
@@ -357,7 +357,7 @@ u354,MILO,m21,antitrust,m,1
 u355,PHIL,m21,antitrust,m,?
 u356,RANDY,m21,antitrust,m,?
 u357,REDMOND,m21,antitrust,m,?
-u358,SHROT,m21,antitrust,f,?
+u358,SHROT,m21,antitrust,m,?
 u359,TEDDY,m21,antitrust,m,?
 u360,ALOTTA,m22,austin powers: international man of mystery,f,7
 u361,ANDY WARHOL,m22,austin powers: international man of mystery,m,?
@@ -380,12 +380,12 @@ u377,VANESSA,m22,austin powers: international man of mystery,f,2
 u378,BAILEY,m23,the avengers,f,?
 u379,DR. DARLING,m23,the avengers,m,?
 u380,EMMA,m23,the avengers,f,2
-u381,FATHER,m23,the avengers,m,?
+u381,FATHER,m23,the avengers,f,?
 u382,INVISIBLE JONES,m23,the avengers,m,4
 u383,MOTHER,m23,the avengers,m,5
-u384,OLD LADY,m23,the avengers,f,?
+u384,OLD LADY,m23,the avengers,m,?
 u385,PORTER,m23,the avengers,m,?
-u386,SIR AUGUST,m23,the avengers,m,?
+u386,SIR AUGUST,m23,the avengers,f,?
 u387,STEED,m23,the avengers,m,1
 u388,VALENTINE,m23,the avengers,f,?
 u389,VOICE,m23,the avengers,f,?
@@ -435,14 +435,14 @@ u432,LT,m26,bad lieutenant,m,?
 u433,NUN,m26,bad lieutenant,m,?
 u434,PRIEST,m26,bad lieutenant,m,?
 u435,1/16TH BLACK,m27,bamboozled,m,?
-u436,AUDIENCE,m27,bamboozled,f,?
+u436,AUDIENCE,m27,bamboozled,m,?
 u437,BIG BLACK,m27,bamboozled,m,?
 u438,CHEEBA,m27,bamboozled,f,?
 u439,DELACROIX,m27,bamboozled,m,1
 u440,DOT,m27,bamboozled,f,?
 u441,DUNWITTY,m27,bamboozled,m,5
 u442,GARY BYRD,m27,bamboozled,m,?
-u443,HONEYCUTT,m27,bamboozled,f,?
+u443,HONEYCUTT,m27,bamboozled,m,?
 u444,JUKKA,m27,bamboozled,f,?
 u445,JUNEBUG,m27,bamboozled,m,7
 u446,MANRAY,m27,bamboozled,m,?
@@ -498,14 +498,14 @@ u495,KARL,m30,big fish,m,?
 u496,NORTHER WINSLOW,m30,big fish,m,?
 u497,SANDRA,m30,big fish,f,4
 u498,WILL,m30,big fish,m,3
-u499,ALEXEI,m31,birthday girl,f,?
+u499,ALEXEI,m31,birthday girl,m,?
 u500,BRANCH MANAGER,m31,birthday girl,m,?
 u501,JOHN,m31,birthday girl,m,2
 u502,NADIA,m31,birthday girl,f,1
 u503,OFFICIAL,m31,birthday girl,m,?
 u504,YURI,m31,birthday girl,m,4
 u505,ANGELA,m32,black snake moan,f,4
-u506,BOJO,m32,black snake moan,f,?
+u506,BOJO,m32,black snake moan,m,?
 u507,BRYAN,m32,black snake moan,m,?
 u508,ELLA MAE,m32,black snake moan,f,?
 u509,GILL,m32,black snake moan,m,7
@@ -563,7 +563,7 @@ u560,MISS SWEET,m35,blast from the past,m,?
 u561,MOM,m35,blast from the past,m,?
 u562,PILOT,m35,blast from the past,m,?
 u563,POSTAL WORKER,m35,blast from the past,m,?
-u564,SODA JERK,m35,blast from the past,m,?
+u564,SODA JERK,m35,blast from the past,f,?
 u565,STREET WALKER,m35,blast from the past,m,?
 u566,TOWER,m35,blast from the past,m,?
 u567,TROY,m35,blast from the past,m,5
@@ -580,7 +580,7 @@ u577,MRS. BEAUMONT,m36,blue velvet,m,?
 u578,MRS. WILLIAMS,m36,blue velvet,m,?
 u579,RAYMOND,m36,blue velvet,m,?
 u580,SANDY,m36,blue velvet,f,4
-u581,YELLOW MAN,m36,blue velvet,m,?
+u581,YELLOW MAN,m36,blue velvet,f,?
 u582,AUGUSTUS,m37,the boondock saints,m,?
 u583,BOTH,m37,the boondock saints,m,?
 u584,CHAFFEY,m37,the boondock saints,f,?
@@ -601,7 +601,7 @@ u598,YAKAVETTA,m37,the boondock saints,f,?
 u599,ANTHONY,m38,bottle rocket,m,1
 u600,APPLEJACK,m38,bottle rocket,m,?
 u601,BOB,m38,bottle rocket,m,6
-u602,COP,m38,bottle rocket,f,?
+u602,COP,m38,bottle rocket,m,?
 u603,DIGNAN,m38,bottle rocket,m,2
 u604,EMPLOYEE,m38,bottle rocket,f,?
 u605,FUTURE MAN,m38,bottle rocket,m,?
@@ -693,15 +693,15 @@ u690,BUSTER,m44,the cider house rules,m,9
 u691,CANDY,m44,the cider house rules,f,2
 u692,CURLY,m44,the cider house rules,m,?
 u693,EDNA,m44,the cider house rules,f,?
-u694,FUZZY,m44,the cider house rules,f,?
+u694,FUZZY,m44,the cider house rules,m,?
 u695,HOMER,m44,the cider house rules,m,1
 u696,JACK,m44,the cider house rules,m,?
 u697,LARCH,m44,the cider house rules,m,5
-u698,MAJOR WINSLOW,m44,the cider house rules,m,?
+u698,MAJOR WINSLOW,m44,the cider house rules,f,?
 u699,MARY AGNES,m44,the cider house rules,f,?
 u700,MR. ROSE,m44,the cider house rules,m,?
 u701,MRS. GOODHALL,m44,the cider house rules,m,?
-u702,MUDDY,m44,the cider house rules,f,?
+u702,MUDDY,m44,the cider house rules,m,?
 u703,OLIVE,m44,the cider house rules,f,?
 u704,PEACHES,m44,the cider house rules,f,?
 u705,RAY,m44,the cider house rules,m,?
@@ -772,11 +772,11 @@ u769,LITTLE KID,m49,detroit rock city,m,?
 u770,MAN WITH COAT,m49,detroit rock city,f,?
 u771,MRS. BRUCE,m49,detroit rock city,m,?
 u772,PRIEST,m49,detroit rock city,m,?
-u773,SCALPER,m49,detroit rock city,f,?
-u774,SIMPLE SIMON'S VOICE,m49,detroit rock city,m,?
+u773,SCALPER,m49,detroit rock city,m,?
+u774,SIMPLE SIMON'S VOICE,m49,detroit rock city,f,?
 u775,TRIP,m49,detroit rock city,m,2
 u776,TRIP'S VOICE,m49,detroit rock city,f,?
-u777,AUDIENCE,m50,donnie darko,f,?
+u777,AUDIENCE,m50,donnie darko,m,?
 u778,DAVID,m50,donnie darko,m,?
 u779,DONNIE,m50,donnie darko,m,1
 u780,DR. MONNITOFF,m50,donnie darko,m,?
@@ -805,14 +805,14 @@ u802,FRY GIRL #1,m51,drop dead gorgeous,m,?
 u803,GLADYS,m51,drop dead gorgeous,f,?
 u804,HANK,m51,drop dead gorgeous,m,?
 u805,HAROLD,m51,drop dead gorgeous,m,?
-u806,IRIS,m51,drop dead gorgeous,f,?
+u806,IRIS,m51,drop dead gorgeous,m,?
 u807,LESLIE,m51,drop dead gorgeous,f,?
 u808,LESTER,m51,drop dead gorgeous,m,?
 u809,LISA,m51,drop dead gorgeous,f,?
 u810,LORETTA,m51,drop dead gorgeous,f,3
 u811,MR. HOWARD,m51,drop dead gorgeous,m,?
 u812,MR. LARSON,m51,drop dead gorgeous,m,?
-u813,PREGNANT FRY GIRL,m51,drop dead gorgeous,f,?
+u813,PREGNANT FRY GIRL,m51,drop dead gorgeous,m,?
 u814,TERRY,m51,drop dead gorgeous,m,?
 u815,TINA,m51,drop dead gorgeous,f,?
 u816,ALL,m52,duck soup,f,?
@@ -833,7 +833,7 @@ u830,KATH,m53,the elephant man,f,?
 u831,KENDAL,m53,the elephant man,m,?
 u832,MERRICK,m53,the elephant man,m,2
 u833,MOTHERSHEAD,m53,the elephant man,f,5
-u834,NIGHT PORTER,m53,the elephant man,m,?
+u834,NIGHT PORTER,m53,the elephant man,f,?
 u835,NORA,m53,the elephant man,f,?
 u836,OWNER,m53,the elephant man,m,?
 u837,PLUMED DWARF,m53,the elephant man,m,?
@@ -856,7 +856,7 @@ u853,SNORRI,m54,erik the viking,f,?
 u854,SVEN,m54,erik the viking,m,10
 u855,SVEN'S DAD,m54,erik the viking,m,10
 u856,THORFINN,m54,erik the viking,f,?
-u857,THORFINN'S MUM,m54,erik the viking,f,?
+u857,THORFINN'S MUM,m54,erik the viking,m,?
 u858,CARRIE,m55,eternal sunshine of the spotless mind,f,?
 u859,CLEMENTINE,m55,eternal sunshine of the spotless mind,f,2
 u860,CLEMENTINE'S VOICE,m55,eternal sunshine of the spotless mind,f,?
@@ -922,12 +922,12 @@ u919,DA,m60,fear and loathing in las vegas,m,?
 u920,DUKE,m60,fear and loathing in las vegas,m,1
 u921,GONZO,m60,fear and loathing in las vegas,m,2
 u922,HIGHWAY PATROLMAN,m60,fear and loathing in las vegas,m,?
-u923,HITCHHIKER,m60,fear and loathing in las vegas,m,?
-u924,MAID,m60,fear and loathing in las vegas,f,?
+u923,HITCHHIKER,m60,fear and loathing in las vegas,f,?
+u924,MAID,m60,fear and loathing in las vegas,m,?
 u925,PROPRIETOR,m60,fear and loathing in las vegas,m,?
-u926,ADULTERER,m61,feast,f,?
+u926,ADULTERER,m61,feast,m,?
 u927,BARTENDER,m61,feast,m,?
-u928,BEER GUY,m61,feast,m,?
+u928,BEER GUY,m61,feast,f,?
 u929,BELLE,m61,feast,f,?
 u930,BOSS MAN,m61,feast,m,1000
 u931,BOZO,m61,feast,m,?
@@ -946,7 +946,7 @@ u943,BEBE,m62,frances,f,?
 u944,CLAIRE,m62,frances,f,?
 u945,CLIFFORD,m62,frances,f,?
 u946,CLURMAN,m62,frances,m,?
-u947,COP,m62,frances,f,?
+u947,COP,m62,frances,m,?
 u948,DICK,m62,frances,m,28
 u949,DOCTOR,m62,frances,m,?
 u950,DOYLE,m62,frances,m,?
@@ -956,23 +956,23 @@ u953,ERNEST,m62,frances,m,4
 u954,FIRE CHIEF,m62,frances,m,?
 u955,FRANCES,m62,frances,f,1
 u956,HARRY,m62,frances,m,3
-u957,HITCHHIKER,m62,frances,m,?
+u957,HITCHHIKER,m62,frances,f,?
 u958,JUDGE,m62,frances,m,?
 u959,JUDGE HILLIER'S WIFE,m62,frances,f,?
 u960,KAMINSKI,m62,frances,m,?
-u961,LAWYER,m62,frances,m,?
+u961,LAWYER,m62,frances,f,?
 u962,LILLIAN,m62,frances,f,2
 u963,MAN,m62,frances,m,?
 u964,ODETS,m62,frances,m,?
 u965,OLDER NURSE,m62,frances,f,?
 u966,SERGEANT,m62,frances,m,?
 u967,SYMINGTON,m62,frances,m,38
-u968,YORK & CROWD,m62,frances,f,?
+u968,YORK & CROWD,m62,frances,m,?
 u969,YOUNG MAN,m62,frances,m,?
 u970,YOUNG NURSE,m62,frances,f,?
 u971,CREATURE,m63,frankenstein,f,?
 u972,ELIZABETH,m63,frankenstein,f,2
-u973,FATHER,m63,frankenstein,m,?
+u973,FATHER,m63,frankenstein,f,?
 u974,GRANDFATHER,m63,frankenstein,m,?
 u975,GRIGORI,m63,frankenstein,f,?
 u976,HENRY,m63,frankenstein,m,1
@@ -1010,7 +1010,7 @@ u1007,BLONDELL,m66,g.i. jane,f,?
 u1008,C.O.,m66,g.i. jane,m,17
 u1009,CORTEZ,m66,g.i. jane,m,?
 u1010,DEHAVEN,m66,g.i. jane,f,3
-u1011,DEHAVEN'S AIDE,m66,g.i. jane,f,?
+u1011,DEHAVEN'S AIDE,m66,g.i. jane,m,?
 u1012,FLAG OFFICER #1,m66,g.i. jane,m,?
 u1013,FLEA,m66,g.i. jane,f,?
 u1014,HAYES,m66,g.i. jane,m,?
@@ -1027,7 +1027,7 @@ u1024,ANIMAL,m67,godzilla,m,4
 u1025,AUDREY,m67,godzilla,f,3
 u1026,CAIMAN,m67,godzilla,m,?
 u1027,ELSIE,m67,godzilla,f,?
-u1028,JEAN-CLAUDE,m67,godzilla,f,?
+u1028,JEAN-CLAUDE,m67,godzilla,m,?
 u1029,KID,m67,godzilla,m,?
 u1030,LT. ANDERSON,m67,godzilla,m,?
 u1031,LUCY,m67,godzilla,f,?
@@ -1038,7 +1038,7 @@ u1035,RAYMOND,m67,godzilla,m,?
 u1036,ALEXANDER,m68,galaxy quest,m,3
 u1037,BRANDON,m68,galaxy quest,m,12
 u1038,COMPUTER,m68,galaxy quest,m,?
-u1039,FRED,m68,galaxy quest,m,?
+u1039,FRED,m68,galaxy quest,f,?
 u1040,GUY,m68,galaxy quest,m,?
 u1041,GWEN,m68,galaxy quest,f,2
 u1042,JASON,m68,galaxy quest,m,1
@@ -1051,7 +1051,7 @@ u1048,SARRIS,m68,galaxy quest,m,?
 u1049,TOMMY,m68,galaxy quest,m,6
 u1050,ARNOLD,m69,george washington,M,?
 u1051,BILLY LEE,m69,george washington,f,?
-u1052,CORNWALLIS,m69,george washington,f,?
+u1052,CORNWALLIS,m69,george washington,m,?
 u1053,GENERAL LEE,m69,george washington,f,?
 u1054,HAMILTON,m69,george washington,m,?
 u1055,HORATIO GATES,m69,george washington,m,?
@@ -1078,7 +1078,7 @@ u1075,DORIS,m70,get shorty,f,?
 u1076,ESCOBAR,m70,get shorty,m,?
 u1077,HARRY,m70,get shorty,m,2
 u1078,KAREN,m70,get shorty,f,3
-u1079,LEO,m70,get shorty,f,?
+u1079,LEO,m70,get shorty,m,?
 u1080,MANAGER,m70,get shorty,m,?
 u1081,MARTIN,m70,get shorty,m,4
 u1082,RAY BONES,m70,get shorty,m,?
@@ -1098,7 +1098,7 @@ u1095,GERROLD,m72,ghost world,m,?
 u1096,GIRL,m72,ghost world,f,?
 u1097,JOE,m72,ghost world,f,?
 u1098,JOHN,m72,ghost world,f,?
-u1099,JOHN ELLIS,m72,ghost world,m,?
+u1099,JOHN ELLIS,m72,ghost world,f,?
 u1100,JOSH,m72,ghost world,m,4
 u1101,MAN,m72,ghost world,m,?
 u1102,MANAGER,m72,ghost world,m,?
@@ -1135,19 +1135,19 @@ u1132,STANTZ,m74,ghostbusters ii,m,2
 u1133,VENKMAN,m74,ghostbusters ii,m,1
 u1134,VIGO,m74,ghostbusters ii,m,?
 u1135,WINSTON,m74,ghostbusters ii,m,6
-u1136,BRIDE,m75,ghostbusters,f,?
+u1136,BRIDE,m75,ghostbusters,m,?
 u1137,COED,m75,ghostbusters,m,?
 u1138,DANA,m75,ghostbusters,F,?
 u1139,DEAN YAEGER,m75,ghostbusters,m,?
-u1140,FIRST BUM,m75,ghostbusters,m,?
-u1141,GROOM,m75,ghostbusters,m,?
+u1140,FIRST BUM,m75,ghostbusters,f,?
+u1141,GROOM,m75,ghostbusters,f,?
 u1142,HEAD LIBRARIAN,m75,ghostbusters,f,?
 u1143,JANINE,m75,ghostbusters,f,?
 u1144,LOUIS,m75,ghostbusters,f,?
 u1145,MANAGER,m75,ghostbusters,m,?
 u1146,PECK,m75,ghostbusters,m,?
 u1147,SECOND BUM,m75,ghostbusters,m,?
-u1148,SOPHOMORE,m75,ghostbusters,f,?
+u1148,SOPHOMORE,m75,ghostbusters,m,?
 u1149,SPENGLER,m75,ghostbusters,M,?
 u1150,STANTZ,m75,ghostbusters,M,?
 u1151,STREET PUNK,m75,ghostbusters,m,?
@@ -1166,7 +1166,7 @@ u1163,NARCISSUS,m76,gladiator,M,?
 u1164,PROXIMO,m76,gladiator,m,4
 u1165,QUINTUS,m76,gladiator,m,?
 u1166,SELENE,m76,gladiator,f,?
-u1167,THEMIS,m76,gladiator,m,?
+u1167,THEMIS,m76,gladiator,f,?
 u1168,TRIBUUS,m76,gladiator,m,?
 u1169,BEN,m77,the graduate,m,2
 u1170,BEN'S VOICE,m77,the graduate,f,?
@@ -1174,7 +1174,7 @@ u1171,CLERK,m77,the graduate,m,?
 u1172,ELAINE,m77,the graduate,f,3
 u1173,MR. BRADDOCK,m77,the graduate,m,4
 u1174,MR. MCCLEERY,m77,the graduate,m,10
-u1175,MR. MCQUIRE,m77,the graduate,m,?
+u1175,MR. MCQUIRE,m77,the graduate,f,?
 u1176,MR. ROBINSON,m77,the graduate,m,5
 u1177,MRS. BRADDOCK,m77,the graduate,f,6
 u1178,MRS. ROBINSON,m77,the graduate,f,1
@@ -1207,7 +1207,7 @@ u1204,COLE,m79,the grifters,m,?
 u1205,DOCTOR,m79,the grifters,m,?
 u1206,HEBBING,m79,the grifters,m,?
 u1207,IRV,m79,the grifters,m,?
-u1208,JEWELER,m79,the grifters,f,?
+u1208,JEWELER,m79,the grifters,m,?
 u1209,KAGGS,m79,the grifters,m,?
 u1210,LILLY,m79,the grifters,f,1
 u1211,MANAGER,m79,the grifters,m,?
@@ -1246,7 +1246,7 @@ u1243,PAUL,m82,"happy birthday, wanda june",m,6
 u1244,PENELOPE,m82,"happy birthday, wanda june",f,2
 u1245,SHUTTLE,m82,"happy birthday, wanda june",m,4
 u1246,VON KONIGSWALD,m82,"happy birthday, wanda june",m,?
-u1247,WANDA JUNE,m82,"happy birthday, wanda june",f,?
+u1247,WANDA JUNE,m82,"happy birthday, wanda june",m,?
 u1248,WOODLY,m82,"happy birthday, wanda june",M,?
 u1249,BEATRICE,m83,hardcore,f,?
 u1250,BLACK STUD,m83,hardcore,m,?
@@ -1268,7 +1268,7 @@ u1265,TELLER,m83,hardcore,m,?
 u1266,TOD,m83,hardcore,m,7
 u1267,WES,m83,hardcore,m,?
 u1268,CANDY,m84,harold and maude,f,?
-u1269,COP,m84,harold and maude,f,?
+u1269,COP,m84,harold and maude,m,?
 u1270,EDITH,m84,harold and maude,f,?
 u1271,GLAUCUS,m84,harold and maude,f,?
 u1272,HAROLD,m84,harold and maude,m,2
@@ -1290,7 +1290,7 @@ u1287,RONSON,m85,hellbound: hellraiser ii,m,?
 u1288,TIFFANY,m85,hellbound: hellraiser ii,f,?
 u1289,ABE,m86,hellboy,m,?
 u1290,ABE'S VOICE,m86,hellboy,f,?
-u1291,BROOM,m86,hellboy,m,?
+u1291,BROOM,m86,hellboy,f,?
 u1292,CLAY,m86,hellboy,m,?
 u1293,GRIGORY,m86,hellboy,m,?
 u1294,HELLBOY,m86,hellboy,m,1
@@ -1330,8 +1330,8 @@ u1327,CONOR,m89,highlander,M,?
 u1328,DENNIS,m89,highlander,m,?
 u1329,DESK OFFICER,m89,highlander,f,?
 u1330,DUPONT,m89,highlander,m,?
-u1331,EXAMINER,m89,highlander,m,?
-u1332,FATHER,m89,highlander,m,?
+u1331,EXAMINER,m89,highlander,f,?
+u1332,FATHER,m89,highlander,f,?
 u1333,GRANDSON,m89,highlander,m,?
 u1334,INSPECTOR,m89,highlander,f,?
 u1335,INTRUDER,m89,highlander,f,?
@@ -1396,12 +1396,12 @@ u1393,HUSTON,m92,house of 1000 corpses,m,?
 u1394,JERRY,m92,house of 1000 corpses,m,11
 u1395,MARY,m92,house of 1000 corpses,f,13
 u1396,MOTHER,m92,house of 1000 corpses,m,?
-u1397,MR. WILLIS,m92,house of 1000 corpses,m,?
-u1398,NAISH,m92,house of 1000 corpses,m,?
+u1397,MR. WILLIS,m92,house of 1000 corpses,f,?
+u1398,NAISH,m92,house of 1000 corpses,f,?
 u1399,OTIS,m92,house of 1000 corpses,m,?
 u1400,STUCKY,m92,house of 1000 corpses,m,?
 u1401,WYDELL,m92,house of 1000 corpses,f,?
-u1402,FATHER,m93,human nature,m,?
+u1402,FATHER,m93,human nature,f,?
 u1403,FEMALE ROOMMATE,m93,human nature,f,?
 u1404,GABRIELLE,m93,human nature,f,19
 u1405,LILA,m93,human nature,f,1
@@ -1499,25 +1499,25 @@ u1496,JIM COOPER'S VOICE,m101,the insider,f,?
 u1497,LIANE,m101,the insider,f,4
 u1498,LIANE'S VOICE,m101,the insider,f,?
 u1499,LOWELL,m101,the insider,m,1
-u1500,LOWELL'S VOICE,m101,the insider,m,?
+u1500,LOWELL'S VOICE,m101,the insider,f,?
 u1501,MICHAEL MOORE,m101,the insider,m,?
 u1502,MIKE WALLACE,m101,the insider,m,3
 u1503,MOTLEY,m101,the insider,m,?
 u1504,RICHARD SCRUGGS,m101,the insider,m,?
 u1505,SHARON,m101,the insider,f,6
-u1506,THE HOTEL MANAGER'S VOICE,m101,the insider,f,?
+u1506,THE HOTEL MANAGER'S VOICE,m101,the insider,m,?
 u1507,THE SHEIKH,m101,the insider,m,?
 u1508,THOMAS SANDEFUR,m101,the insider,m,?
 u1509,TOBACCO LAWYER,m101,the insider,m,?
 u1510,WIGAND,m101,the insider,m,2
-u1511,WIGAND'S VOICE,m101,the insider,m,?
+u1511,WIGAND'S VOICE,m101,the insider,f,?
 u1512,BONNIE,m102,intolerable cruelty,f,?
 u1513,DOYLE,m102,intolerable cruelty,m,8
 u1514,GANGSTER,m102,intolerable cruelty,m,?
 u1515,JOE,m102,intolerable cruelty,f,?
 u1516,JUDGE,m102,intolerable cruelty,m,?
 u1517,KENNETH,m102,intolerable cruelty,M,?
-u1518,LAWYER,m102,intolerable cruelty,m,?
+u1518,LAWYER,m102,intolerable cruelty,f,?
 u1519,MARYLIN,m102,intolerable cruelty,f,2
 u1520,MILES,m102,intolerable cruelty,m,1
 u1521,PATRICIA,m102,intolerable cruelty,f,?
@@ -1544,7 +1544,7 @@ u1541,KING,m103,it happened one night,m,?
 u1542,LOVINGTON,m103,it happened one night,m,?
 u1543,MAN,m103,it happened one night,m,?
 u1544,MARY,m103,it happened one night,f,?
-u1545,OLD LADY,m103,it happened one night,f,?
+u1545,OLD LADY,m103,it happened one night,m,?
 u1546,OPERATOR,m103,it happened one night,m,?
 u1547,OWNER,m103,it happened one night,m,?
 u1548,PETER,m103,it happened one night,m,1
@@ -1553,7 +1553,7 @@ u1550,SECOND PILOT,m103,it happened one night,m,?
 u1551,SECRETARY,m103,it happened one night,f,?
 u1552,SHAPELEY,m103,it happened one night,m,4
 u1553,WESTLEY,m103,it happened one night,m,?
-u1554,WIFE,m103,it happened one night,m,?
+u1554,WIFE,m103,it happened one night,f,?
 u1555,AL,m104,jfk,m,?
 u1556,ANDREWS,m104,jfk,m,45
 u1557,BANISTER,m104,jfk,m,?
@@ -1569,8 +1569,8 @@ u1566,JASPER,m104,jfk,m,?
 u1567,JEAN HILL,m104,jfk,m,?
 u1568,JIM,m104,jfk,m,8
 u1569,JOHNSON,m104,jfk,m,?
-u1570,JUDGE HAGGERTY,m104,jfk,f,?
-u1571,LAWYER,m104,jfk,m,?
+u1570,JUDGE HAGGERTY,m104,jfk,m,?
+u1571,LAWYER,m104,jfk,f,?
 u1572,LIZ,m104,jfk,f,19
 u1573,LONG,m104,jfk,m,?
 u1574,LOU,m104,jfk,m,9
@@ -1580,7 +1580,7 @@ u1577,MARTIN,m104,jfk,m,16
 u1578,MERCER,m104,jfk,m,?
 u1579,MILLER,m104,jfk,m,?
 u1580,MOBSTER,m104,jfk,m,?
-u1581,NUMA,m104,jfk,f,?
+u1581,NUMA,m104,jfk,m,?
 u1582,O'KEEFE,m104,jfk,f,?
 u1583,OFFICIAL,m104,jfk,m,?
 u1584,RUBY,m104,jfk,f,?
@@ -1639,7 +1639,7 @@ u1636,KICKER,m107,jason x,m,?
 u1637,KKINSA,m107,jason x,f,?
 u1638,PEREZ,m107,jason x,m,?
 u1639,RIZZO,m107,jason x,m,?
-u1640,THORGAN,m107,jason x,f,?
+u1640,THORGAN,m107,jason x,m,?
 u1641,YLLO,m107,jason x,m,?
 u1642,BRODY,m108,jaws,m,1
 u1643,CASSIDY,m108,jaws,f,?
@@ -1649,7 +1649,7 @@ u1646,ELLEN,m108,jaws,f,4
 u1647,ELLEN'S VOICE,m108,jaws,f,?
 u1648,HENDRICKS,m108,jaws,m,?
 u1649,HOOPER,m108,jaws,m,3
-u1650,MEADOWS,m108,jaws,f,?
+u1650,MEADOWS,m108,jaws,m,?
 u1651,MICHAEL,m108,jaws,m,?
 u1652,QUINT,m108,jaws,m,2
 u1653,VAUGHN,m108,jaws,m,5
@@ -1657,7 +1657,7 @@ u1654,BLEEKER,m109,juno,m,2
 u1655,BLEEKER'S MOM,m109,juno,m,?
 u1656,BREN,m109,juno,f,5
 u1657,GERTA,m109,juno,f,?
-u1658,GIRL LAB PARTNER,m109,juno,m,?
+u1658,GIRL LAB PARTNER,m109,juno,f,?
 u1659,GUY LAB PARTNER,m109,juno,m,?
 u1660,JUNO,m109,juno,f,1
 u1661,LEAH,m109,juno,f,7
@@ -1665,7 +1665,7 @@ u1662,MAC,m109,juno,f,1
 u1663,MARK,m109,juno,m,4
 u1664,PUNK RECEPTIONIST,m109,juno,m,?
 u1665,ROLLO,m109,juno,m,?
-u1666,SU-CHIN,m109,juno,f,?
+u1666,SU-CHIN,m109,juno,m,?
 u1667,ULTRASOUND TECH,m109,juno,m,?
 u1668,VANESSA,m109,juno,f,3
 u1669,VIJAY,m109,juno,m,?
@@ -1710,7 +1710,7 @@ u1707,NOLAN,m112,knight moves,m,?
 u1708,PETER,m112,knight moves,m,1
 u1709,WOMAN,m112,knight moves,m,?
 u1710,WOMAN'S VOICE,m112,knight moves,m,?
-u1711,YURILIVICH,m112,knight moves,m,?
+u1711,YURILIVICH,m112,knight moves,f,?
 u1712,COLWYN,m113,krull,m,1
 u1713,CYCLOPS,m113,krull,m,?
 u1714,ERGO,m113,krull,m,?
@@ -1725,23 +1725,23 @@ u1722,VELLA,m113,krull,f,?
 u1723,VOICE OF THE BEAST,m113,krull,m,?
 u1724,WIDOW,m113,krull,f,4
 u1725,YNYR,m113,krull,m,3
-u1726,COP,m114,léon,f,?
-u1727,JENNY,m114,léon,f,?
-u1728,LEON,m114,léon,m,22
-u1729,MAN,m114,léon,m,?
-u1730,MATHILDA,m114,léon,f,3
-u1731,RECEPTIONIST,m114,léon,m,?
-u1732,RINALDI,m114,léon,f,?
-u1733,STANSFIELD,m114,léon,m,?
-u1734,THE BOSS,m114,léon,m,?
-u1735,TONY,m114,léon,m,?
+u1726,COP,m114,lÈon,m,?
+u1727,JENNY,m114,lÈon,f,?
+u1728,LEON,m114,lÈon,m,22
+u1729,MAN,m114,lÈon,m,?
+u1730,MATHILDA,m114,lÈon,f,3
+u1731,RECEPTIONIST,m114,lÈon,m,?
+u1732,RINALDI,m114,lÈon,f,?
+u1733,STANSFIELD,m114,lÈon,m,?
+u1734,THE BOSS,m114,lÈon,m,?
+u1735,TONY,m114,lÈon,m,?
 u1736,ADELLE,m115,labor of love,f,?
 u1737,DALLY,m115,labor of love,f,?
 u1738,DENNY,m115,labor of love,m,?
 u1739,DR. RAY,m115,labor of love,m,?
 u1740,DR. ROYCE,m115,labor of love,f,?
 u1741,ELLEN,m115,labor of love,F,?
-u1742,FATHER,m115,labor of love,m,?
+u1742,FATHER,m115,labor of love,f,?
 u1743,GERALD,m115,labor of love,m,?
 u1744,HANSEN,m115,labor of love,m,?
 u1745,ISAAC,m115,labor of love,m,?
@@ -1765,7 +1765,7 @@ u1762,BROOKE,m117,legally blonde,m,?
 u1763,CHUTNEY,m117,legally blonde,f,12
 u1764,DEWEY,m117,legally blonde,m,?
 u1765,DONOVAN,m117,legally blonde,m,?
-u1766,DORKY DAVID,m117,legally blonde,f,?
+u1766,DORKY DAVID,m117,legally blonde,m,?
 u1767,ELLE,m117,legally blonde,f,1
 u1768,EMMETT,m117,legally blonde,m,2
 u1769,ENRIQUE,m117,legally blonde,m,?
@@ -1790,7 +1790,7 @@ u1787,JIMMY,m118,legend,m,?
 u1788,LILI,m118,legend,f,2
 u1789,OGG,m118,legend,m,?
 u1790,OONA,m118,legend,f,10
-u1791,SCREWBALL,m118,legend,f,?
+u1791,SCREWBALL,m118,legend,m,?
 u1792,THURGIS,m118,legend,f,?
 u1793,ADAM,m119,life as a house,m,?
 u1794,ALYSSA,m119,life as a house,f,4
@@ -1807,8 +1807,8 @@ u1804,ROBIN,m119,life as a house,f,2
 u1805,RYAN,m119,life as a house,m,?
 u1806,SAM,m119,life as a house,m,3
 u1807,ABERNATHY,m120,the life of david gale,f,?
-u1808,BISCUIT,m120,the life of david gale,m,?
-u1809,BLOCKER,m120,the life of david gale,m,?
+u1808,BISCUIT,m120,the life of david gale,f,?
+u1809,BLOCKER,m120,the life of david gale,f,?
 u1810,BOUNCER,m120,the life of david gale,m,?
 u1811,CLAUDE,m120,the life of david gale,M,?
 u1812,COOKIE,m120,the life of david gale,f,?
@@ -1818,7 +1818,7 @@ u1815,DOCTOR,m120,the life of david gale,m,?
 u1816,GOLDMOUTH,m120,the life of david gale,m,?
 u1817,HOPPIN' BOB,m120,the life of david gale,m,?
 u1818,JAKE,m120,the life of david gale,m,?
-u1819,JANGLE LEG,m120,the life of david gale,f,?
+u1819,JANGLE LEG,m120,the life of david gale,m,?
 u1820,LEON,m120,the life of david gale,m,?
 u1821,MAE ROSE,m120,the life of david gale,f,?
 u1822,MAMA GIBSON,m120,the life of david gale,m,?
@@ -1869,7 +1869,7 @@ u1866,"""V""",m123,lost highway,m,?
 u1867,AL,m123,lost highway,m,?
 u1868,ALICE,m123,lost highway,f,2
 u1869,ANDY,m123,lost highway,m,?
-u1870,ARNIE,m123,lost highway,f,?
+u1870,ARNIE,m123,lost highway,m,?
 u1871,BILL,m123,lost highway,m,?
 u1872,CAPTAIN HENDERSON,m123,lost highway,m,?
 u1873,CLAIRE,m123,lost highway,f,?
@@ -1911,7 +1911,7 @@ u1908,LEONARD,m125,men in black,m,?
 u1909,MIKEY,m125,men in black,m,?
 u1910,PRESIDENT,m125,men in black,m,?
 u1911,WALLACE,m125,men in black,m,?
-u1912,YAZ,m125,men in black,f,?
+u1912,YAZ,m125,men in black,m,?
 u1913,ZED,m125,men in black,m,5
 u1914,ZED'S VOICE,m125,men in black,m,?
 u1915,AGATHA,m126,minority report,f,8
@@ -1937,7 +1937,7 @@ u1934,WITWER,m126,minority report,m,2
 u1935,ARTHUR,m127,made,f,?
 u1936,AUDREY,m127,made,f,?
 u1937,BARTENDER,m127,made,m,?
-u1938,BELLMAN,m127,made,f,?
+u1938,BELLMAN,m127,made,m,?
 u1939,BIANCA,m127,made,f,?
 u1940,BOBBY,m127,made,m,1
 u1941,CHLOE,m127,made,f,?
@@ -1949,7 +1949,7 @@ u1946,HORNY GUY,m127,made,m,?
 u1947,HORRACE,m127,made,m,10
 u1948,JESS,m127,made,f,4
 u1949,JIMMY,m127,made,m,?
-u1950,LEO,m127,made,f,?
+u1950,LEO,m127,made,m,?
 u1951,MAX,m127,made,m,14
 u1952,RICKY,m127,made,m,2
 u1953,RUIZ,m127,made,m,?
@@ -1985,7 +1985,7 @@ u1982,VOICE OF MALCOLM X,m128,malcolm x,m,?
 u1983,CREASY,m129,man on fire,m,1
 u1984,CREASY'S VOICE,m129,man on fire,f,?
 u1985,CUSTOMS,m129,man on fire,m,?
-u1986,DANIEL,m129,man on fire,m,?
+u1986,DANIEL,m129,man on fire,f,?
 u1987,GUARDIAN TWO,m129,man on fire,m,?
 u1988,JORDAN,m129,man on fire,m,?
 u1989,JORGE,m129,man on fire,m,?
@@ -2008,18 +2008,18 @@ u2005,DR. KEEGAN,m130,marty,m,?
 u2006,FIRST IRISH WOMAN,m130,marty,m,?
 u2007,GIRL,m130,marty,f,?
 u2008,JOE,m130,marty,f,?
-u2009,LEO,m130,marty,f,?
+u2009,LEO,m130,marty,m,?
 u2010,MARTY,m130,marty,m,7
 u2011,MRS. FUSARI,m130,marty,f,?
 u2012,MRS. PILLETTI,m130,marty,F,?
 u2013,RALPH,m130,marty,m,?
 u2014,SECOND IRISH WOMAN,m130,marty,m,?
-u2015,THOMAS,m130,marty,m,?
+u2015,THOMAS,m130,marty,f,?
 u2016,VIRGINIA,m130,marty,f,?
 u2017,DAGO RED,m131,mash,m,?
 u2018,DUKE,m131,mash,m,3
 u2019,FRANK,m131,mash,f,?
-u2020,GENERAL HAMMOND,m131,mash,f,?
+u2020,GENERAL HAMMOND,m131,mash,m,?
 u2021,HAWKEYE,m131,mash,m,1
 u2022,HENRY,m131,mash,f,?
 u2023,HO-JON,m131,mash,m,?
@@ -2038,7 +2038,7 @@ u2035,UGLY JOHN,m131,mash,m,?
 u2036,ANN,m132,meet john doe,f,2
 u2037,BEANY,m132,meet john doe,m,9
 u2038,BERT,m132,meet john doe,m,?
-u2039,BERT'S WIFE,m132,meet john doe,m,?
+u2039,BERT'S WIFE,m132,meet john doe,f,?
 u2040,COLONEL,m132,meet john doe,m,?
 u2041,CONNELL,m132,meet john doe,m,6
 u2042,D. B.,m132,meet john doe,m,?
@@ -2075,7 +2075,7 @@ u2072,GENA,m134,metropolis,f,?
 u2073,HALDEN,m134,metropolis,m,?
 u2074,KATIE,m134,metropolis,f,?
 u2075,KID,m134,metropolis,m,?
-u2076,LAWYER,m134,metropolis,m,?
+u2076,LAWYER,m134,metropolis,f,?
 u2077,SYNTHETIC VOICE,m134,metropolis,f,?
 u2078,TANNER,m134,metropolis,m,?
 u2079,ADAM,m135,mighty morphin power rangers,m,?
@@ -2084,7 +2084,7 @@ u2081,ALPHA 5,m135,mighty morphin power rangers,m,?
 u2082,BILLY,m135,mighty morphin power rangers,m,?
 u2083,BULK,m135,mighty morphin power rangers,m,?
 u2084,DULCEA,m135,mighty morphin power rangers,f,?
-u2085,GOLDAR,m135,mighty morphin power rangers,f,?
+u2085,GOLDAR,m135,mighty morphin power rangers,m,?
 u2086,IVAN,m135,mighty morphin power rangers,m,?
 u2087,KIMBERLY,m135,mighty morphin power rangers,f,?
 u2088,MORDANT,m135,mighty morphin power rangers,m,?
@@ -2099,7 +2099,7 @@ u2096,BOBBY CLOWES,m136,mobsters,m,?
 u2097,BOO-BOO HOFF,m136,mobsters,m,?
 u2098,CAPONE,m136,mobsters,m,?
 u2099,CHARLIE,m136,mobsters,m,?
-u2100,DETECTIVE MULLAVEY,m136,mobsters,f,?
+u2100,DETECTIVE MULLAVEY,m136,mobsters,m,?
 u2101,FRANK,m136,mobsters,f,?
 u2102,GAY ORLOVA,m136,mobsters,f,?
 u2103,JOE PROFACI,m136,mobsters,f,?
@@ -2124,7 +2124,7 @@ u2121,KIMMY,m137,monkeybone,m,?
 u2122,KITTY,m137,monkeybone,f,?
 u2123,MONKEYBONE,m137,monkeybone,m,3
 u2124,STU,m137,monkeybone,m,1
-u2125,STU-BONE,m137,monkeybone,m,?
+u2125,STU-BONE,m137,monkeybone,f,?
 u2126,DISCIPLE PROSPECT,m138,my mother dreams the satan's disciples in new york,m,?
 u2127,MARIAN,m138,my mother dreams the satan's disciples in new york,f,1
 u2128,MARIKA,m138,my mother dreams the satan's disciples in new york,f,?
@@ -2141,7 +2141,7 @@ u2138,JEFFERSON,m139,mr. smith goes to washington,m,2
 u2139,JIMMIE,m139,mr. smith goes to washington,f,?
 u2140,MA,m139,mr. smith goes to washington,f,?
 u2141,MCGANN,m139,mr. smith goes to washington,m,7
-u2142,NOSEY,m139,mr. smith goes to washington,m,?
+u2142,NOSEY,m139,mr. smith goes to washington,f,?
 u2143,OTIS,m139,mr. smith goes to washington,m,?
 u2144,PAINE,m139,mr. smith goes to washington,m,3
 u2145,PETER,m139,mr. smith goes to washington,m,?
@@ -2155,7 +2155,7 @@ u2152,VOICES,m139,mr. smith goes to washington,m,?
 u2153,2ND BODYGUARD,m140,mr. deeds goes to town,m,?
 u2154,AGENT,m140,mr. deeds goes to town,m,?
 u2155,AMY,m140,mr. deeds goes to town,f,?
-u2156,APPLICANT,m140,mr. deeds goes to town,f,?
+u2156,APPLICANT,m140,mr. deeds goes to town,m,?
 u2157,BABE,m140,mr. deeds goes to town,f,2
 u2158,BOB,m140,mr. deeds goes to town,m,?
 u2159,BUDINGTON,m140,mr. deeds goes to town,m,?
@@ -2177,7 +2177,7 @@ u2174,LONGFELLOW'S VOICE,m140,mr. deeds goes to town,f,?
 u2175,MABEL,m140,mr. deeds goes to town,f,8
 u2176,MAC,m140,mr. deeds goes to town,m,3
 u2177,MORROW,m140,mr. deeds goes to town,m,?
-u2178,MRS. MEREDITH,m140,mr. deeds goes to town,f,?
+u2178,MRS. MEREDITH,m140,mr. deeds goes to town,m,?
 u2179,SVENSON,m140,mr. deeds goes to town,m,?
 u2180,VOICE,m140,mr. deeds goes to town,f,?
 u2181,VON HOLLER,m140,mr. deeds goes to town,m,?
@@ -2197,7 +2197,7 @@ u2194,MARTIN,m141,mumford,m,?
 u2195,MRS. COOK,m141,mumford,m,?
 u2196,MUMFORD,m141,mumford,m,1
 u2197,NESSA,m141,mumford,f,7
-u2198,SHEELER,m141,mumford,m,?
+u2198,SHEELER,m141,mumford,f,?
 u2199,SKIP,m141,mumford,m,3
 u2200,SOFIE,m141,mumford,f,2
 u2201,ARDETH RAY,m142,the mummy,m,?
@@ -2221,7 +2221,7 @@ u2218,MONICA,m143,mystery men,f,14
 u2219,MOTHER,m143,mystery men,m,?
 u2220,RAJA,m143,mystery men,m,1
 u2221,SHOVELER,m143,mystery men,m,3
-u2222,SPHINX,m143,mystery men,m,?
+u2222,SPHINX,m143,mystery men,f,?
 u2223,TONY P,m143,mystery men,m,?
 u2224,ALEXANDER,m144,napoleon,m,?
 u2225,BARRAS,m144,napoleon,m,?
@@ -2292,7 +2292,7 @@ u2289,PREACHER,m147,the night of the hunter,m,?
 u2290,RACHEL COOPER,m147,the night of the hunter,m,?
 u2291,RUBY,m147,the night of the hunter,f,?
 u2292,WALT,m147,the night of the hunter,m,7
-u2293,WILLA HARPER,m147,the night of the hunter,m,?
+u2293,WILLA HARPER,m147,the night of the hunter,f,?
 u2294,DR KING,m148,a nightmare on elm street,m,?
 u2295,GLEN,m148,a nightmare on elm street,m,6
 u2296,LT THOMPSON,m148,a nightmare on elm street,m,?
@@ -2306,17 +2306,17 @@ u2303,ALL THREE RUSSIANS,m149,ninotchka,m,?
 u2304,ANNA,m149,ninotchka,f,1000
 u2305,BULJANOFF,m149,ninotchka,m,6
 u2306,GASTON,m149,ninotchka,m,?
-u2307,GENERAL SAVITZKY,m149,ninotchka,f,?
+u2307,GENERAL SAVITZKY,m149,ninotchka,m,?
 u2308,HEADWAITER,m149,ninotchka,f,?
 u2309,IRANOFF,m149,ninotchka,m,5
 u2310,KOPALSKI,m149,ninotchka,m,7
-u2311,LAWYER,m149,ninotchka,m,?
+u2311,LAWYER,m149,ninotchka,f,?
 u2312,LEON,m149,ninotchka,m,2
 u2313,MANAGER,m149,ninotchka,m,?
 u2314,NINOTCHKA,m149,ninotchka,f,1
 u2315,OFFICIAL,m149,ninotchka,m,1000
 u2316,PORTER,m149,ninotchka,m,?
-u2317,PÈRE MATHIEU,m149,ninotchka,m,?
+u2317,P»RE MATHIEU,m149,ninotchka,m,?
 u2318,RAKONIN,m149,ninotchka,m,?
 u2319,RAZININ,m149,ninotchka,m,4
 u2320,SWANA,m149,ninotchka,f,3
@@ -2334,7 +2334,7 @@ u2331,HOOVER,m150,nixon,m,5
 u2332,HUNT,m150,nixon,m,?
 u2333,JONES,m150,nixon,m,18
 u2334,KISSINGER,m150,nixon,m,1
-u2335,LIDDY,m150,nixon,m,?
+u2335,LIDDY,m150,nixon,f,?
 u2336,MANOLO,m150,nixon,m,?
 u2337,MAO,m150,nixon,f,?
 u2338,MITCH,m150,nixon,m,?
@@ -2345,7 +2345,7 @@ u2342,RICHARD,m150,nixon,m,?
 u2343,ROCKEFELLER,m150,nixon,m,19
 u2344,SANDY,m150,nixon,m,?
 u2345,STUDENT 2,m150,nixon,m,?
-u2346,STURGIS,m150,nixon,m,?
+u2346,STURGIS,m150,nixon,f,?
 u2347,TOLSON,m150,nixon,m,?
 u2348,YOUNG WOMAN,m150,nixon,m,?
 u2349,ZIEGLER,m150,nixon,m,?
@@ -2357,7 +2357,7 @@ u2354,DRIVER,m151,no country for old men,m,?
 u2355,ELLIS,m151,no country for old men,m,8
 u2356,LORETTA,m151,no country for old men,f,?
 u2357,MAN,m151,no country for old men,m,?
-u2358,MAN AT CHAIR,m151,no country for old men,m,?
+u2358,MAN AT CHAIR,m151,no country for old men,f,?
 u2359,MOLLY,m151,no country for old men,f,?
 u2360,MOSS,m151,no country for old men,m,3
 u2361,MOTHER,m151,no country for old men,m,?
@@ -2392,7 +2392,7 @@ u2389,WESLEY,m152,nurse betty,m,3
 u2390,BIG DAN,m153,"o brother, where art thou?",m,?
 u2391,COOLEY,m153,"o brother, where art thou?",m,?
 u2392,DELMAR,m153,"o brother, where art thou?",m,3
-u2393,ECKARD,m153,"o brother, where art thou?",m,?
+u2393,ECKARD,m153,"o brother, where art thou?",f,?
 u2394,EVERETT,m153,"o brother, where art thou?",m,1
 u2395,FRENCH,m153,"o brother, where art thou?",m,?
 u2396,JUNIOR,m153,"o brother, where art thou?",m,?
@@ -2416,7 +2416,7 @@ u2413,PERRYMAN,m154,an officer and a gentleman,m,?
 u2414,SID,m154,an officer and a gentleman,m,3
 u2415,ZACK,m154,an officer and a gentleman,m,1
 u2416,BURNHAM,m155,panic room,m,3
-u2417,COP 1,m155,panic room,f,?
+u2417,COP 1,m155,panic room,m,?
 u2418,EVAN,m155,panic room,m,?
 u2419,JUNIOR,m155,panic room,m,5
 u2420,LYDIA,m155,panic room,f,?
@@ -2449,15 +2449,15 @@ u2446,CONTINENTAL SERGEANT,m157,the patriot,m,?
 u2447,CORNWALLIS,m157,the patriot,m,9
 u2448,GABRIEL,m157,the patriot,m,2
 u2449,LEE,m157,the patriot,f,?
-u2450,MAJOR HALBERT,m157,the patriot,f,?
+u2450,MAJOR HALBERT,m157,the patriot,m,?
 u2451,MARGARET,m157,the patriot,f,?
 u2452,MARION,m157,the patriot,M,?
 u2453,NATHAN,m157,the patriot,m,?
-u2454,REV. OLIVER,m157,the patriot,f,?
+u2454,REV. OLIVER,m157,the patriot,m,?
 u2455,ROBINSON,m157,the patriot,m,?
 u2456,SUSAN,m157,the patriot,f,?
-u2457,TARLETON,m157,the patriot,f,?
-u2458,THOMAS,m157,the patriot,m,?
+u2457,TARLETON,m157,the patriot,m,?
+u2458,THOMAS,m157,the patriot,f,?
 u2459,WASHINGTON,m157,the patriot,m,?
 u2460,ELLIE,m158,pet sematary,f,7
 u2461,JUD,m158,pet sematary,m,2
@@ -2471,9 +2471,9 @@ u2468,GIBBS,m159,pirates of the caribbean,m,?
 u2469,GILLETTE,m159,pirates of the caribbean,m,?
 u2470,JACK,m159,pirates of the caribbean,m,1000
 u2471,MULLROY,m159,pirates of the caribbean,m,?
-u2472,MURTOGG,m159,pirates of the caribbean,m,?
+u2472,MURTOGG,m159,pirates of the caribbean,f,?
 u2473,NORRINGTON,m159,pirates of the caribbean,m,?
-u2474,PINTEL,m159,pirates of the caribbean,f,?
+u2474,PINTEL,m159,pirates of the caribbean,m,?
 u2475,SWANN,m159,pirates of the caribbean,f,?
 u2476,WILL,m159,pirates of the caribbean,M,?
 u2477,ARGON,m160,plastic man,m,?
@@ -2481,7 +2481,7 @@ u2478,KID,m160,plastic man,m,?
 u2479,LITTERBUG,m160,plastic man,m,?
 u2480,NEBBLEMAN,m160,plastic man,m,?
 u2481,O'BRIEN,m160,plastic man,M,?
-u2482,POPPY,m160,plastic man,f,?
+u2482,POPPY,m160,plastic man,m,?
 u2483,SIM,m160,plastic man,m,?
 u2484,SUSAN,m160,plastic man,F,?
 u2485,ANNE,m161,platinum blonde,F,?
@@ -2532,7 +2532,7 @@ u2529,ABBE DU MAUPAS,m164,quills,m,?
 u2530,CHARLOTTE,m164,quills,f,?
 u2531,CLEANTE,m164,quills,m,?
 u2532,COULMIER,m164,quills,m,3
-u2533,DELBENÈ,m164,quills,m,?
+u2533,DELBEN»,m164,quills,m,?
 u2534,HORSEMAN,m164,quills,m,?
 u2535,INGENUE,m164,quills,m,?
 u2536,LIBERTINE,m164,quills,f,?
@@ -2552,13 +2552,13 @@ u2549,LOUELLA,m165,rko 281,f,?
 u2550,MANK,m165,rko 281,m,4
 u2551,MARION,m165,rko 281,f,3
 u2552,MAYER,m165,rko 281,m,?
-u2553,PAUL STEWART,m165,rko 281,f,?
+u2553,PAUL STEWART,m165,rko 281,m,?
 u2554,SCHAEFER,m165,rko 281,m,6
 u2555,SHOP OWNER,m165,rko 281,m,?
 u2556,TOLAND,m165,rko 281,m,?
 u2557,WELLES,m165,rko 281,m,1
 u2558,1ST DEPUTY,m166,raging bull,f,?
-u2559,COMO,m166,raging bull,m,?
+u2559,COMO,m166,raging bull,f,?
 u2560,EAGAN,m166,raging bull,m,?
 u2561,IRMA,m166,raging bull,f,?
 u2562,J.R.,m166,raging bull,m,?
@@ -2597,7 +2597,7 @@ u2594,SERGEANT,m168,rebel without a cause,m,?
 u2595,ASHLEY,m169,reindeer games,f,13
 u2596,GABRIEL,m169,reindeer games,m,17
 u2597,JACK BANGS,m169,reindeer games,m,?
-u2598,JUMPY,m169,reindeer games,m,?
+u2598,JUMPY,m169,reindeer games,f,?
 u2599,MERLIN,m169,reindeer games,f,?
 u2600,NICK,m169,reindeer games,m,2
 u2601,OLD TIMER,m169,reindeer games,m,?
@@ -2607,14 +2607,14 @@ u2604,TEEN CLERK,m169,reindeer games,m,?
 u2605,WAITRESS,m169,reindeer games,f,?
 u2606,YOUNG GOVERNOR,m169,reindeer games,m,?
 u2607,ZOOK,m169,reindeer games,m,?
-u2608,COP,m170,reservoir dogs,f,?
+u2608,COP,m170,reservoir dogs,m,?
 u2609,EDDIE,m170,reservoir dogs,m,4
 u2610,FREDDY,m170,reservoir dogs,m,2
 u2611,HOLDAWAY,m170,reservoir dogs,m,9
 u2612,JOE,m170,reservoir dogs,m,6
 u2613,MARVIN,m170,reservoir dogs,m,?
 u2614,MR. BLONDE,m170,reservoir dogs,f,?
-u2615,MR. BROWN,m170,reservoir dogs,f,?
+u2615,MR. BROWN,m170,reservoir dogs,m,?
 u2616,MR. ORANGE,m170,reservoir dogs,m,2
 u2617,MR. PINK,m170,reservoir dogs,m,5
 u2618,MR. WHITE,m170,reservoir dogs,m,1
@@ -2663,7 +2663,7 @@ u2660,MR. STUBBINS,m173,serial mom,m,?
 u2661,MRS. ACKERMAN,m173,serial mom,m,?
 u2662,MRS. JENSON,m173,serial mom,m,?
 u2663,MRS. STERNER,m173,serial mom,m,?
-u2664,SCOTTY,m173,serial mom,m,?
+u2664,SCOTTY,m173,serial mom,f,?
 u2665,VENDOR,m173,serial mom,m,?
 u2666,YOUNG MAN,m173,serial mom,m,?
 u2667,AUGUST,m174,the seventh victim,m,1000
@@ -2695,7 +2695,7 @@ u2692,JOHN,m175,"sex, lies, and videotape",m,3
 u2693,MR. MILLER,m175,"sex, lies, and videotape",m,?
 u2694,SECRETARY,m175,"sex, lies, and videotape",f,?
 u2695,VOICE ON PHONE,m175,"sex, lies, and videotape",f,?
-u2696,BETTS,m176,shivers,f,?
+u2696,BETTS,m176,shivers,m,?
 u2697,BOY,m176,shivers,m,?
 u2698,DETECTIVE,m176,shivers,f,?
 u2699,FORSYTHE,m176,shivers,f,?
@@ -2708,12 +2708,12 @@ u2705,ST. LUC,m176,shivers,m,1
 u2706,SUPER,m176,shivers,m,?
 u2707,TUDOR,m176,shivers,m,?
 u2708,ANSALONG,m177,shock treatment,m,?
-u2709,AUDIENCE,m177,shock treatment,f,?
+u2709,AUDIENCE,m177,shock treatment,m,?
 u2710,BERT,m177,shock treatment,m,?
 u2711,BETTY,m177,shock treatment,f,7
 u2712,BRAD,m177,shock treatment,m,?
-u2713,BRAD AND JANET,m177,shock treatment,f,?
-u2714,DAD,m177,shock treatment,m,?
+u2713,BRAD AND JANET,m177,shock treatment,m,?
+u2714,DAD,m177,shock treatment,f,?
 u2715,FARLEY,m177,shock treatment,m,?
 u2716,JANET,m177,shock treatment,f,?
 u2717,KIDS,m177,shock treatment,m,?
@@ -2775,14 +2775,14 @@ u2772,HANK,m181,simone,m,?
 u2773,HARRY,m181,simone,f,?
 u2774,KENT,m181,simone,m,?
 u2775,LAINEY,m181,simone,f,?
-u2776,LAWYER,m181,simone,m,?
+u2776,LAWYER,m181,simone,f,?
 u2777,MAX,m181,simone,m,?
 u2778,MILTON,m181,simone,m,?
 u2779,NICOLA,m181,simone,f,?
 u2780,PREMIERE REPORTER 2,m181,simone,m,?
 u2781,SECURITY GUARD,m181,simone,m,?
 u2782,SIMONE,m181,simone,f,?
-u2783,SIMONE / VIKTOR,m181,simone,f,?
+u2783,SIMONE / VIKTOR,m181,simone,m,?
 u2784,VIKTOR,m181,simone,M,?
 u2785,ANNA,m182,the sixth sense,f,?
 u2786,COLE,m182,the sixth sense,m,2
@@ -2832,7 +2832,7 @@ u2829,CASINO EMPLOYEE,m186,smokin' aces,f,?
 u2830,DARWIN TREMOR,m186,smokin' aces,m,?
 u2831,DR. GILL,m186,smokin' aces,m,?
 u2832,DUPREE,m186,smokin' aces,m,?
-u2833,ELMORE,m186,smokin' aces,m,?
+u2833,ELMORE,m186,smokin' aces,f,?
 u2834,HUGO,m186,smokin' aces,m,28
 u2835,ISRAEL,m186,smokin' aces,m,6
 u2836,LOCKE,m186,smokin' aces,m,12
@@ -2885,7 +2885,7 @@ u2882,BLONDIE,m190,stalag 17,f,?
 u2883,COOKIE,m190,stalag 17,f,?
 u2884,DUKE,m190,stalag 17,m,8
 u2885,DUNBAR,m190,stalag 17,m,?
-u2886,GENEVA MAN,m190,stalag 17,f,?
+u2886,GENEVA MAN,m190,stalag 17,m,?
 u2887,GERMAN LIEUTENANT,m190,stalag 17,m,?
 u2888,HARRY,m190,stalag 17,m,5
 u2889,HOFFY,m190,stalag 17,m,6
@@ -2907,9 +2907,9 @@ u2904,LA FORGE,m191,star trek: generations,m,4
 u2905,LURSA,m191,star trek: generations,f,?
 u2906,PICARD,m191,star trek: generations,m,1
 u2907,RIKER,m191,star trek: generations,m,?
-u2908,SCOTTY,m191,star trek: generations,m,?
+u2908,SCOTTY,m191,star trek: generations,f,?
 u2909,SORAN,m191,star trek: generations,m,?
-u2910,TROI,m191,star trek: generations,f,?
+u2910,TROI,m191,star trek: generations,m,?
 u2911,WORF,m191,star trek: generations,m,?
 u2912,1ST OFFICER,m192,star trek iii: the search for spock,m,?
 u2913,CAPTAIN,m192,star trek iii: the search for spock,m,?
@@ -2924,11 +2924,11 @@ u2921,MALTZ,m192,star trek iii: the search for spock,m,?
 u2922,MORROW,m192,star trek iii: the search for spock,m,?
 u2923,SAAVIK,m192,star trek iii: the search for spock,f,8
 u2924,SAREK,m192,star trek iii: the search for spock,m,33
-u2925,SCOTTY,m192,star trek iii: the search for spock,m,?
-u2926,SPOCK,m192,star trek iii: the search for spock,m,?
+u2925,SCOTTY,m192,star trek iii: the search for spock,f,?
+u2926,SPOCK,m192,star trek iii: the search for spock,f,?
 u2927,STYLES,m192,star trek iii: the search for spock,m,?
 u2928,SULU,m192,star trek iii: the search for spock,m,6
-u2929,TORG,m192,star trek iii: the search for spock,m,?
+u2929,TORG,m192,star trek iii: the search for spock,f,?
 u2930,UHURA,m192,star trek iii: the search for spock,f,?
 u2931,WOMAN,m192,star trek iii: the search for spock,m,?
 u2932,BONES,m193,star trek: the wrath of khan,M,?
@@ -2940,7 +2940,7 @@ u2937,KHAN,m193,star trek: the wrath of khan,m,?
 u2938,KIRK,m193,star trek: the wrath of khan,m,1
 u2939,PRESTON,m193,star trek: the wrath of khan,m,?
 u2940,SAAVIK,m193,star trek: the wrath of khan,f,11
-u2941,SCOTTY,m193,star trek: the wrath of khan,m,?
+u2941,SCOTTY,m193,star trek: the wrath of khan,f,?
 u2942,SCOTTY'S VOICE,m193,star trek: the wrath of khan,f,?
 u2943,SPOCK,m193,star trek: the wrath of khan,m,2
 u2944,SPOCK'S VOICE,m193,star trek: the wrath of khan,f,?
@@ -2953,12 +2953,12 @@ u2950,BOB,m194,star trek iv: the voyage home,m,?
 u2951,BONES,m194,star trek iv: the voyage home,m,3
 u2952,CAPTAIN,m194,star trek iv: the voyage home,m,?
 u2953,CHEKOV,m194,star trek iv: the voyage home,m,?
-u2954,COUNCIL PRESIDENT,m194,star trek iv: the voyage home,m,?
+u2954,COUNCIL PRESIDENT,m194,star trek iv: the voyage home,f,?
 u2955,DOCTOR,m194,star trek iv: the voyage home,m,?
 u2956,FBI AGENT,m194,star trek iv: the voyage home,m,?
 u2957,GILLIAN,m194,star trek iv: the voyage home,f,9
 u2958,KIRK,m194,star trek iv: the voyage home,m,1
-u2959,KLINGON AMBASSADOR,m194,star trek iv: the voyage home,m,?
+u2959,KLINGON AMBASSADOR,m194,star trek iv: the voyage home,f,?
 u2960,MORROW,m194,star trek iv: the voyage home,m,?
 u2961,NICHOLS,m194,star trek iv: the voyage home,m,?
 u2962,PILOT,m194,star trek iv: the voyage home,m,?
@@ -2968,7 +2968,7 @@ u2965,SCIENCE OFFICER,m194,star trek iv: the voyage home,m,?
 u2966,SCOTTY,m194,star trek iv: the voyage home,m,4
 u2967,SPOCK,m194,star trek iv: the voyage home,m,2
 u2968,SULU,m194,star trek iv: the voyage home,m,?
-u2969,THE BOY,m194,star trek iv: the voyage home,m,?
+u2969,THE BOY,m194,star trek iv: the voyage home,f,?
 u2970,UHURA,m194,star trek iv: the voyage home,f,?
 u2971,ANIJ,m195,star trek: insurrection,f,9
 u2972,ARTIM,m195,star trek: insurrection,m,13
@@ -2978,13 +2978,13 @@ u2975,DOUGHERTY,m195,star trek: insurrection,m,10
 u2976,GALLATIN,m195,star trek: insurrection,m,?
 u2977,LA FORGE,m195,star trek: insurrection,m,?
 u2978,NARA,m195,star trek: insurrection,f,?
-u2979,PERIM,m195,star trek: insurrection,m,?
+u2979,PERIM,m195,star trek: insurrection,f,?
 u2980,PICARD,m195,star trek: insurrection,m,1
 u2981,PICARD'S COM VOICE,m195,star trek: insurrection,f,?
 u2982,RIKER,m195,star trek: insurrection,m,2
 u2983,RIKER'S COM VOICE,m195,star trek: insurrection,m,?
 u2984,RU'AFO,m195,star trek: insurrection,m,?
-u2985,SOJEF,m195,star trek: insurrection,m,?
+u2985,SOJEF,m195,star trek: insurrection,f,?
 u2986,SON'A OFFICER #2,m195,star trek: insurrection,f,?
 u2987,TROI,m195,star trek: insurrection,f,7
 u2988,WORF,m195,star trek: insurrection,m,5
@@ -3002,7 +3002,7 @@ u2999,RIKER,m196,star trek: first contact,m,2
 u3000,RIKER'S COM VOICE,m196,star trek: first contact,m,?
 u3001,RUBY,m196,star trek: first contact,f,27
 u3002,SCRIMM,m196,star trek: first contact,m,?
-u3003,TROI,m196,star trek: first contact,f,?
+u3003,TROI,m196,star trek: first contact,m,?
 u3004,WOMAN'S VOICE,m196,star trek: first contact,m,?
 u3005,WORF,m196,star trek: first contact,m,5
 u3006,ADMIRAL DONALD,m197,star trek vi: the undiscovered country,m,?
@@ -3028,7 +3028,7 @@ u3025,DATA,m198,star trek: nemesis,m,3
 u3026,DEANNA,m198,star trek: nemesis,f,6
 u3027,DONATRA,m198,star trek: nemesis,f,?
 u3028,GEORDI,m198,star trek: nemesis,m,4
-u3029,HEAD,m198,star trek: nemesis,f,?
+u3029,HEAD,m198,star trek: nemesis,m,?
 u3030,JANEWAY,m198,star trek: nemesis,m,?
 u3031,PICARD,m198,star trek: nemesis,m,1
 u3032,REMAN OFFICER,m198,star trek: nemesis,m,?
@@ -3102,7 +3102,7 @@ u3099,DON TOMMASSINO,m203,the godfather,m,?
 u3100,FABRIZZIO,m203,the godfather,m,?
 u3101,FREDO,m203,the godfather,m,?
 u3102,HAGEN,m203,the godfather,m,5
-u3103,JOHNNY,m203,the godfather,m,?
+u3103,JOHNNY,m203,the godfather,f,?
 u3104,KAY,m203,the godfather,f,10
 u3105,MICHAEL,m203,the godfather,m,2
 u3106,MOE,m203,the godfather,m,?
@@ -3110,7 +3110,7 @@ u3107,NAZORINE,m203,the godfather,f,?
 u3108,NURSE,m203,the godfather,f,?
 u3109,PAULIE,m203,the godfather,m,?
 u3110,PRIEST,m203,the godfather,m,?
-u3111,SOLLOZZO,m203,the godfather,m,?
+u3111,SOLLOZZO,m203,the godfather,f,?
 u3112,SONNY,m203,the godfather,m,3
 u3113,TESSIO,m203,the godfather,m,?
 u3114,VITELLI,m203,the godfather,f,?
@@ -3136,7 +3136,7 @@ u3133,MAN IN BUSINESS SUIT,m205,taxi driver,f,?
 u3134,PALANTINE,m205,taxi driver,f,?
 u3135,PERSONNEL OFFICER,m205,taxi driver,m,33
 u3136,SECRET SERVICE MAN,m205,taxi driver,m,?
-u3137,SPORT,m205,taxi driver,m,?
+u3137,SPORT,m205,taxi driver,f,?
 u3138,TOM,m205,taxi driver,m,7
 u3139,TRAVIS,m205,taxi driver,m,1
 u3140,WIZARD,m205,taxi driver,m,6
@@ -3151,7 +3151,7 @@ u3148,ELDRIDGE,m207,the majestic,m,?
 u3149,FITTS,m207,the majestic,m,?
 u3150,HARRY,m207,the majestic,m,9
 u3151,JERRY,m207,the majestic,m,?
-u3152,LARDNER,m207,the majestic,f,?
+u3152,LARDNER,m207,the majestic,m,?
 u3153,LEO,m207,the majestic,m,19
 u3154,LUKE,m207,the majestic,m,44
 u3155,MRS. TERWILLIGER,m207,the majestic,m,?
@@ -3193,7 +3193,7 @@ u3190,ERLICH,m210,the crow: salvation,m,?
 u3191,MADDEN,m210,the crow: salvation,f,?
 u3192,RANDALL,m210,the crow: salvation,f,1
 u3193,TOMMY,m210,the crow: salvation,m,?
-u3194,TOOMEY,m210,the crow: salvation,f,?
+u3194,TOOMEY,m210,the crow: salvation,m,?
 u3195,TRACY,m210,the crow: salvation,m,?
 u3196,WALSH,m210,the crow: salvation,m,?
 u3197,BARNHARDT,m211,the day the earth stood still,m,5
@@ -3202,7 +3202,7 @@ u3199,CAPTAIN,m211,the day the earth stood still,m,?
 u3200,HARLEY,m211,the day the earth stood still,M,?
 u3201,HELEN,m211,the day the earth stood still,f,2
 u3202,HILDA,m211,the day the earth stood still,f,?
-u3203,JEWELER,m211,the day the earth stood still,f,?
+u3203,JEWELER,m211,the day the earth stood still,m,?
 u3204,KLAATU,m211,the day the earth stood still,m,1
 u3205,LIEUTENANT,m211,the day the earth stood still,m,?
 u3206,MAJOR,m211,the day the earth stood still,m,?
@@ -3235,7 +3235,7 @@ u3232,EMMA,m214,the time machine,f,4
 u3233,KALEN,m214,the time machine,m,7
 u3234,KORUS,m214,the time machine,m,?
 u3235,MARA,m214,the time machine,f,2
-u3236,MOTORIST,m214,the time machine,m,?
+u3236,MOTORIST,m214,the time machine,f,?
 u3237,MRS. WATCHIT,m214,the time machine,m,?
 u3238,OVERLORD,m214,the time machine,M,?
 u3239,PHILBY,m214,the time machine,M,?
@@ -3270,15 +3270,15 @@ u3267,TRUCKER,m216,thelma & louise,m,?
 u3268,BOSS'S DISABLED BROTHER,m217,there's something about mary,m,?
 u3269,DETECTIVE CAVALLO,m217,there's something about mary,m,?
 u3270,DOM,m217,there's something about mary,m,5
-u3271,DR. LALONDE,m217,there's something about mary,f,?
+u3271,DR. LALONDE,m217,there's something about mary,m,?
 u3272,FRIEND #1,m217,there's something about mary,m,?
 u3273,HEALY,m217,there's something about mary,m,2
-u3274,HITCHHIKER,m217,there's something about mary,m,?
+u3274,HITCHHIKER,m217,there's something about mary,f,?
 u3275,JOANIE,m217,there's something about mary,f,?
 u3276,MAGDA,m217,there's something about mary,f,6
 u3277,MARY,m217,there's something about mary,f,1
 u3278,MARY'S DAD,m217,there's something about mary,m,?
-u3279,MARY'S MOM,m217,there's something about mary,f,?
+u3279,MARY'S MOM,m217,there's something about mary,m,?
 u3280,POLICE OFFICER,m217,there's something about mary,m,?
 u3281,RENISE,m217,there's something about mary,f,?
 u3282,SULLY,m217,there's something about mary,m,7
@@ -3318,7 +3318,7 @@ u3315,GIRL,m220,top gun,f,?
 u3316,GOOSE,m220,top gun,m,4
 u3317,HOLLYWOOD,m220,top gun,m,?
 u3318,ICE,m220,top gun,m,3
-u3319,ICEMAN,m220,top gun,f,?
+u3319,ICEMAN,m220,top gun,m,?
 u3320,JESTER,m220,top gun,m,?
 u3321,MAVERICK,m220,top gun,m,1
 u3322,SLIDER,m220,top gun,m,?
@@ -3335,8 +3335,8 @@ u3332,EDGEMAR,m221,total recall,m,9
 u3333,EVERETT,m221,total recall,m,?
 u3334,GEORGE,m221,total recall,f,?
 u3335,HARRY,m221,total recall,m,18
-u3336,HELM,m221,total recall,m,?
-u3337,JOHNNY,m221,total recall,m,?
+u3336,HELM,m221,total recall,f,?
+u3337,JOHNNY,m221,total recall,f,?
 u3338,LORI,m221,total recall,f,3
 u3339,MCCLANE,m221,total recall,m,10
 u3340,MELINA,m221,total recall,f,2
@@ -3350,7 +3350,7 @@ u3347,HEATHER,m222,tremors,f,?
 u3348,JIM,m222,tremors,m,?
 u3349,MEGAN,m222,tremors,f,?
 u3350,OLD FRED,m222,tremors,m,?
-u3351,PHAM VAN,m222,tremors,m,?
+u3351,PHAM VAN,m222,tremors,f,?
 u3352,RHONDA,m222,tremors,f,3
 u3353,VAL,m222,tremors,m,1
 u3354,BADALATO,m223,true believer,m,?
@@ -3369,7 +3369,7 @@ u3366,REYNARD,m223,true believer,m,5
 u3367,ROGER,m223,true believer,m,2
 u3368,SHU,m223,true believer,m,4
 u3369,SKLAROFF,m223,true believer,m,?
-u3370,STIPE,m223,true believer,m,?
+u3370,STIPE,m223,true believer,f,?
 u3371,ALBERT,m224,twin peaks: fire walk with me,m,?
 u3372,BOB'S VOICE,m224,twin peaks: fire walk with me,f,?
 u3373,BOBBY,m224,twin peaks: fire walk with me,m,4
@@ -3391,7 +3391,7 @@ u3388,JERRY,m224,twin peaks: fire walk with me,m,?
 u3389,JOSIE,m224,twin peaks: fire walk with me,f,?
 u3390,LAURA,m224,twin peaks: fire walk with me,f,1
 u3391,LELAND,m224,twin peaks: fire walk with me,m,2
-u3392,LEO,m224,twin peaks: fire walk with me,f,?
+u3392,LEO,m224,twin peaks: fire walk with me,m,?
 u3393,MAN FROM ANOTHER PLACE,m224,twin peaks: fire walk with me,f,?
 u3394,NORMA,m224,twin peaks: fire walk with me,f,?
 u3395,PETE,m224,twin peaks: fire walk with me,m,?
@@ -3414,15 +3414,15 @@ u3411,JIMMY,m225,the verdict,m,?
 u3412,JUDGE,m225,the verdict,m,5
 u3413,KATHY,m225,the verdict,f,?
 u3414,LAURA,m225,the verdict,f,2
-u3415,MAID,m225,the verdict,f,?
+u3415,MAID,m225,the verdict,m,?
 u3416,MARY ROONEY,m225,the verdict,f,?
 u3417,MICKEY,m225,the verdict,m,3
 u3418,ROONEY,m225,the verdict,m,?
 u3419,SALLY,m225,the verdict,f,9
 u3420,TOWLER,m225,the verdict,m,?
 u3421,VOICE,m225,the verdict,f,?
-u3422,YOUNG LAWYER,m225,the verdict,f,?
-u3423,ALONZO HOGUE,m226,the war of the worlds,m,?
+u3422,YOUNG LAWYER,m225,the verdict,m,?
+u3423,ALONZO HOGUE,m226,the war of the worlds,f,?
 u3424,CHIEF OF STAFF,m226,the war of the worlds,m,?
 u3425,CLAYTON,m226,the war of the worlds,m,1
 u3426,COLONEL,m226,the war of the worlds,m,?
@@ -3462,7 +3462,7 @@ u3459,FRANCIS,m228,white squall,f,?
 u3460,GEORGE,m228,white squall,f,?
 u3461,JOHN,m228,white squall,m,13
 u3462,LAWFORD,m228,white squall,m,?
-u3463,MIDDY,m228,white squall,f,?
+u3463,MIDDY,m228,white squall,m,?
 u3464,PHIL,m228,white squall,m,?
 u3465,RICK,m228,white squall,m,?
 u3466,ROBIN,m228,white squall,m,?
@@ -3520,8 +3520,8 @@ u3517,ROSEN,m231,the woodsman,m,7
 u3518,VICKI,m231,the woodsman,f,4
 u3519,WALTER,m231,the woodsman,m,1
 u3520,BUD,m232,the abyss,m,1
-u3521,CATFISH,m232,the abyss,m,?
-u3522,COFFEY,m232,the abyss,m,?
+u3521,CATFISH,m232,the abyss,f,?
+u3522,COFFEY,m232,the abyss,f,?
 u3523,HIPPY,m232,the abyss,m,?
 u3524,JAMMER,m232,the abyss,m,?
 u3525,LINDSEY,m232,the abyss,f,2
@@ -3534,7 +3534,7 @@ u3531,CARABINIERE,m233,l'avventura,f,?
 u3532,CLAUDIA,m233,l'avventura,f,2
 u3533,CORRADO,m233,l'avventura,m,?
 u3534,ETTORE,m233,l'avventura,m,?
-u3535,FATHER,m233,l'avventura,m,?
+u3535,FATHER,m233,l'avventura,f,?
 u3536,GIULIA,m233,l'avventura,f,?
 u3537,GOFFREDO,m233,l'avventura,m,?
 u3538,LIEUTENANT,m233,l'avventura,m,?
@@ -3563,7 +3563,7 @@ u3560,BLONDE,m235,a hard day's night,m,?
 u3561,BOY,m235,a hard day's night,m,17
 u3562,BOYS,m235,a hard day's night,m,?
 u3563,DIRECTOR,m235,a hard day's night,m,?
-u3564,FLOOR MANAGER,m235,a hard day's night,m,?
+u3564,FLOOR MANAGER,m235,a hard day's night,f,?
 u3565,FRANK,m235,a hard day's night,f,?
 u3566,GEORGE,m235,a hard day's night,m,4
 u3567,GIRL,m235,a hard day's night,f,1000
@@ -3582,7 +3582,7 @@ u3579,BROUSSARD,m236,alien,m,?
 u3580,COMPUTER,m236,alien,m,?
 u3581,FAUST,m236,alien,m,?
 u3582,HUNTER,m236,alien,M,?
-u3583,MELKONIS,m236,alien,f,?
+u3583,MELKONIS,m236,alien,m,?
 u3584,ROBY,m236,alien,m,?
 u3585,STANDARD,m236,alien,M,?
 u3586,ACKLAND,m237,alien vs. predator,m,?
@@ -3618,7 +3618,7 @@ u3615,CLAWSEN,m239,all the president's men,m,?
 u3616,DAHLBERG,m239,all the president's men,m,?
 u3617,DARDIS,m239,all the president's men,f,?
 u3618,DEEP THROAT,m239,all the president's men,m,5
-u3619,FOREIGN EDITOR,m239,all the president's men,m,?
+u3619,FOREIGN EDITOR,m239,all the president's men,f,?
 u3620,HANNAH,m239,all the president's men,f,?
 u3621,HUNT,m239,all the president's men,m,?
 u3622,IRWIN,m239,all the president's men,m,?
@@ -3642,7 +3642,7 @@ u3639,FINCH,m240,american pie,m,?
 u3640,HEATHER,m240,american pie,f,11
 u3641,JESSICA,m240,american pie,f,10
 u3642,JIM,m240,american pie,m,1
-u3643,JIM'S DAD,m240,american pie,m,?
+u3643,JIM'S DAD,m240,american pie,f,?
 u3644,KEVIN,m240,american pie,m,3
 u3645,KEVIN'S BROTHER,m240,american pie,m,?
 u3646,MICHELLE,m240,american pie,f,4
@@ -3650,7 +3650,7 @@ u3647,NADIA,m240,american pie,f,?
 u3648,OZ,m240,american pie,m,2
 u3649,PORNO-CHANNEL CHICK,m240,american pie,m,?
 u3650,SHERMAN,m240,american pie,m,?
-u3651,SOPHOMORE CHICK,m240,american pie,m,?
+u3651,SOPHOMORE CHICK,m240,american pie,f,?
 u3652,STIFLER,m240,american pie,m,8
 u3653,STIFLER'S MOM,m240,american pie,m,?
 u3654,VICKY,m240,american pie,f,6
@@ -3658,7 +3658,7 @@ u3655,AMY,m241,an american werewolf in paris,f,?
 u3656,ANDY,m241,an american werewolf in paris,m,1
 u3657,CHIEF,m241,an american werewolf in paris,m,?
 u3658,CLAUDE,m241,an american werewolf in paris,m,6
-u3659,COP,m241,an american werewolf in paris,f,?
+u3659,COP,m241,an american werewolf in paris,m,?
 u3660,DESK OFFICER,m241,an american werewolf in paris,f,?
 u3661,GASTON,m241,an american werewolf in paris,m,?
 u3662,LEDUC,m241,an american werewolf in paris,m,?
@@ -3678,7 +3678,7 @@ u3675,VLADIMIR,m242,anastasia,m,3
 u3676,1ST MAN,m243,annie hall,m,?
 u3677,2ND MAN,m243,annie hall,m,?
 u3678,ACTOR,m243,annie hall,m,?
-u3679,ACTRESS,m243,annie hall,f,?
+u3679,ACTRESS,m243,annie hall,m,?
 u3680,ALLISON,m243,annie hall,f,4
 u3681,ALVY,m243,annie hall,m,1
 u3682,ALVY'S FATHER,m243,annie hall,m,?
@@ -3735,14 +3735,14 @@ u3732,MARGIE,m246,the apartment,f,7
 u3733,MATUSCHKA,m246,the apartment,f,?
 u3734,MISS OLSEN,m246,the apartment,m,?
 u3735,MOFFETT,m246,the apartment,m,?
-u3736,MRS. DREYFUSS,m246,the apartment,m,?
+u3736,MRS. DREYFUSS,m246,the apartment,f,?
 u3737,MRS. LIEBERMAN,m246,the apartment,m,?
 u3738,SHELDRAKE,m246,the apartment,m,3
 u3739,SYLVIA,m246,the apartment,f,8
 u3740,TOMMY,m246,the apartment,m,?
 u3741,VANDERHOF,m246,the apartment,m,?
 u3742,AGENT,m247,apocalypse now,m,31
-u3743,AUSTRALIAN,m247,apocalypse now,f,?
+u3743,AUSTRALIAN,m247,apocalypse now,m,?
 u3744,CAPTAIN,m247,apocalypse now,m,2
 u3745,CHEF,m247,apocalypse now,m,4
 u3746,CHIEF,m247,apocalypse now,m,8
@@ -3753,7 +3753,7 @@ u3750,COLONEL,m247,apocalypse now,m,?
 u3751,GASTON,m247,apocalypse now,m,?
 u3752,KILGORE,m247,apocalypse now,m,3
 u3753,KURTZ,m247,apocalypse now,m,1
-u3754,KURTZ'S WIFE,m247,apocalypse now,f,?
+u3754,KURTZ'S WIFE,m247,apocalypse now,m,?
 u3755,LANCE,m247,apocalypse now,m,7
 u3756,LIEUTENANT,m247,apocalypse now,m,?
 u3757,MIKE,m247,apocalypse now,m,?
@@ -3838,7 +3838,7 @@ u3836,BOY,m254,badlands,m,?
 u3837,CATO,m254,badlands,m,?
 u3838,CLERK,m254,badlands,m,?
 u3839,DEPUTY,m254,badlands,f,?
-u3840,FATHER,m254,badlands,m,?
+u3840,FATHER,m254,badlands,f,?
 u3841,GIRL,m254,badlands,f,?
 u3842,HOLLY,m254,badlands,f,2
 u3843,KIT,m254,badlands,m,1
@@ -3850,7 +3850,7 @@ u3848,BILLY,m255,the adventures of buckaroo banzai across the 8th dimension,m,?
 u3849,BUCKAROO BANZAI,m255,the adventures of buckaroo banzai across the 8th dimension,m,1
 u3850,BUCKAROO BANZAI ON TV,m255,the adventures of buckaroo banzai across the 8th dimension,m,?
 u3851,CASPER LINDLEY,m255,the adventures of buckaroo banzai across the 8th dimension,f,?
-u3852,JOHN BIGBOOTÉ,m255,the adventures of buckaroo banzai across the 8th dimension,m,?
+u3852,JOHN BIGBOOT…,m255,the adventures of buckaroo banzai across the 8th dimension,m,?
 u3853,JOHN O'CONNOR,m255,the adventures of buckaroo banzai across the 8th dimension,m,?
 u3854,JOHN PARKER,m255,the adventures of buckaroo banzai across the 8th dimension,m,?
 u3855,NATIONAL SECURITY MAN,m255,the adventures of buckaroo banzai across the 8th dimension,m,?
@@ -3911,9 +3911,9 @@ u3909,TOXIC,m258,basquiat,m,?
 u3910,ALFRED,m259,batman returns,m,?
 u3911,BATMAN,m259,batman returns,m,?
 u3912,BRUCE,m259,batman returns,m,1
-u3913,CATWOMAN,m259,batman returns,f,?
+u3913,CATWOMAN,m259,batman returns,m,?
 u3914,CHIP,m259,batman returns,m,?
-u3915,FAT CLOWN,m259,batman returns,m,?
+u3915,FAT CLOWN,m259,batman returns,f,?
 u3916,MAX,m259,batman returns,m,4
 u3917,PENGUIN,m259,batman returns,m,2
 u3918,SELINA,m259,batman returns,f,3
@@ -3923,7 +3923,7 @@ u3921,BATGIRL,m260,batman and robin,f,?
 u3922,BATMAN,m260,batman and robin,m,1
 u3923,BRUCE,m260,batman and robin,m,1
 u3924,DICK,m260,batman and robin,m,2
-u3925,FREEZE,m260,batman and robin,m,?
+u3925,FREEZE,m260,batman and robin,f,?
 u3926,IVY,m260,batman and robin,f,?
 u3927,JULIE,m260,batman and robin,f,?
 u3928,MS. B. HAVEN,m260,batman and robin,m,?
@@ -3938,14 +3938,14 @@ u3936,DICK,m261,batman forever,m,?
 u3937,EDWARD,m261,batman forever,m,?
 u3938,GUARD,m261,batman forever,m,?
 u3939,RIDDLER,m261,batman forever,m,?
-u3940,STICKLEY,m261,batman forever,f,?
-u3941,TWO-FACE,m261,batman forever,m,?
+u3940,STICKLEY,m261,batman forever,m,?
+u3941,TWO-FACE,m261,batman forever,f,?
 u3942,ALFRED,m262,batman,m,?
 u3943,BATMAN,m262,batman,m,1
 u3944,BRUCE,m262,batman,m,1
 u3945,DENT,m262,batman,m,?
 u3946,DRIVER,m262,batman,m,?
-u3947,ECKHARDT,m262,batman,m,?
+u3947,ECKHARDT,m262,batman,f,?
 u3948,EDDIE,m262,batman,f,?
 u3949,GRISSOM,m262,batman,m,?
 u3950,JACK,m262,batman,m,?
@@ -3953,11 +3953,11 @@ u3951,JOKER,m262,batman,m,?
 u3952,KNOX,m262,batman,m,4
 u3953,MAYOR,m262,batman,m,?
 u3954,NICK,m262,batman,m,?
-u3955,ROTELLI,m262,batman,m,?
+u3955,ROTELLI,m262,batman,f,?
 u3956,VICKI,m262,batman,f,3
 u3957,ALISON,m263,bean,f,3
 u3958,ANNIE,m263,bean,f,?
-u3959,BEAN,m263,bean,f,?
+u3959,BEAN,m263,bean,m,?
 u3960,BERNIE,m263,bean,m,?
 u3961,DAVID,m263,bean,m,2
 u3962,DOCTOR,m263,bean,m,?
@@ -3976,7 +3976,7 @@ u3974,DALLAS,m264,beavis and butt-head do america,m,?
 u3975,DUMB GUY,m264,beavis and butt-head do america,m,?
 u3976,FLEMMING,m264,beavis and butt-head do america,m,5
 u3977,MARTHA,m264,beavis and butt-head do america,f,?
-u3978,MUDDY,m264,beavis and butt-head do america,f,?
+u3978,MUDDY,m264,beavis and butt-head do america,m,?
 u3979,ADAM,m265,beetle juice,m,1
 u3980,BARBARA,m265,beetle juice,f,2
 u3981,BETELGEUSE,m265,beetle juice,m,?
@@ -3997,7 +3997,7 @@ u3995,DENNIS,m266,being there,m,?
 u3996,DENNIS' VOICE,m266,being there,f,?
 u3997,DUPONT,m266,being there,m,?
 u3998,EVE,m266,being there,f,2
-u3999,FIRST LADY,m266,being there,f,?
+u3999,FIRST LADY,m266,being there,m,?
 u4000,FRANKLIN,m266,being there,m,8
 u4001,HAYES,m266,being there,m,?
 u4002,HULL,m266,being there,f,?
@@ -4007,7 +4007,7 @@ u4005,KARPATOV,m266,being there,m,?
 u4006,KAUFMAN,m266,being there,m,26
 u4007,KINNEY,m266,being there,m,?
 u4008,LOUISE,m266,being there,f,7
-u4009,MRS. AUBREY,m266,being there,f,?
+u4009,MRS. AUBREY,m266,being there,m,?
 u4010,NOVOGROD,m266,being there,m,?
 u4011,PRESIDENT,m266,being there,m,4
 u4012,RAND,m266,being there,f,2
@@ -4024,7 +4024,7 @@ u4022,ELIJAH,m267,being john malkovich,m,?
 u4023,ERROLL,m267,being john malkovich,m,?
 u4024,FLEMMER,m267,being john malkovich,m,?
 u4025,FLORIS,m267,being john malkovich,f,?
-u4026,HARRY S. TRUMAN PUPPET,m267,being john malkovich,f,?
+u4026,HARRY S. TRUMAN PUPPET,m267,being john malkovich,m,?
 u4027,KEVIN BACON,m267,being john malkovich,m,?
 u4028,LESTER,m267,being john malkovich,m,8
 u4029,LOTTE,m267,being john malkovich,f,2
@@ -4043,7 +4043,7 @@ u4041,JANEY,m268,beloved,f,9
 u4042,LADY JONES,m268,beloved,m,?
 u4043,PAUL,m268,beloved,m,2
 u4044,SAWYER,m268,beloved,m,?
-u4045,SETHE,m268,beloved,m,?
+u4045,SETHE,m268,beloved,f,?
 u4046,STAMP PAID,m268,beloved,m,7
 u4047,WHITE MAN,m268,beloved,m,?
 u4048,ALLAN,m269,the big lebowski,m,?
@@ -4052,7 +4052,7 @@ u4050,BRANDT,m269,the big lebowski,m,6
 u4051,CHIEF,m269,the big lebowski,m,?
 u4052,DA FINO,m269,the big lebowski,m,?
 u4053,DIETER,m269,the big lebowski,m,?
-u4054,DONNELLY,m269,the big lebowski,f,?
+u4054,DONNELLY,m269,the big lebowski,m,?
 u4055,DONNY,m269,the big lebowski,m,4
 u4056,DRIVER,m269,the big lebowski,m,?
 u4057,DUDE,m269,the big lebowski,m,1
@@ -4092,7 +4092,7 @@ u4090,ANNA,m273,book of shadows: blair witch 2,F,?
 u4091,COTTER,m273,book of shadows: blair witch 2,M,?
 u4092,DOMINI,m273,book of shadows: blair witch 2,f,?
 u4093,HEATHER,m273,book of shadows: blair witch 2,F,?
-u4094,INTERN,m273,book of shadows: blair witch 2,f,?
+u4094,INTERN,m273,book of shadows: blair witch 2,m,?
 u4095,MAN'S VOICE,m273,book of shadows: blair witch 2,f,?
 u4096,NICK,m273,book of shadows: blair witch 2,M,?
 u4097,SID,m273,book of shadows: blair witch 2,m,?
@@ -4120,7 +4120,7 @@ u4118,MRS. BEAUMONT,m275,bloodmoon,m,?
 u4119,MRS. WILLIAMS,m275,bloodmoon,m,?
 u4120,RAYMOND,m275,bloodmoon,m,?
 u4121,SANDY,m275,bloodmoon,m,?
-u4122,YELLOW MAN,m275,bloodmoon,m,?
+u4122,YELLOW MAN,m275,bloodmoon,f,?
 u4123,ALESSANDRO,m276,blow,m,?
 u4124,AUGUSTO,m276,blow,m,?
 u4125,BARBARA,m276,blow,f,3
@@ -4155,7 +4155,7 @@ u4153,GENERAL,m277,la battaglia di algeri,m,?
 u4154,HACENE,m277,la battaglia di algeri,f,?
 u4155,KADER,m277,la battaglia di algeri,m,?
 u4156,MATHIEU,m277,la battaglia di algeri,m,?
-u4157,MOURAD,m277,la battaglia di algeri,f,?
+u4157,MOURAD,m277,la battaglia di algeri,m,?
 u4158,PETIT OMAR,m277,la battaglia di algeri,m,?
 u4159,SERGEANT,m277,la battaglia di algeri,m,?
 u4160,SOLDIER,m277,la battaglia di algeri,f,?
@@ -4184,7 +4184,7 @@ u4182,ELEANOR,m279,the bridges of madison county,f,?
 u4183,FRANCESCA,m279,the bridges of madison county,f,2
 u4184,GLADYS,m279,the bridges of madison county,f,?
 u4185,HENRY,m279,the bridges of madison county,f,?
-u4186,LAWYER,m279,the bridges of madison county,m,?
+u4186,LAWYER,m279,the bridges of madison county,f,?
 u4187,MADGE,m279,the bridges of madison county,f,?
 u4188,MICHAEL,m279,the bridges of madison county,m,4
 u4189,MOTHER,m279,the bridges of madison county,m,?
@@ -4193,7 +4193,7 @@ u4191,RICHARD,m279,the bridges of madison county,m,?
 u4192,ROBERT,m279,the bridges of madison county,m,1
 u4193,BILL,m280,bones,m,?
 u4194,BONES,m280,bones,m,1
-u4195,CINNABAR,m280,bones,m,?
+u4195,CINNABAR,m280,bones,f,?
 u4196,JASON,m280,bones,m,?
 u4197,JEREMIAH,m280,bones,m,4
 u4198,LUPOVICH,m280,bones,m,?
@@ -4207,7 +4207,7 @@ u4205,STANK,m280,bones,m,?
 u4206,TIA,m280,bones,f,?
 u4207,WEAZE,m280,bones,m,?
 u4208,CAESAR,m281,bound,m,3
-u4209,COP #1,m281,bound,f,?
+u4209,COP #1,m281,bound,m,?
 u4210,CORKY,m281,bound,f,2
 u4211,GINO,m281,bound,m,?
 u4212,JOHNNIE,m281,bound,m,5
@@ -4217,7 +4217,7 @@ u4215,ABBOTT,m282,the bourne identity,m,5
 u4216,BOURNE,m282,the bourne identity,m,1
 u4217,CLERK,m282,the bourne identity,m,?
 u4218,CONKLIN,m282,the bourne identity,m,3
-u4219,DEPUTY DCM,m282,the bourne identity,m,?
+u4219,DEPUTY DCM,m282,the bourne identity,f,?
 u4220,GIANCARLO,m282,the bourne identity,m,?
 u4221,MANAGER/PHONE,m282,the bourne identity,m,?
 u4222,MARIE,m282,the bourne identity,f,2
@@ -4234,7 +4234,7 @@ u4232,ZORN,m282,the bourne identity,m,?
 u4233,DOWSER,m283,brazil,m,13
 u4234,GENT,m283,brazil,m,?
 u4235,GIRL,m283,brazil,f,?
-u4236,GIRL BUTTLE,m283,brazil,f,?
+u4236,GIRL BUTTLE,m283,brazil,m,?
 u4237,HELPMANN,m283,brazil,f,?
 u4238,INTERVIEWER,m283,brazil,f,?
 u4239,JACK,m283,brazil,m,6
@@ -4257,7 +4257,7 @@ u4255,COATES,m284,bringing out the dead,m,8
 u4256,DISPATCHER LOVE,m284,bringing out the dead,f,?
 u4257,DRUMMER,m284,bringing out the dead,m,?
 u4258,FRANK,m284,bringing out the dead,m,1
-u4259,HAZMAT,m284,bringing out the dead,m,?
+u4259,HAZMAT,m284,bringing out the dead,f,?
 u4260,KANITA,m284,bringing out the dead,f,?
 u4261,LARRY,m284,bringing out the dead,m,3
 u4262,MARCUS,m284,bringing out the dead,m,4
@@ -4273,14 +4273,14 @@ u4271,BOBBIE,m285,broadcast news,f,?
 u4272,BUDDY,m285,broadcast news,m,?
 u4273,CAMERAMAN,m285,broadcast news,m,?
 u4274,ERNIE,m285,broadcast news,m,4
-u4275,FATHER,m285,broadcast news,m,?
+u4275,FATHER,m285,broadcast news,f,?
 u4276,GERALD,m285,broadcast news,m,?
 u4277,J.D.,m285,broadcast news,m,?
 u4278,JANE,m285,broadcast news,f,3
 u4279,JENNIFER,m285,broadcast news,f,?
 u4280,PAUL,m285,broadcast news,m,?
 u4281,TOM,m285,broadcast news,m,1
-u4282,WIFE,m285,broadcast news,m,?
+u4282,WIFE,m285,broadcast news,f,?
 u4283,YOUNG WOMAN,m285,broadcast news,m,?
 u4284,ALICE,m286,a bucket of blood,f,8
 u4285,ART,m286,a bucket of blood,m,?
@@ -4306,7 +4306,7 @@ u4304,GRUELLER,m287,buffy the vampire slayer,m,?
 u4305,JEFFREY,m287,buffy the vampire slayer,m,10
 u4306,JENNIFER,m287,buffy the vampire slayer,f,?
 u4307,KIMBERLY,m287,buffy the vampire slayer,f,7
-u4308,LOTHOS,m287,buffy the vampire slayer,m,?
+u4308,LOTHOS,m287,buffy the vampire slayer,f,?
 u4309,MAN,m287,buffy the vampire slayer,m,?
 u4310,MERRICK,m287,buffy the vampire slayer,m,2
 u4311,NICOLE,m287,buffy the vampire slayer,f,8
@@ -4317,14 +4317,14 @@ u4315,ANNIE,m288,bull durham,f,2
 u4316,BOBBY,m288,bull durham,f,?
 u4317,CRASH,m288,bull durham,m,1
 u4318,EBBY,m288,bull durham,m,?
-u4319,FATHER,m288,bull durham,m,?
+u4319,FATHER,m288,bull durham,f,?
 u4320,JACKSON,m288,bull durham,m,?
 u4321,JIMMY,m288,bull durham,m,?
 u4322,JOSE,m288,bull durham,m,?
 u4323,LARRY,m288,bull durham,m,5
 u4324,MILLIE,m288,bull durham,f,?
 u4325,NUKE,m288,bull durham,m,3
-u4326,NUKE'S FATHER,m288,bull durham,f,?
+u4326,NUKE'S FATHER,m288,bull durham,m,?
 u4327,SANDY,m288,bull durham,m,?
 u4328,SKIP,m288,bull durham,m,?
 u4329,TONY,m288,bull durham,m,?
@@ -4336,8 +4336,8 @@ u4334,AUSTIN,m289,casino,m,?
 u4335,BANKER,m289,casino,m,?
 u4336,BORELLI,m289,casino,f,?
 u4337,CHARLIE CLARK,m289,casino,m,?
-u4338,COP #1,m289,casino,f,?
-u4339,COP #2,m289,casino,f,?
+u4338,COP #1,m289,casino,m,?
+u4339,COP #2,m289,casino,m,?
 u4340,COWBOY,m289,casino,m,?
 u4341,DETECTIVE JOHNSON,m289,casino,m,?
 u4342,DOMINICK,m289,casino,m,?
@@ -4349,7 +4349,7 @@ u4347,FRANKIE AVALON,m289,casino,m,?
 u4348,GAGGI,m289,casino,m,6
 u4349,GINGER,m289,casino,f,2
 u4350,GREEN,m289,casino,m,?
-u4351,HIGH ROLLER,m289,casino,m,?
+u4351,HIGH ROLLER,m289,casino,f,?
 u4352,HOTEL RECEPTIONIST,m289,casino,m,?
 u4353,JENNIFER,m289,casino,f,?
 u4354,JERRY,m289,casino,m,?
@@ -4377,10 +4377,10 @@ u4375,ADONIS,m290,catwoman,m,?
 u4376,BROCK,m290,catwoman,M,?
 u4377,CACTUS,m290,catwoman,m,?
 u4378,CAPTAIN GOD,m290,catwoman,m,?
-u4379,CATWOMAN,m290,catwoman,f,?
-u4380,FEMALE EXEC CAT,m290,catwoman,m,?
+u4379,CATWOMAN,m290,catwoman,m,?
+u4380,FEMALE EXEC CAT,m290,catwoman,f,?
 u4381,FRANK,m290,catwoman,f,?
-u4382,HOUSECAT,m290,catwoman,m,?
+u4382,HOUSECAT,m290,catwoman,f,?
 u4383,LANE,m290,catwoman,M,?
 u4384,LIBRARY CLERK,m290,catwoman,m,?
 u4385,MOM,m290,catwoman,f,34
@@ -4390,7 +4390,7 @@ u4388,2ND DRIVER,m291,cellular,m,?
 u4389,CAITLIN,m291,cellular,f,?
 u4390,COP'S VOICE,m291,cellular,f,?
 u4391,GRILLO,m291,cellular,m,?
-u4392,KLINGER,m291,cellular,m,?
+u4392,KLINGER,m291,cellular,f,?
 u4393,LENORE,m291,cellular,F,?
 u4394,LENORE'S VOICE,m291,cellular,f,?
 u4395,MALE VOICE,m291,cellular,M,?
@@ -4401,7 +4401,7 @@ u4399,TRUCKER,m291,cellular,m,?
 u4400,VOICE,m291,cellular,f,?
 u4401,COL,m292,the crying game,m,10
 u4402,DAVE,m292,the crying game,m,?
-u4403,DEVEROUX,m292,the crying game,m,?
+u4403,DEVEROUX,m292,the crying game,f,?
 u4404,DIL,m292,the crying game,m,8
 u4405,FERGUS,m292,the crying game,m,3
 u4406,FRANKNUM,m292,the crying game,m,?
@@ -4414,7 +4414,7 @@ u4412,BARTHOLOMEW,m293,charade,m,1000
 u4413,BARTHOLOMEW'S VOICE,m293,charade,f,?
 u4414,CRUIKSHANK,m293,charade,m,?
 u4415,DYLE,m293,charade,M,?
-u4416,FÉLIX,m293,charade,m,?
+u4416,F…LIX,m293,charade,m,?
 u4417,GIDEON,m293,charade,m,?
 u4418,GRANDPIERRE,m293,charade,m,8
 u4419,JEAN-LOUIS,m293,charade,m,?
@@ -4429,7 +4429,7 @@ u4427,BEN,m294,cherry falls,m,?
 u4428,BRENT,m294,cherry falls,m,3
 u4429,CARETAKER,m294,cherry falls,m,?
 u4430,CINDY,m294,cherry falls,f,?
-u4431,DAD,m294,cherry falls,m,?
+u4431,DAD,m294,cherry falls,f,?
 u4432,DEPUTY,m294,cherry falls,f,?
 u4433,JIMMY,m294,cherry falls,m,?
 u4434,JODY,m294,cherry falls,f,1
@@ -4486,7 +4486,7 @@ u4484,RAINMAKER,m296,chinatown,m,?
 u4485,SECRETARY,m296,chinatown,f,?
 u4486,SOPHIE,m296,chinatown,f,?
 u4487,SOPHIE'S VOICE,m296,chinatown,f,?
-u4488,THE BOY,m296,chinatown,m,?
+u4488,THE BOY,m296,chinatown,f,?
 u4489,VOICE ON PHONE,m296,chinatown,f,?
 u4490,WALSH,m296,chinatown,m,?
 u4491,WALSH'S VOICE,m296,chinatown,m,?
@@ -4528,7 +4528,7 @@ u4526,GIRL 1,m299,clerks.,m,?
 u4527,GIRL 2,m299,clerks.,m,?
 u4528,HEATHER,m299,clerks.,f,?
 u4529,IMPATIENT CUSTOMER,m299,clerks.,m,?
-u4530,INDECISIVE CUSTOMER,m299,clerks.,f,?
+u4530,INDECISIVE CUSTOMER,m299,clerks.,m,?
 u4531,JAY,m299,clerks.,m,5
 u4532,JOHN,m299,clerks.,f,?
 u4533,MAN,m299,clerks.,m,?
@@ -4548,7 +4548,7 @@ u4546,GABE,m300,cliffhanger,m,1
 u4547,HAL,m300,cliffhanger,m,3
 u4548,JESSIE,m300,cliffhanger,f,4
 u4549,KYNETTE,m300,cliffhanger,f,?
-u4550,MATHESON,m300,cliffhanger,f,?
+u4550,MATHESON,m300,cliffhanger,m,?
 u4551,QUALEN,m300,cliffhanger,m,2
 u4552,SARAH,m300,cliffhanger,f,?
 u4553,TRAVERS,m300,cliffhanger,m,5
@@ -4563,7 +4563,7 @@ u4561,DOLIN,m301,a clockwork orange,m,?
 u4562,DR. BRANOM,m301,a clockwork orange,f,16
 u4563,DR. BRODSKY,m301,a clockwork orange,m,?
 u4564,DR. TAYLOR,m301,a clockwork orange,m,?
-u4565,EM,m301,a clockwork orange,f,?
+u4565,EM,m301,a clockwork orange,m,?
 u4566,GEORGIE,m301,a clockwork orange,f,?
 u4567,GOVERNOR,m301,a clockwork orange,m,?
 u4568,LARDFACE,m301,a clockwork orange,f,?
@@ -4574,7 +4574,7 @@ u4572,PRIEST,m301,a clockwork orange,m,?
 u4573,RUBINSTEIN,m301,a clockwork orange,m,?
 u4574,TRAMP,m301,a clockwork orange,m,?
 u4575,ANNIE,m302,collateral,f,3
-u4576,COP #1,m302,collateral,f,?
+u4576,COP #1,m302,collateral,m,?
 u4577,DANIEL,m302,collateral,m,8
 u4578,DMITRI,m302,collateral,m,?
 u4579,HELLER,m302,collateral,f,?
@@ -4587,12 +4587,12 @@ u4585,MULDOON,m302,collateral,m,?
 u4586,PEDROSA,m302,collateral,f,?
 u4587,VINCENT,m302,collateral,m,1
 u4588,WOMAN,m302,collateral,m,?
-u4589,COP,m303,conspiracy theory,f,?
+u4589,COP,m303,conspiracy theory,m,?
 u4590,CYNIC,m303,conspiracy theory,f,?
 u4591,FLIP,m303,conspiracy theory,m,?
 u4592,JERRY,m303,conspiracy theory,m,1
 u4593,JONAS,m303,conspiracy theory,m,3
-u4594,LAWYER,m303,conspiracy theory,m,?
+u4594,LAWYER,m303,conspiracy theory,f,?
 u4595,LIZA,m303,conspiracy theory,F,?
 u4596,LOWRY,m303,conspiracy theory,m,4
 u4597,OPERATOR,m303,conspiracy theory,m,?
@@ -4602,7 +4602,7 @@ u4600,CHAIRMAN,m304,contact,m,?
 u4601,DRUMLIN,m304,contact,m,10
 u4602,ELLIE,m304,contact,f,1
 u4603,HADDEN,m304,contact,m,12
-u4604,JEAN-CLAUDE,m304,contact,f,?
+u4604,JEAN-CLAUDE,m304,contact,m,?
 u4605,JOSS,m304,contact,m,9
 u4606,KENT,m304,contact,m,?
 u4607,KITZ,m304,contact,f,?
@@ -4612,7 +4612,7 @@ u4610,PRESIDENT LASKER,m304,contact,m,?
 u4611,PROJECT OFFICIAL,m304,contact,m,?
 u4612,TED,m304,contact,m,2
 u4613,WILLIE,m304,contact,f,?
-u4614,ALIBI,m305,cool hand luke,f,?
+u4614,ALIBI,m305,cool hand luke,m,?
 u4615,ARLETTA,m305,cool hand luke,f,7
 u4616,BLIND DICK,m305,cool hand luke,m,?
 u4617,BOSS PAUL,m305,cool hand luke,m,?
@@ -4622,7 +4622,7 @@ u4620,DRAGLINE,m305,cool hand luke,m,2
 u4621,GAMBLER,m305,cool hand luke,m,?
 u4622,KOKO,m305,cool hand luke,m,4
 u4623,LUKE,m305,cool hand luke,m,1
-u4624,SOCIETY RED,m305,cool hand luke,m,?
+u4624,SOCIETY RED,m305,cool hand luke,f,?
 u4625,TATTOO,m305,cool hand luke,m,?
 u4626,ANDY,m306,copycat,m,8
 u4627,ATTORNEY,m306,copycat,m,?
@@ -4650,7 +4650,7 @@ u4648,MRS. HALLSTROM,m308,crazy love,m,?
 u4649,MRS. MAYER,m308,crazy love,f,?
 u4650,NURSE GATES,m308,crazy love,m,?
 u4651,PAUL,m308,crazy love,M,?
-u4652,PRINCIPAL GAIL,m308,crazy love,m,?
+u4652,PRINCIPAL GAIL,m308,crazy love,f,?
 u4653,RUTH,m308,crazy love,f,?
 u4654,AGENT HADLEY,m309,crime spree,f,?
 u4655,BASTALDI,m309,crime spree,f,?
@@ -4667,8 +4667,8 @@ u4665,RAPHAEL,m309,crime spree,m,?
 u4666,RAYMOND,m309,crime spree,m,?
 u4667,SAMI,m309,crime spree,m,5
 u4668,SOPHIE,m309,crime spree,f,9
-u4669,UNIFORMED COP,m309,crime spree,f,?
-u4670,VINNY,m309,crime spree,m,?
+u4669,UNIFORMED COP,m309,crime spree,m,?
+u4670,VINNY,m309,crime spree,f,?
 u4671,WAYNE,m309,crime spree,m,?
 u4672,ZAMMITO,m309,crime spree,m,?
 u4673,ZERO,m309,crime spree,m,?
@@ -4681,10 +4681,10 @@ u4679,GANGSTER A,m310,"crouching tiger, hidden dragon",f,?
 u4680,GOVERNESS,m310,"crouching tiger, hidden dragon",f,?
 u4681,JEN,m310,"crouching tiger, hidden dragon",F,?
 u4682,LI,m310,"crouching tiger, hidden dragon",m,1
-u4683,LO,m310,"crouching tiger, hidden dragon",m,?
+u4683,LO,m310,"crouching tiger, hidden dragon",f,?
 u4684,MADAM YU,m310,"crouching tiger, hidden dragon",f,?
 u4685,MAY,m310,"crouching tiger, hidden dragon",f,?
-u4686,SIR TE,m310,"crouching tiger, hidden dragon",f,?
+u4686,SIR TE,m310,"crouching tiger, hidden dragon",m,?
 u4687,TSAI,m310,"crouching tiger, hidden dragon",m,?
 u4688,YU,m310,"crouching tiger, hidden dragon",f,2
 u4689,ALBRECHT,m311,the crow,m,3
@@ -4739,7 +4739,7 @@ u4737,PETER,m314,the curse,M,?
 u4738,SHRINK,m314,the curse,m,?
 u4739,BARBER,m315,dark city,m,?
 u4740,BUMSTEAD,m315,dark city,m,?
-u4741,COP,m315,dark city,f,?
+u4741,COP,m315,dark city,m,?
 u4742,KARL,m315,dark city,m,?
 u4743,MISS CRENSHAW,m315,dark city,f,?
 u4744,MISTER BLACK,m315,dark city,f,?
@@ -4748,7 +4748,7 @@ u4746,SCHREBER,m315,dark city,m,3
 u4747,STROMBOLI,m315,dark city,f,?
 u4748,THOMPSON,m315,dark city,m,?
 u4749,WHITE,m315,dark city,m,?
-u4750,WIFE,m315,dark city,m,?
+u4750,WIFE,m315,dark city,f,?
 u4751,BOB,m316,dave,m,3
 u4752,DAVE,m316,dave,m,1
 u4753,DUANE,m316,dave,m,5
@@ -4791,7 +4791,7 @@ u4789,CAPTAIN,m319,deep rising,m,?
 u4790,FINNEGAN,m319,deep rising,m,1
 u4791,HANOVER,m319,deep rising,m,5
 u4792,MAMOOLI,m319,deep rising,f,?
-u4793,MULLIGAN,m319,deep rising,m,?
+u4793,MULLIGAN,m319,deep rising,f,?
 u4794,PANTUCCI,m319,deep rising,m,4
 u4795,TRILLIAN,m319,deep rising,f,2
 u4796,VIVO,m319,deep rising,m,?
@@ -4816,7 +4816,7 @@ u4814,CASSY,m321,demolition man,f,?
 u4815,DUBBS,m321,demolition man,m,?
 u4816,GALLAGHER,m321,demolition man,m,?
 u4817,KIMBERLY,m321,demolition man,f,?
-u4818,PEEBLES,m321,demolition man,m,?
+u4818,PEEBLES,m321,demolition man,f,?
 u4819,SANCHEZ,m321,demolition man,m,?
 u4820,SHEPPARD,m321,demolition man,m,?
 u4821,WADE,m321,demolition man,m,?
@@ -4847,7 +4847,7 @@ u4845,KARL,m323,die hard,m,?
 u4846,MCCLANE,m323,die hard,m,1
 u4847,POWELL,m323,die hard,m,5
 u4848,ROBINSON,m323,die hard,m,7
-u4849,TAKAGI,m323,die hard,m,?
+u4849,TAKAGI,m323,die hard,f,?
 u4850,THEO,m323,die hard,f,?
 u4851,COMMISSIONER,m324,dog day afternoon,m,?
 u4852,DRIVER,m324,dog day afternoon,m,?
@@ -4883,16 +4883,16 @@ u4881,LASHINDRA,m325,domino,f,?
 u4882,LATEESHA,m325,domino,f,?
 u4883,SOPHIE,m325,domino,f,?
 u4884,TARYN,m325,domino,f,?
-u4885,WEISS,m325,domino,m,?
+u4885,WEISS,m325,domino,f,?
 u4886,ZIERING,m325,domino,m,?
-u4887,BUGGIN' OUT,m326,do the right thing,f,?
+u4887,BUGGIN' OUT,m326,do the right thing,m,?
 u4888,CLIFTON,m326,do the right thing,m,?
 u4889,COCONUT SID,m326,do the right thing,m,?
 u4890,DA MAYOR,m326,do the right thing,m,?
 u4891,EDDIE,m326,do the right thing,f,?
 u4892,JADE,m326,do the right thing,f,12
 u4893,KOREAN CLERK,m326,do the right thing,m,?
-u4894,MISTER SEÑOR LOVE DADDY,m326,do the right thing,f,?
+u4894,MISTER SE—OR LOVE DADDY,m326,do the right thing,m,?
 u4895,ML,m326,do the right thing,m,9
 u4896,MOOKIE,m326,do the right thing,m,6
 u4897,MOTHER SISTER,m326,do the right thing,m,?
@@ -4903,14 +4903,14 @@ u4901,SWEET DICK WILLIE,m326,do the right thing,m,11
 u4902,TINA,m326,do the right thing,f,17
 u4903,VITO,m326,do the right thing,m,4
 u4904,CALE,m327,dumb and dumberer: when harry met lloyd,m,?
-u4905,CHING CHONG,m327,dumb and dumberer: when harry met lloyd,m,?
+u4905,CHING CHONG,m327,dumb and dumberer: when harry met lloyd,f,?
 u4906,HARRY,m327,dumb and dumberer: when harry met lloyd,m,4
 u4907,JESSICA,m327,dumb and dumberer: when harry met lloyd,f,8
-u4908,JESSICA'S DAD,m327,dumb and dumberer: when harry met lloyd,m,?
+u4908,JESSICA'S DAD,m327,dumb and dumberer: when harry met lloyd,f,?
 u4909,LEWIS,m327,dumb and dumberer: when harry met lloyd,m,?
 u4910,LLOYD,m327,dumb and dumberer: when harry met lloyd,m,6
 u4911,MARGIE,m327,dumb and dumberer: when harry met lloyd,f,?
-u4912,MOFFIT,m327,dumb and dumberer: when harry met lloyd,m,?
+u4912,MOFFIT,m327,dumb and dumberer: when harry met lloyd,f,?
 u4913,MRS. DUNNE,m327,dumb and dumberer: when harry met lloyd,f,?
 u4914,MS. HELLER,m327,dumb and dumberer: when harry met lloyd,f,11
 u4915,PRINCIPAL COLLINS,m327,dumb and dumberer: when harry met lloyd,m,10
@@ -4924,7 +4924,7 @@ u4922,DUKE LETO,m328,dune,m,?
 u4923,EMPEROR,m328,dune,m,?
 u4924,GURNEY,m328,dune,m,?
 u4925,JESSICA,m328,dune,f,?
-u4926,KYNES,m328,dune,f,?
+u4926,KYNES,m328,dune,m,?
 u4927,MAPES,m328,dune,m,?
 u4928,NAVIGATOR,m328,dune,m,?
 u4929,PAUL,m328,dune,m,8
@@ -4949,7 +4949,7 @@ u4947,MR. FELDMAN,m329,ed wood,m,?
 u4948,NORMA,m329,ed wood,f,?
 u4949,ORSON WELLES,m329,ed wood,m,?
 u4950,PAUL MARCO,m329,ed wood,m,?
-u4951,REVEREND LEMON,m329,ed wood,f,?
+u4951,REVEREND LEMON,m329,ed wood,m,?
 u4952,REYNOLDS,m329,ed wood,m,15
 u4953,RUDE BOSS,m329,ed wood,m,?
 u4954,TOR,m329,ed wood,m,13
@@ -4969,7 +4969,7 @@ u4967,MARCIA,m330,edtv,f,?
 u4968,MR. SCHARLACH,m330,edtv,m,?
 u4969,RAY,m330,edtv,m,3
 u4970,RITA,m330,edtv,f,?
-u4971,SCHARLACH,m330,edtv,m,?
+u4971,SCHARLACH,m330,edtv,f,?
 u4972,SHARI,m330,edtv,f,2
 u4973,TAD,m330,edtv,m,?
 u4974,WOMAN,m330,edtv,m,?
@@ -5003,7 +5003,7 @@ u5001,LYNN,m332,l.a. confidential,f,5
 u5002,MRS. LEFFERTS,m332,l.a. confidential,m,?
 u5003,OPERATOR,m332,l.a. confidential,m,?
 u5004,PATCHETT,m332,l.a. confidential,m,7
-u5005,PINKER,m332,l.a. confidential,m,?
+u5005,PINKER,m332,l.a. confidential,f,?
 u5006,REYNOLDS,m332,l.a. confidential,m,?
 u5007,STENSLAND,m332,l.a. confidential,m,?
 u5008,STOMPANATO,m332,l.a. confidential,m,?
@@ -5044,11 +5044,11 @@ u5042,SILVERBERG,m333,enemy of the state,m,?
 u5043,STACY,m333,enemy of the state,m,?
 u5044,WAITER,m333,enemy of the state,m,?
 u5045,ZAVITZ,m333,enemy of the state,m,?
-u5046,ALMÁSY,m334,the english patient,M,?
+u5046,ALM¡SY,m334,the english patient,M,?
 u5047,BOY,m334,the english patient,m,?
 u5048,CARAVAGGIO,m334,the english patient,m,3
 u5049,CLIFTON,m334,the english patient,m,?
-u5050,CORPORAL,m334,the english patient,f,?
+u5050,CORPORAL,m334,the english patient,m,?
 u5051,HANA,m334,the english patient,f,2
 u5052,HARDY,m334,the english patient,m,?
 u5053,JAN,m334,the english patient,m,?
@@ -5056,7 +5056,7 @@ u5054,KATHARINE,m334,the english patient,f,4
 u5055,KIP,m334,the english patient,m,5
 u5056,LADY HAMPTON,m334,the english patient,m,?
 u5057,MADOX,m334,the english patient,m,7
-u5058,MÜLLER,m334,the english patient,m,?
+u5058,M‹LLER,m334,the english patient,m,?
 u5059,OFFICER,m334,the english patient,m,?
 u5060,OLIVER,m334,the english patient,m,?
 u5061,STUART,m334,the english patient,m,?
@@ -5064,7 +5064,7 @@ u5062,THE PATIENT,m334,the english patient,M,?
 u5063,CRUZ,m335,entrapment,m,4
 u5064,GIN,m335,entrapment,f,2
 u5065,MAC,m335,entrapment,m,1
-u5066,QUI,m335,entrapment,m,?
+u5066,QUI,m335,entrapment,f,?
 u5067,THIBADEAUX,m335,entrapment,m,3
 u5068,ANNA,m336,erin brockovich,f,?
 u5069,BAUM,m336,erin brockovich,m,?
@@ -5080,10 +5080,10 @@ u5078,GEORGE,m336,erin brockovich,m,18
 u5079,JANE,m336,erin brockovich,f,?
 u5080,KATIE,m336,erin brockovich,f,?
 u5081,LAURA,m336,erin brockovich,f,?
-u5082,MANDY,m336,erin brockovich,f,?
+u5082,MANDY,m336,erin brockovich,m,?
 u5083,MATTHEW,m336,erin brockovich,m,?
 u5084,MRS. MORALES,m336,erin brockovich,m,?
-u5085,PAULSEN,m336,erin brockovich,f,?
+u5085,PAULSEN,m336,erin brockovich,m,?
 u5086,POTTER,m336,erin brockovich,f,?
 u5087,ROSALIND,m336,erin brockovich,f,?
 u5088,ROSS,m336,erin brockovich,m,?
@@ -5120,7 +5120,7 @@ u5118,PENDEJO BOB,m339,escape from l.a.,m,?
 u5119,PIPELINE,m339,escape from l.a.,f,?
 u5120,PLISSKEN,m339,escape from l.a.,m,1
 u5121,PRESIDENT,m339,escape from l.a.,m,?
-u5122,SPINAL,m339,escape from l.a.,f,?
+u5122,SPINAL,m339,escape from l.a.,m,?
 u5123,TASLIMA,m339,escape from l.a.,f,?
 u5124,UTOPIA,m339,escape from l.a.,f,?
 u5125,ARTHUR,m340,excalibur,m,1
@@ -5137,10 +5137,10 @@ u5135,UTHER,m340,excalibur,m,?
 u5136,BURKE,m341,the exorcist,m,?
 u5137,CARDINAL,m341,the exorcist,f,?
 u5138,CHRIS,m341,the exorcist,f,1
-u5139,CLINIC DIRECTOR,m341,the exorcist,m,?
+u5139,CLINIC DIRECTOR,m341,the exorcist,f,?
 u5140,DR. KLEIN,m341,the exorcist,m,9
 u5141,DR. TANNEY,m341,the exorcist,m,?
-u5142,FATHER DYER,m341,the exorcist,m,?
+u5142,FATHER DYER,m341,the exorcist,f,?
 u5143,KARL,m341,the exorcist,m,?
 u5144,KARRAS,m341,the exorcist,m,6
 u5145,KINDERMAN,m341,the exorcist,m,3
@@ -5259,7 +5259,7 @@ u5257,BANDAGED PROPRIETOR,m348,fight club,m,?
 u5258,BOB,m348,fight club,m,?
 u5259,BOSS,m348,fight club,m,?
 u5260,DETECTIVE STERN,m348,fight club,m,?
-u5261,INTERN,m348,fight club,f,?
+u5261,INTERN,m348,fight club,m,?
 u5262,JACK,m348,fight club,M,?
 u5263,LEADER,m348,fight club,m,?
 u5264,LOU,m348,fight club,f,?
@@ -5365,7 +5365,7 @@ u5363,DON,m356,the adventures of ford fairlane,m,?
 u5364,FORD,m356,the adventures of ford fairlane,m,1
 u5365,GRENDEL,m356,the adventures of ford fairlane,m,2
 u5366,JAZZ,m356,the adventures of ford fairlane,f,5
-u5367,JOHNNY,m356,the adventures of ford fairlane,m,?
+u5367,JOHNNY,m356,the adventures of ford fairlane,f,?
 u5368,LT. AMOS,m356,the adventures of ford fairlane,m,?
 u5369,MELODI,m356,the adventures of ford fairlane,f,?
 u5370,SLEAZY GUY,m356,the adventures of ford fairlane,m,?
@@ -5375,7 +5375,7 @@ u5373,ZUZU,m356,the adventures of ford fairlane,f,6
 u5374,1ST MAN,m357,the french connection,m,?
 u5375,2ND MAN,m357,the french connection,m,?
 u5376,ANGIE,m357,the french connection,f,?
-u5377,BLACK PUSHER,m357,the french connection,m,?
+u5377,BLACK PUSHER,m357,the french connection,f,?
 u5378,CHARNIER,m357,the french connection,m,?
 u5379,DANCER,m357,the french connection,m,?
 u5380,DESK CLERK,m357,the french connection,m,?
@@ -5384,19 +5384,19 @@ u5382,DOYLE,m357,the french connection,m,1
 u5383,JESUS,m357,the french connection,m,?
 u5384,LA VALLE,m357,the french connection,f,?
 u5385,MARIE,m357,the french connection,f,?
-u5386,MULDERIG,m357,the french connection,m,?
+u5386,MULDERIG,m357,the french connection,f,?
 u5387,MUTCHIE,m357,the french connection,f,?
 u5388,NICOLI,m357,the french connection,m,?
 u5389,RUSSO,m357,the french connection,m,3
 u5390,SAL,m357,the french connection,m,?
 u5391,WEINSTOCK,m357,the french connection,m,?
 u5392,DARYL,m358,frequency,m,?
-u5393,DESK SGT.,m358,frequency,f,?
+u5393,DESK SGT.,m358,frequency,m,?
 u5394,FRANK,m358,frequency,m,1
 u5395,GIBSON,m358,frequency,m,?
 u5396,GORDO,m358,frequency,m,?
 u5397,JOHN,m358,frequency,m,2
-u5398,JOHNNY,m358,frequency,m,?
+u5398,JOHNNY,m358,frequency,f,?
 u5399,JULIA,m358,frequency,f,4
 u5400,SATCH,m358,frequency,m,5
 u5401,SHEPARD,m358,frequency,m,?
@@ -5424,7 +5424,7 @@ u5422,SHERIFF,m360,jason lives: friday the 13th part vi,m,3
 u5423,SISSY,m360,jason lives: friday the 13th part vi,f,?
 u5424,STAN,m360,jason lives: friday the 13th part vi,m,?
 u5425,TOMMY,m360,jason lives: friday the 13th part vi,m,1
-u5426,CAMPBELL,m361,jason goes to hell: the final friday,f,?
+u5426,CAMPBELL,m361,jason goes to hell: the final friday,m,?
 u5427,DIANA,m361,jason goes to hell: the final friday,f,?
 u5428,DUKE,m361,jason goes to hell: the final friday,m,?
 u5429,JESSICA,m361,jason goes to hell: the final friday,f,?
@@ -5465,13 +5465,13 @@ u5463,BA,m364,gandhi,f,?
 u5464,BOURKE-WHITE,m364,gandhi,m,?
 u5465,CHARLIE,m364,gandhi,m,?
 u5466,COLLINS,m364,gandhi,m,?
-u5467,GANDHI,m364,gandhi,f,?
+u5467,GANDHI,m364,gandhi,m,?
 u5468,IRWIN,m364,gandhi,m,?
 u5469,JINNAH,m364,gandhi,f,?
 u5470,KHAN,m364,gandhi,m,?
 u5471,MIRABEHN,m364,gandhi,m,?
 u5472,NEHRU,m364,gandhi,m,?
-u5473,PATEL,m364,gandhi,f,?
+u5473,PATEL,m364,gandhi,m,?
 u5474,PORTER,m364,gandhi,m,?
 u5475,SENIOR POLICE OFFICER,m364,gandhi,m,?
 u5476,SMUTS,m364,gandhi,m,?
@@ -5558,7 +5558,7 @@ u5556,SENATOR GEARY,m369,the godfather: part ii,f,?
 u5557,SENATOR KANE,m369,the godfather: part ii,f,?
 u5558,TESSIO,m369,the godfather: part ii,m,?
 u5559,VITO,m369,the godfather: part ii,m,?
-u5560,WIDOW,m369,the godfather: part ii,m,?
+u5560,WIDOW,m369,the godfather: part ii,f,?
 u5561,BETTY,m370,gods and monsters,f,4
 u5562,CLAY,m370,gods and monsters,m,2
 u5563,DAVID,m370,gods and monsters,m,5
@@ -5628,7 +5628,7 @@ u5626,BOOKKEEPER,m374,the grapes of wrath,m,?
 u5627,CARETAKER,m374,the grapes of wrath,m,16
 u5628,CASY,m374,the grapes of wrath,m,3
 u5629,CONNIE,m374,the grapes of wrath,f,?
-u5630,COP,m374,the grapes of wrath,f,?
+u5630,COP,m374,the grapes of wrath,m,?
 u5631,DAVIS,m374,the grapes of wrath,m,?
 u5632,DRIVER,m374,the grapes of wrath,m,?
 u5633,FIRST BOY,m374,the grapes of wrath,m,?
@@ -5652,7 +5652,7 @@ u5650,THE MAN,m374,the grapes of wrath,m,?
 u5651,TIM,m374,the grapes of wrath,m,?
 u5652,TOM,m374,the grapes of wrath,m,1
 u5653,WINFIELD,m374,the grapes of wrath,m,?
-u5654,WINFIELD'S VOICE,m374,the grapes of wrath,m,?
+u5654,WINFIELD'S VOICE,m374,the grapes of wrath,f,?
 u5655,AMY,m375,grosse pointe blank,f,?
 u5656,ARLENE,m375,grosse pointe blank,f,?
 u5657,BOB,m375,grosse pointe blank,m,?
@@ -5671,7 +5671,7 @@ u5669,MARY,m375,grosse pointe blank,f,18
 u5670,MCCULLERS,m375,grosse pointe blank,m,7
 u5671,MR. NEWBERRY,m375,grosse pointe blank,m,?
 u5672,PAUL,m375,grosse pointe blank,m,?
-u5673,SOUTHTEC GUARD,m375,grosse pointe blank,m,?
+u5673,SOUTHTEC GUARD,m375,grosse pointe blank,f,?
 u5674,ANNIE,m376,the horse whisperer,f,2
 u5675,DAVID GOTTSCHALK,m376,the horse whisperer,m,?
 u5676,DIANE,m376,the horse whisperer,f,4
@@ -5688,11 +5688,11 @@ u5686,WOMAN,m376,the horse whisperer,m,?
 u5687,AGENT BOB,m377,hackers,m,?
 u5688,AGENT RAY,m377,hackers,m,?
 u5689,BLADE,m377,hackers,m,?
-u5690,CEREAL,m377,hackers,m,?
+u5690,CEREAL,m377,hackers,f,?
 u5691,DADE,m377,hackers,m,1
 u5692,GILL,m377,hackers,m,?
 u5693,HAL,m377,hackers,m,?
-u5694,JOEY,m377,hackers,m,?
+u5694,JOEY,m377,hackers,f,?
 u5695,KATE,m377,hackers,f,2
 u5696,KID,m377,hackers,m,?
 u5697,MARGO,m377,hackers,f,12
@@ -5702,10 +5702,10 @@ u5700,NORM,m377,hackers,m,?
 u5701,OPERATOR,m377,hackers,m,?
 u5702,PHREAK,m377,hackers,m,?
 u5703,PLAGUE,m377,hackers,m,7
-u5704,RAZOR,m377,hackers,f,?
+u5704,RAZOR,m377,hackers,m,?
 u5705,ATTENDANT,m378,halloween 4: the return of michael myers,m,?
 u5706,BRADY,m378,halloween 4: the return of michael myers,m,8
-u5707,COP,m378,halloween 4: the return of michael myers,f,?
+u5707,COP,m378,halloween 4: the return of michael myers,m,?
 u5708,DARLENE,m378,halloween 4: the return of michael myers,f,?
 u5709,DR. HOFFMAN,m378,halloween 4: the return of michael myers,m,?
 u5710,EARL,m378,halloween 4: the return of michael myers,m,?
@@ -5730,9 +5730,9 @@ u5728,LOOMIS,m379,halloween,m,1
 u5729,LYNDA,m379,halloween,f,?
 u5730,MARION,m379,halloween,f,9
 u5731,PAUL,m379,halloween,m,?
-u5732,SISTER,m379,halloween,f,?
+u5732,SISTER,m379,halloween,m,?
 u5733,TOMMY,m379,halloween,m,7
-u5734,WYNN,m379,halloween,f,?
+u5734,WYNN,m379,halloween,m,?
 u5735,APRIL,m380,hannah and her sisters,f,2
 u5736,CAROL,m380,hannah and her sisters,f,?
 u5737,DAVID,m380,hannah and her sisters,m,1000
@@ -5741,7 +5741,7 @@ u5739,DUSTY,m380,hannah and her sisters,m,?
 u5740,ED,m380,hannah and her sisters,m,?
 u5741,ELLIOT,m380,hannah and her sisters,m,3
 u5742,EVAN,m380,hannah and her sisters,m,?
-u5743,FATHER,m380,hannah and her sisters,m,?
+u5743,FATHER,m380,hannah and her sisters,f,?
 u5744,FREDERICK,m380,hannah and her sisters,m,8
 u5745,GAIL,m380,hannah and her sisters,f,13
 u5746,HANNAH,m380,hannah and her sisters,f,4
@@ -5755,13 +5755,13 @@ u5753,ANNA,m381,hannibal,f,?
 u5754,BARNEY,m381,hannibal,m,5
 u5755,BRIGHAM,m381,hannibal,m,21
 u5756,COMMITTEE MEMBER,m381,hannibal,m,?
-u5757,COP ONE,m381,hannibal,f,?
+u5757,COP ONE,m381,hannibal,m,?
 u5758,CORDELL,m381,hannibal,m,8
 u5759,CRAWFORD,m381,hannibal,m,?
 u5760,DRUMGO,m381,hannibal,m,?
 u5761,FELL,m381,hannibal,f,?
 u5762,FRANKLIN,m381,hannibal,m,?
-u5763,GENTLEMAN,m381,hannibal,f,?
+u5763,GENTLEMAN,m381,hannibal,m,?
 u5764,KRENDLER,m381,hannibal,m,?
 u5765,LECHTER,m381,hannibal,m,?
 u5766,MAPP,m381,hannibal,m,?
@@ -5788,7 +5788,7 @@ u5786,WICHITA                                            ],m382,happy campers,m,
 u5787,BETTY,m383,heathers,f,?
 u5788,BRAD,m383,heathers,m,?
 u5789,COURTNEY,m383,heathers,f,?
-u5790,DAD,m383,heathers,m,?
+u5790,DAD,m383,heathers,f,?
 u5791,EARL,m383,heathers,m,?
 u5792,HEATHER CHANDLER,m383,heathers,f,?
 u5793,HEATHER DUKE,m383,heathers,m,?
@@ -5829,14 +5829,14 @@ u5827,DUKE,m386,hero,m,?
 u5828,EVELYN,m386,hero,f,?
 u5829,GALE,m386,hero,f,2
 u5830,JOAN,m386,hero,f,?
-u5831,JOEY,m386,hero,m,?
+u5831,JOEY,m386,hero,f,?
 u5832,PARKER,m386,hero,m,?
 u5833,ROBINSON,m386,hero,m,?
 u5834,WALLACE,m386,hero,m,7
 u5835,WINSTON,m386,hero,m,?
 u5836,BERT,m387,hider in the house,m,?
 u5837,BULLY,m387,hider in the house,f,?
-u5838,HIDER,m387,hider in the house,m,?
+u5838,HIDER,m387,hider in the house,f,?
 u5839,HOLLY,m387,hider in the house,m,?
 u5840,JULIE,m387,hider in the house,f,2
 u5841,NEIL,m387,hider in the house,m,4
@@ -5891,7 +5891,7 @@ u5889,MR. JONES,m389,hostage,m,?
 u5890,SEYMORE,m389,hostage,m,?
 u5891,TALLEY,m389,hostage,m,1
 u5892,THE WATCHMAN,m389,hostage,m,?
-u5893,THE WATCHMAN'S VOICE,m389,hostage,f,?
+u5893,THE WATCHMAN'S VOICE,m389,hostage,m,?
 u5894,THOMAS,m389,hostage,m,?
 u5895,TUZEE,m389,hostage,f,?
 u5896,WALTER,m389,hostage,f,?
@@ -5934,7 +5934,7 @@ u5932,SHEA,m392,house of the damned,f,?
 u5933,WILL,m392,house of the damned,m,2
 u5934,BRAD,m393,hellraiser iii: hell on earth,m,?
 u5935,DOC,m393,hellraiser iii: hell on earth,m,?
-u5936,ELLIOTT,m393,hellraiser iii: hell on earth,m,?
+u5936,ELLIOTT,m393,hellraiser iii: hell on earth,f,?
 u5937,JOEY,m393,hellraiser iii: hell on earth,f,3
 u5938,JP,m393,hellraiser iii: hell on earth,m,?
 u5939,MAMA,m393,hellraiser iii: hell on earth,f,?
@@ -5964,7 +5964,7 @@ u5962,BUZZ,m395,the hudsucker proxy,m,6
 u5963,CHIEF,m395,the hudsucker proxy,m,?
 u5964,EDITOR,m395,the hudsucker proxy,m,?
 u5965,HUDSUCKER,m395,the hudsucker proxy,m,?
-u5966,INTERCOM,m395,the hudsucker proxy,f,?
+u5966,INTERCOM,m395,the hudsucker proxy,m,?
 u5967,LOU,m395,the hudsucker proxy,f,?
 u5968,MOSES,m395,the hudsucker proxy,m,?
 u5969,MRS. MUSSBURGER,m395,the hudsucker proxy,m,?
@@ -6001,7 +6001,7 @@ u5999,WENDY,m397,the ice storm,f,6
 u6000,CHIEF NYBACK,m398,insomnia,m,?
 u6001,ELLIE,m398,insomnia,f,3
 u6002,FARRELL,m398,insomnia,m,?
-u6003,FRED,m398,insomnia,m,?
+u6003,FRED,m398,insomnia,f,?
 u6004,HAP,m398,insomnia,m,5
 u6005,RACHEL,m398,insomnia,f,?
 u6006,RANDY,m398,insomnia,m,?
@@ -6039,7 +6039,7 @@ u6037,BERT,m402,it's a wonderful life,m,?
 u6038,CARTER,m402,it's a wonderful life,m,?
 u6039,CLARENCE,m402,it's a wonderful life,m,5
 u6040,CLARENCE'S VOICE,m402,it's a wonderful life,f,?
-u6041,COP,m402,it's a wonderful life,f,?
+u6041,COP,m402,it's a wonderful life,m,?
 u6042,DR. CAMPBELL,m402,it's a wonderful life,m,?
 u6043,ERNIE,m402,it's a wonderful life,m,?
 u6044,FRANKLIN'S VOICE,m402,it's a wonderful life,f,?
@@ -6140,7 +6140,7 @@ u6138,MARCEE,m408,jerry maguire,f,?
 u6139,MATT,m408,jerry maguire,m,?
 u6140,RAY,m408,jerry maguire,m,9
 u6141,SUGAR,m408,jerry maguire,m,6
-u6142,TEE PEE,m408,jerry maguire,m,?
+u6142,TEE PEE,m408,jerry maguire,f,?
 u6143,TIDWELL,m408,jerry maguire,m,2
 u6144,WOMAN,m408,jerry maguire,m,?
 u6145,AMANDA,m409,jurassic park iii,f,3
@@ -6196,7 +6196,7 @@ u6194,OSKAR,m413,kafka,m,?
 u6195,POCKMARKED ANARCHIST,m413,kafka,f,?
 u6196,ANN,m414,king kong,f,1
 u6197,DENHAM,m414,king kong,m,?
-u6198,ENGLEHORN,m414,king kong,f,?
+u6198,ENGLEHORN,m414,king kong,m,?
 u6199,JACK,m414,king kong,m,3
 u6200,KID,m414,king kong,m,?
 u6201,LORD DARROW,m414,king kong,m,?
@@ -6222,7 +6222,7 @@ u6220,JOANNA,m416,kramer vs. kramer,f,2
 u6221,JUDGE,m416,kramer vs. kramer,m,?
 u6222,O'CONNOR,m416,kramer vs. kramer,m,6
 u6223,PHYLLIS,m416,kramer vs. kramer,f,7
-u6224,SATURDAY FATHER,m416,kramer vs. kramer,f,?
+u6224,SATURDAY FATHER,m416,kramer vs. kramer,m,?
 u6225,SECRETARY,m416,kramer vs. kramer,f,?
 u6226,SHAUNESSY,m416,kramer vs. kramer,m,5
 u6227,SHAUNESSY'S VOICE,m416,kramer vs. kramer,f,?
@@ -6233,8 +6233,8 @@ u6231,THELMA,m416,kramer vs. kramer,F,?
 u6232,WOMAN'S VOICE,m416,kramer vs. kramer,m,?
 u6233,BODYGUARD,m417,kundun,m,?
 u6234,BOY,m417,kundun,m,?
-u6235,FATHER,m417,kundun,m,?
-u6236,GENERAL CHIANG,m417,kundun,f,?
+u6235,FATHER,m417,kundun,f,?
+u6236,GENERAL CHIANG,m417,kundun,m,?
 u6237,GENERAL CHIANG CHIN-WU,m417,kundun,m,?
 u6238,KASHAG MEMBER,m417,kundun,m,?
 u6239,LHAMO,m417,kundun,m,?
@@ -6245,14 +6245,14 @@ u6243,LUKHANGWA,m417,kundun,f,?
 u6244,MAN,m417,kundun,m,?
 u6245,MAO TSE TUNG,m417,kundun,f,?
 u6246,MOTHER,m417,kundun,m,?
-u6247,NOBLE BOY,m417,kundun,m,?
+u6247,NOBLE BOY,m417,kundun,f,?
 u6248,NORBU THUNDRUP,m417,kundun,m,19
 u6249,TAKSTER RINPOCHE,m417,kundun,f,?
 u6250,TAKTRA RINPOCHE,m417,kundun,f,?
 u6251,TENZIN GYATSO,m417,kundun,M,?
 u6252,TIBETAN WOMAN,m417,kundun,m,?
 u6253,WOMAN,m417,kundun,m,?
-u6254,BICKERMAN,m418,lake placid,f,?
+u6254,BICKERMAN,m418,lake placid,m,?
 u6255,GARE,m418,lake placid,m,?
 u6256,HECTOR,m418,lake placid,m,3
 u6257,JACK,m418,lake placid,m,1
@@ -6271,7 +6271,7 @@ u6269,DR. LECTER,m419,the silence of the lambs,M,?
 u6270,KRENDLER,m419,the silence of the lambs,m,?
 u6271,MR. GUMB,m419,the silence of the lambs,m,?
 u6272,MR. YOW,m419,the silence of the lambs,m,?
-u6273,PILCHER,m419,the silence of the lambs,m,?
+u6273,PILCHER,m419,the silence of the lambs,f,?
 u6274,RODEN,m419,the silence of the lambs,m,?
 u6275,SEN. MARTIN,m419,the silence of the lambs,m,?
 u6276,STACY,m419,the silence of the lambs,m,?
@@ -6299,7 +6299,7 @@ u6297,WILLIE,m421,leviathan,f,3
 u6298,WILLIE'S VOICE,m421,leviathan,m,?
 u6299,BACON,m422,"lock, stock and two smoking barrels",m,?
 u6300,BARRY,m422,"lock, stock and two smoking barrels",m,?
-u6301,BIG CHRIS,m422,"lock, stock and two smoking barrels",m,?
+u6301,BIG CHRIS,m422,"lock, stock and two smoking barrels",f,?
 u6302,DEAN,m422,"lock, stock and two smoking barrels",m,?
 u6303,DOG,m422,"lock, stock and two smoking barrels",m,?
 u6304,DOORMAN,m422,"lock, stock and two smoking barrels",m,?
@@ -6420,7 +6420,7 @@ u6418,BURT,m428,magnolia,m,?
 u6419,CHAD,m428,magnolia,m,82
 u6420,CLAUDIA,m428,magnolia,f,9
 u6421,CLAUIDA,m428,magnolia,f,?
-u6422,COCKTAIL WAITRESS,m428,magnolia,f,?
+u6422,COCKTAIL WAITRESS,m428,magnolia,m,?
 u6423,CYNTHIA,m428,magnolia,f,?
 u6424,DIXON,m428,magnolia,m,18
 u6425,DOC,m428,magnolia,m,?
@@ -6450,7 +6450,7 @@ u6448,SOLOMON,m428,magnolia,m,?
 u6449,STANLEY,m428,magnolia,m,12
 u6450,THURSTON,m428,magnolia,m,16
 u6451,WORM,m428,magnolia,m,?
-u6452,YOUNG PHARMACY KID,m428,magnolia,f,?
+u6452,YOUNG PHARMACY KID,m428,magnolia,m,?
 u6453,ANNE,m429,the man in the iron mask,f,?
 u6454,ARAMIS,m429,the man in the iron mask,m,2
 u6455,ATHOS,m429,the man in the iron mask,m,3
@@ -6495,7 +6495,7 @@ u6493,RED DRAGON,m431,manhunter,m,?
 u6494,SARAH,m431,manhunter,f,?
 u6495,SHERMAN,m431,manhunter,m,?
 u6496,SPRINGFIELD,m431,manhunter,m,18
-u6497,SPURGEN,m431,manhunter,m,?
+u6497,SPURGEN,m431,manhunter,f,?
 u6498,VOICE,m431,manhunter,f,?
 u6499,ANDY,m432,man on the moon,m,1
 u6500,BOOKER,m432,man on the moon,m,?
@@ -6512,12 +6512,12 @@ u6510,OLD DOCTOR,m432,man on the moon,m,?
 u6511,SAD SACK,m432,man on the moon,m,?
 u6512,STANLEY,m432,man on the moon,m,?
 u6513,TONY CLIFTON,m432,man on the moon,m,?
-u6514,YOGI,m432,man on the moon,f,?
+u6514,YOGI,m432,man on the moon,m,?
 u6515,ZMUDA,m432,man on the moon,m,1000
-u6516,AGENT JONES,m433,the matrix,m,?
+u6516,AGENT JONES,m433,the matrix,f,?
 u6517,AGENT SMITH,m433,the matrix,m,?
 u6518,APOC,m433,the matrix,m,?
-u6519,CHOI,m433,the matrix,m,?
+u6519,CHOI,m433,the matrix,f,?
 u6520,CYPHER,m433,the matrix,m,6
 u6521,LIEUTENANT,m433,the matrix,m,?
 u6522,MORPHEUS,m433,the matrix,m,2
@@ -6534,7 +6534,7 @@ u6532,CHARLIE,m434,halloween iii: season of the witch,m,16
 u6533,DIANE,m434,halloween iii: season of the witch,f,?
 u6534,GIOVANNI,m434,halloween iii: season of the witch,m,?
 u6535,JIMMY,m434,halloween iii: season of the witch,m,?
-u6536,JOEY,m434,halloween iii: season of the witch,m,?
+u6536,JOEY,m434,halloween iii: season of the witch,f,?
 u6537,JOHNNY BOY,m434,halloween iii: season of the witch,m,?
 u6538,MARIO,m434,halloween iii: season of the witch,m,?
 u6539,MICHAEL,m434,halloween iii: season of the witch,m,?
@@ -6561,7 +6561,7 @@ u6560,BURT,m436,memento,m,4
 u6561,DODD,m436,memento,m,?
 u6562,JIMMY,m436,memento,m,?
 u6563,LEONARD,m436,memento,m,1
-u6564,"LEONARD							  *",m436,memento,m,?
+u6564,LEONARD							  *,m436,memento,m,?
 u6565,LEONARD'S WIFE,m436,memento,f,?
 u6566,MRS. JANKIS,m436,memento,m,?
 u6567,NATALIE,m436,memento,f,2
@@ -6574,7 +6574,7 @@ u6573,EL TIBURON,m437,miami vice,m,?
 u6574,FUJIMA,m437,miami vice,m,5
 u6575,GINA,m437,miami vice,f,?
 u6576,ISABELLA,m437,miami vice,f,3
-u6577,JOSÉ YERO,m437,miami vice,m,?
+u6577,JOS… YERO,m437,miami vice,m,?
 u6578,MONTOYA,m437,miami vice,f,?
 u6579,STEVENS,m437,miami vice,m,?
 u6580,TRUDY,m437,miami vice,f,?
@@ -6587,7 +6587,7 @@ u6586,RALPH,m438,midnight cowboy,m,?
 u6587,RATSO,m438,midnight cowboy,m,1
 u6588,RICH LADY,m438,midnight cowboy,m,?
 u6589,SHIRLEY,m438,midnight cowboy,f,?
-u6590,TOWNY,m438,midnight cowboy,f,?
+u6590,TOWNY,m438,midnight cowboy,m,?
 u6591,VETERAN,m438,midnight cowboy,m,?
 u6592,BELL,m439,midnight express,f,?
 u6593,BILLY,m439,midnight express,m,1
@@ -6595,7 +6595,7 @@ u6594,DAVIS,m439,midnight express,m,?
 u6595,DETECTIVE,m439,midnight express,f,?
 u6596,DRIVER,m439,midnight express,m,?
 u6597,ERICH,m439,midnight express,m,?
-u6598,FATHER,m439,midnight express,m,?
+u6598,FATHER,m439,midnight express,f,?
 u6599,MAX,m439,midnight express,m,8
 u6600,SUSAN,m439,midnight express,f,?
 u6601,TEX,m439,midnight express,m,?
@@ -6604,7 +6604,7 @@ u6603,ZIAT,m439,midnight express,f,?
 u6604,JEREMY,m440,mimic,m,?
 u6605,JOSH,m440,mimic,m,?
 u6606,LEONARD,m440,mimic,m,5
-u6607,MANNY,m440,mimic,m,?
+u6607,MANNY,m440,mimic,f,?
 u6608,PETER,m440,mimic,m,2
 u6609,RICKY,m440,mimic,m,?
 u6610,SIRI,m440,mimic,f,?
@@ -6652,7 +6652,7 @@ u6651,MONA,m444,moonstruck,f,?
 u6652,MR. JOHNNY,m444,moonstruck,m,5
 u6653,OLD MAN,m444,moonstruck,m,?
 u6654,PERRY,m444,moonstruck,m,7
-u6655,PERRY'S VOICE,m444,moonstruck,m,?
+u6655,PERRY'S VOICE,m444,moonstruck,f,?
 u6656,PRIEST,m444,moonstruck,m,?
 u6657,RAYMOND,m444,moonstruck,m,8
 u6658,RITA,m444,moonstruck,f,6
@@ -6679,13 +6679,13 @@ u6678,LAUNCELOT,m445,monty python and the holy grail,m,?
 u6679,MAN,m445,monty python and the holy grail,m,?
 u6680,OLD WOMAN,m445,monty python and the holy grail,m,?
 u6681,OTHER KNIGHTS,m445,monty python and the holy grail,m,?
-u6682,PIGLET,m445,monty python and the holy grail,f,?
+u6682,PIGLET,m445,monty python and the holy grail,m,?
 u6683,PRINCE,m445,monty python and the holy grail,m,?
 u6684,ROBIN,m445,monty python and the holy grail,m,?
 u6685,SINGERS,m445,monty python and the holy grail,m,?
 u6686,SOLDIER,m445,monty python and the holy grail,f,?
-u6687,SOOTHSAYER,m445,monty python and the holy grail,m,?
-u6688,TALL KNIGHT,m445,monty python and the holy grail,m,?
+u6687,SOOTHSAYER,m445,monty python and the holy grail,f,?
+u6688,TALL KNIGHT,m445,monty python and the holy grail,f,?
 u6689,TIM,m445,monty python and the holy grail,m,2
 u6690,ZOOT,m445,monty python and the holy grail,m,?
 u6691,ARCHIE,m446,mrs brown,m,5
@@ -6731,7 +6731,7 @@ u6730,MIDDLE-AGED WOMAN,m448,mulholland dr.,m,?
 u6731,PARAMOUNT GUARD,m448,mulholland dr.,m,?
 u6732,RAY,m448,mulholland dr.,m,?
 u6733,RITA,m448,mulholland dr.,f,2
-u6734,SERGEANT BAXTER,m448,mulholland dr.,f,?
+u6734,SERGEANT BAXTER,m448,mulholland dr.,m,?
 u6735,WALLY,m448,mulholland dr.,m,?
 u6736,ANNOUNCER,m449,"""murderland""",f,?
 u6737,BRUCE,m449,"""murderland""",M,?
@@ -6750,7 +6750,7 @@ u6749,JEFFREY,m450,my girl 2,m,7
 u6750,JUDY,m450,my girl 2,f,?
 u6751,KEVIN,m450,my girl 2,m,?
 u6752,MAN,m450,my girl 2,m,?
-u6753,MR. OWETT,m450,my girl 2,m,?
+u6753,MR. OWETT,m450,my girl 2,f,?
 u6754,NICK,m450,my girl 2,m,4
 u6755,PHIL,m450,my girl 2,m,5
 u6756,ROSE,m450,my girl 2,f,6
@@ -6773,11 +6773,11 @@ u6772,VADA,m451,my girl,f,4
 u6773,DIGGER,m452,my best friend's wedding,M,?
 u6774,JULIANNE,m452,my best friend's wedding,f,1
 u6775,KIMMY,m452,my best friend's wedding,f,16
-u6776,MANDY,m452,my best friend's wedding,f,?
+u6776,MANDY,m452,my best friend's wedding,m,?
 u6777,MICHAEL,m452,my best friend's wedding,m,2
 u6778,SAMMY,m452,my best friend's wedding,m,?
 u6779,WALTER,m452,my best friend's wedding,f,?
-u6780,ALBUQUERQUE,m453,nashville,m,?
+u6780,ALBUQUERQUE,m453,nashville,f,?
 u6781,BARBARA JEAN,m453,nashville,f,?
 u6782,BARNETT,m453,nashville,m,11
 u6783,BILL,m453,nashville,m,?
@@ -6832,7 +6832,7 @@ u6831,OWNER,m455,nothing but a man,m,?
 u6832,POP,m455,nothing but a man,m,?
 u6833,REVEREND DAWSON,m455,nothing but a man,m,8
 u6834,SUPERVISOR,m455,nothing but a man,m,?
-u6835,UNDERTAKER,m455,nothing but a man,f,?
+u6835,UNDERTAKER,m455,nothing but a man,m,?
 u6836,WHITE,m455,nothing but a man,m,?
 u6837,WILL,m455,nothing but a man,m,3
 u6838,DANNY,m456,the negotiator,m,?
@@ -6841,7 +6841,7 @@ u6840,OMAR,m456,the negotiator,m,?
 u6841,3JANE,m457,neuromancer,f,?
 u6842,AEROL,m457,neuromancer,m,?
 u6843,ARMITAGE,m457,neuromancer,m,?
-u6844,BAO/WINTERMUTE,m457,neuromancer,f,?
+u6844,BAO/WINTERMUTE,m457,neuromancer,m,?
 u6845,CASE,m457,neuromancer,M,?
 u6846,DIXIE,m457,neuromancer,f,?
 u6847,JULIUS/WINTERMUTE,m457,neuromancer,m,?
@@ -6854,7 +6854,7 @@ u6853,RIVIERA,m457,neuromancer,f,?
 u6854,ALDYS,m458,never been kissed,f,17
 u6855,ANITA,m458,never been kissed,f,4
 u6856,GEORGE,m458,never been kissed,f,?
-u6857,GIBBY,m458,never been kissed,f,?
+u6857,GIBBY,m458,never been kissed,m,?
 u6858,GUS,m458,never been kissed,m,5
 u6859,GUY,m458,never been kissed,m,?
 u6860,JOSIE,m458,never been kissed,f,1
@@ -6872,7 +6872,7 @@ u6871,LOCK,m459,the nightmare before christmas,m,?
 u6872,SALLY,m459,the nightmare before christmas,f,3
 u6873,SHOCK,m459,the nightmare before christmas,m,?
 u6874,VARIOUS PEOPLE,m459,the nightmare before christmas,f,?
-u6875,DAD,m460,a nightmare on elm street part 2: freddy's revenge,m,?
+u6875,DAD,m460,a nightmare on elm street part 2: freddy's revenge,f,?
 u6876,FREDDY,m460,a nightmare on elm street part 2: freddy's revenge,m,?
 u6877,GRADY,m460,a nightmare on elm street part 2: freddy's revenge,m,3
 u6878,JESSE,m460,a nightmare on elm street part 2: freddy's revenge,m,1
@@ -6894,7 +6894,7 @@ u6893,TARYN,m461,a nightmare on elm street 3: dream warriors,f,?
 u6894,THOMPSON,m461,a nightmare on elm street 3: dream warriors,m,?
 u6895,WILL,m461,a nightmare on elm street 3: dream warriors,m,?
 u6896,ANNA,m462,notting hill,f,1
-u6897,BELLA,m462,notting hill,f,?
+u6897,BELLA,m462,notting hill,m,?
 u6898,BERNIE,m462,notting hill,m,?
 u6899,GIRL,m462,notting hill,f,?
 u6900,HONEY,m462,notting hill,f,?
@@ -6920,7 +6920,7 @@ u6919,HARDING,m463,one flew over the cuckoo's nest,m,22
 u6920,MARTINI,m463,one flew over the cuckoo's nest,f,?
 u6921,MCMURPHY,m463,one flew over the cuckoo's nest,m,21
 u6922,MISS PILBOW,m463,one flew over the cuckoo's nest,f,?
-u6923,NIGHT SUPERVISOR,m463,one flew over the cuckoo's nest,m,?
+u6923,NIGHT SUPERVISOR,m463,one flew over the cuckoo's nest,f,?
 u6924,NURSE ITSU,m463,one flew over the cuckoo's nest,m,?
 u6925,NURSE PILBOW,m463,one flew over the cuckoo's nest,m,?
 u6926,PATIENTS,m463,one flew over the cuckoo's nest,m,?
@@ -6957,7 +6957,7 @@ u6956,J.P.,m465,on the waterfront,m,?
 u6957,JACKIE,m465,on the waterfront,f,?
 u6958,JIMMY,m465,on the waterfront,m,?
 u6959,JOCKO,m465,on the waterfront,m,?
-u6960,JOEY,m465,on the waterfront,m,?
+u6960,JOEY,m465,on the waterfront,f,?
 u6961,JOHNNY,m465,on the waterfront,m,3
 u6962,MRS. COLLINS,m465,on the waterfront,m,?
 u6963,MUTT,m465,on the waterfront,m,?
@@ -6982,7 +6982,7 @@ u6981,GLENN,m467,out of sight,m,15
 u6982,HEJIRA,m467,out of sight,m,1000
 u6983,KAREN,m467,out of sight,f,13
 u6984,KENNETH,m467,out of sight,m,?
-u6985,MAID,m467,out of sight,f,?
+u6985,MAID,m467,out of sight,m,?
 u6986,MARSHALL,m467,out of sight,m,6
 u6987,MAURICE,m467,out of sight,m,16
 u6988,MOSELLE,m467,out of sight,f,?
@@ -7017,7 +7017,7 @@ u7016,CAROL,m469,peggy sue got married,f,4
 u7017,CHARLIE,m469,peggy sue got married,m,2
 u7018,DOLORES,m469,peggy sue got married,f,?
 u7019,ELIZABETH,m469,peggy sue got married,f,?
-u7020,MADDY,m469,peggy sue got married,f,?
+u7020,MADDY,m469,peggy sue got married,m,?
 u7021,MICHAEL,m469,peggy sue got married,m,6
 u7022,MR. KELCHER,m469,peggy sue got married,M,?
 u7023,MRS. KELCHER,m469,peggy sue got married,f,?
@@ -7033,12 +7033,12 @@ u7032,GUS,m470,pet sematary ii,m,?
 u7033,MARJORIE,m470,pet sematary ii,f,?
 u7034,RENEE,m470,pet sematary ii,f,?
 u7035,RUDMAN,m470,pet sematary ii,m,?
-u7036,YOLANDER,m470,pet sematary ii,f,?
+u7036,YOLANDER,m470,pet sematary ii,m,?
 u7037,ANDREW,m471,philadelphia,m,1
 u7038,ANTHEA,m471,philadelphia,f,?
 u7039,BELINDA,m471,philadelphia,f,62
 u7040,DR. ARMBRUSTER,m471,philadelphia,m,?
-u7041,INTERN,m471,philadelphia,f,?
+u7041,INTERN,m471,philadelphia,m,?
 u7042,JOE,m471,philadelphia,m,2
 u7043,JUDGE GARNETT,m471,philadelphia,f,?
 u7044,KENTON,m471,philadelphia,m,?
@@ -7084,10 +7084,10 @@ u7083,KING,m474,platoon,m,1
 u7084,LERNER,m474,platoon,f,?
 u7085,O'NEILL,m474,platoon,m,?
 u7086,RHAH,m474,platoon,f,?
-u7087,WOLFE,m474,platoon,m,?
+u7087,WOLFE,m474,platoon,f,?
 u7088,BETTY,m475,playback,F,?
 u7089,BRANDON,m475,playback,M,?
-u7090,CAMPBELL,m475,playback,f,?
+u7090,CAMPBELL,m475,playback,m,?
 u7091,CLARENDON,m475,playback,m,?
 u7092,DRISCOLL,m475,playback,m,?
 u7093,GOBLE,m475,playback,m,?
@@ -7096,7 +7096,7 @@ u7095,KILLAINE,m475,playback,f,?
 u7096,MAGRUDER,m475,playback,m,?
 u7097,MAN,m475,playback,m,?
 u7098,MANAGER,m475,playback,m,?
-u7099,MARGO,m475,playback,f,?
+u7099,MARGO,m475,playback,m,?
 u7100,MCKECHNIE,m475,playback,f,?
 u7101,MITCHELL,m475,playback,M,?
 u7102,PORTER,m475,playback,m,?
@@ -7135,7 +7135,7 @@ u7134,JAKE,m479,pretty woman,m,?
 u7135,KIT,m479,pretty woman,f,5
 u7136,KROSS,m479,pretty woman,m,?
 u7137,LANDLORD,m479,pretty woman,m,?
-u7138,MAID,m479,pretty woman,f,?
+u7138,MAID,m479,pretty woman,m,?
 u7139,MR. THOMAS,m479,pretty woman,m,?
 u7140,SALESWOMAN,m479,pretty woman,m,?
 u7141,STUCKEY,m479,pretty woman,m,4
@@ -7156,7 +7156,7 @@ u7155,VIZZINI,m480,the princess bride,m,5
 u7156,WESTLEY,m480,the princess bride,m,1
 u7157,YELLIN,m480,the princess bride,f,?
 u7158,BIALYSTOCK,m481,the producers,m,1
-u7159,BIALYSTOCK AND BLOOM,m481,the producers,m,?
+u7159,BIALYSTOCK AND BLOOM,m481,the producers,f,?
 u7160,BLOOM,m481,the producers,m,2
 u7161,BLOOM AND DRUNK,m481,the producers,m,?
 u7162,DE BRIS,m481,the producers,m,?
@@ -7171,7 +7171,7 @@ u7170,CAR DEALER,m482,psycho,m,?
 u7171,CAROLINE,m482,psycho,f,?
 u7172,CAROLINE'S VOICE,m482,psycho,f,?
 u7173,LILA,m482,psycho,f,2
-u7174,LOWERY'S VOICE,m482,psycho,m,?
+u7174,LOWERY'S VOICE,m482,psycho,f,?
 u7175,MARY,m482,psycho,F,?
 u7176,MRS. CHAMBERS,m482,psycho,m,?
 u7177,NORMAN,m482,psycho,m,1
@@ -7192,12 +7192,12 @@ u7191,MAXWELL,m483,maniac,m,?
 u7192,MRS. BUCKLEY,m483,maniac,f,?
 u7193,WOMAN,m483,maniac,m,?
 u7194,DOCTOR,m484,vampyr,m,?
-u7195,LÉONE,m484,vampyr,m,?
+u7195,L…ONE,m484,vampyr,f,?
 u7196,MARC,m484,vampyr,m,?
 u7197,NIKOLAS,m484,vampyr,m,?
 u7198,NURSE,m484,vampyr,f,?
-u7199,THE DRAWING-ROOM,m484,vampyr,m,?
-u7200,THE SICK-ROOM,m484,vampyr,m,?
+u7199,THE DRAWING-ROOM,m484,vampyr,f,?
+u7200,THE SICK-ROOM,m484,vampyr,f,?
 u7201,CAPTAIN,m485,mystery of the wax museum,m,?
 u7202,CHARLOTTE,m485,mystery of the wax museum,f,2
 u7203,DETECTIVE,m485,mystery of the wax museum,f,?
@@ -7234,7 +7234,7 @@ u7233,BENNY,m488,red white black & blue,m,?
 u7234,BILLY-BOY,m488,red white black & blue,M,?
 u7235,CAPTAIN ALBERT,m488,red white black & blue,m,?
 u7236,D.A. RAVICH,m488,red white black & blue,m,?
-u7237,KITTLE,m488,red white black & blue,f,?
+u7237,KITTLE,m488,red white black & blue,m,?
 u7238,NENA,m488,red white black & blue,f,?
 u7239,POP-SWEET,m488,red white black & blue,m,?
 u7240,ZIMMERMANN,m488,red white black & blue,f,?
@@ -7264,7 +7264,7 @@ u7263,ROCKY,m490,the rocky horror picture show,m,?
 u7264,ADRIAN,m491,rocky,f,2
 u7265,APOLLO,m491,rocky,m,4
 u7266,BODYGUARD,m491,rocky,m,?
-u7267,CHIPPED TOOTH,m491,rocky,f,?
+u7267,CHIPPED TOOTH,m491,rocky,m,?
 u7268,CLEANER,m491,rocky,m,?
 u7269,COMMENTATOR,m491,rocky,m,?
 u7270,COMMENTATOR #1,m491,rocky,f,?
@@ -7283,7 +7283,7 @@ u7282,REPORTER #2,m491,rocky,m,?
 u7283,ROCKY,m491,rocky,m,1
 u7284,TRAINER,m491,rocky,m,22
 u7285,BABY HERMAN,m492,who framed roger rabbit,m,?
-u7286,BETTY BOOP,m492,who framed roger rabbit,f,?
+u7286,BETTY BOOP,m492,who framed roger rabbit,m,?
 u7287,DIRECTOR,m492,who framed roger rabbit,m,?
 u7288,DOLORES,m492,who framed roger rabbit,f,3
 u7289,DOOM,m492,who framed roger rabbit,m,2
@@ -7318,7 +7318,7 @@ u7317,MIKHI,m494,ronin,m,?
 u7318,PHONE VOICE,m494,ronin,f,?
 u7319,SAM,m494,ronin,m,1
 u7320,SEAMUS,m494,ronin,m,9
-u7321,SWEDE,m494,ronin,f,?
+u7321,SWEDE,m494,ronin,m,?
 u7322,TONY,m494,ronin,m,?
 u7323,VINCENT,m494,ronin,m,2
 u7324,BOOTH,m495,route 9,m,1
@@ -7333,7 +7333,7 @@ u7332,SALESPERSON,m495,route 9,m,?
 u7333,SALLY,m495,route 9,f,3
 u7334,WALLACE,m495,route 9,m,?
 u7335,WILLIE,m495,route 9,f,?
-u7336,CAPTAIN DIEL,m496,rush hour 2,m,?
+u7336,CAPTAIN DIEL,m496,rush hour 2,f,?
 u7337,CARTER,m496,rush hour 2,m,2
 u7338,CRAPS DEALER,m496,rush hour 2,m,?
 u7339,DOORMAN #1,m496,rush hour 2,m,?
@@ -7345,7 +7345,7 @@ u7344,MASTER FU,m496,rush hour 2,m,?
 u7345,RICKY TAN,m496,rush hour 2,m,?
 u7346,SPECIAL AGENT STERLING,m496,rush hour 2,m,?
 u7347,STEVEN REIGN,m496,rush hour 2,m,?
-u7348,SUPERINDENDENT CHIN,m496,rush hour 2,f,?
+u7348,SUPERINDENDENT CHIN,m496,rush hour 2,m,?
 u7349,CARTER,m497,rush hour,m,8
 u7350,DIEL,m497,rush hour,m,?
 u7351,HAN,m497,rush hour,m,?
@@ -7396,7 +7396,7 @@ u7395,ESTELLA,m500,salt of the earth,f,?
 u7396,FRANK,m500,salt of the earth,f,?
 u7397,HARTWELL,m500,salt of the earth,m,?
 u7398,LUIS,m500,salt of the earth,m,?
-u7399,RAMÓN,m500,salt of the earth,m,?
+u7399,RAM”N,m500,salt of the earth,m,?
 u7400,RUTH,m500,salt of the earth,f,?
 u7401,SAL,m500,salt of the earth,m,?
 u7402,SEBASTIAN,m500,salt of the earth,m,?
@@ -7450,11 +7450,11 @@ u7449,VALHERE,m503,say anything...,f,?
 u7450,BRINNLITZ GUY 2,m504,schindler's list,m,?
 u7451,CLERK,m504,schindler's list,m,?
 u7452,EMILIE,m504,schindler's list,f,?
-u7453,GESTAPO,m504,schindler's list,m,?
+u7453,GESTAPO,m504,schindler's list,f,?
 u7454,GOETH,m504,schindler's list,m,3
 u7455,GOLDBERG,m504,schindler's list,f,?
 u7456,LOWENSTEIN,m504,schindler's list,m,?
-u7457,PFEFFERBERG,m504,schindler's list,f,?
+u7457,PFEFFERBERG,m504,schindler's list,m,?
 u7458,RASCH,m504,schindler's list,m,?
 u7459,SCHERNER,m504,schindler's list,m,?
 u7460,SCHINDLER,m504,schindler's list,m,1
@@ -7502,7 +7502,7 @@ u7501,WOMAN,m506,scream 3,m,?
 u7502,BILLY,m507,scream,m,7
 u7503,CASEY,m507,scream,f,1
 u7504,DEWEY,m507,scream,m,13
-u7505,FATHER,m507,scream,m,?
+u7505,FATHER,m507,scream,f,?
 u7506,GALE,m507,scream,f,9
 u7507,GIRL #1,m507,scream,m,?
 u7508,GIRL #2,m507,scream,m,?
@@ -7544,14 +7544,14 @@ u7543,MOSE,m509,the searchers,m,?
 u7544,MRS. JORGENSEN,m509,the searchers,m,?
 u7545,OFFICER,m509,the searchers,m,?
 u7546,ELLEN,m510,seven days to live,f,6
-u7547,LINDNER,m510,seven days to live,f,?
+u7547,LINDNER,m510,seven days to live,m,?
 u7548,MARTIN,m510,seven days to live,m,7
 u7549,MRS. LINDNER,m510,seven days to live,m,?
 u7550,PAUL,m510,seven days to live,m,?
 u7551,PROF. ROTH,m510,seven days to live,m,?
-u7552,ALLEYN,m511,shakespeare in love,f,?
+u7552,ALLEYN,m511,shakespeare in love,m,?
 u7553,BOATMAN,m511,shakespeare in love,m,?
-u7554,BURBAGE,m511,shakespeare in love,f,?
+u7554,BURBAGE,m511,shakespeare in love,m,?
 u7555,DR. MOTH,m511,shakespeare in love,m,?
 u7556,FENNYMAN,m511,shakespeare in love,m,2
 u7557,HENSLOWE,m511,shakespeare in love,m,1
@@ -7610,7 +7610,7 @@ u7609,DOCTOR,m514,the shining,m,?
 u7610,DOROTHY,m514,the shining,f,?
 u7611,GRADY,m514,the shining,m,7
 u7612,HALLORAN,m514,the shining,m,?
-u7613,HERMIE,m514,the shining,m,?
+u7613,HERMIE,m514,the shining,f,?
 u7614,JACK,m514,the shining,m,1
 u7615,LLOYD,m514,the shining,m,?
 u7616,RANGER,m514,the shining,m,?
@@ -7627,7 +7627,7 @@ u7626,CHARLENE,m516,sister act,f,?
 u7627,CHOIR,m516,sister act,f,?
 u7628,CHRISTY,m516,sister act,M,?
 u7629,EDDIE,m516,sister act,m,7
-u7630,JOEY,m516,sister act,m,?
+u7630,JOEY,m516,sister act,f,?
 u7631,LAWANDA,m516,sister act,f,?
 u7632,MARY LAZARUS,m516,sister act,f,5
 u7633,MARY PATRICK,m516,sister act,f,3
@@ -7637,7 +7637,7 @@ u7636,MIKE,m516,sister act,m,?
 u7637,MOTHER SUPERIOR,m516,sister act,f,2
 u7638,O'HARA,m516,sister act,f,?
 u7639,RONELLES,m516,sister act,m,?
-u7640,TATE,m516,sister act,f,?
+u7640,TATE,m516,sister act,m,?
 u7641,VINCE,m516,sister act,m,6
 u7642,WILLY,m516,sister act,m,?
 u7643,BALTUS,m517,sleepy hollow,m,?
@@ -7654,7 +7654,7 @@ u7653,OLD CRONE,m517,sleepy hollow,f,?
 u7654,PHILIPSE,m517,sleepy hollow,f,?
 u7655,THIRD MAN,m517,sleepy hollow,m,?
 u7656,VAN RIPPER,m517,sleepy hollow,m,?
-u7657,YOUNG ICHABOD,m517,sleepy hollow,f,?
+u7657,YOUNG ICHABOD,m517,sleepy hollow,m,?
 u7658,YOUNG MASBATH,m517,sleepy hollow,m,11
 u7659,BILL,m518,sling blade,m,9
 u7660,BOY,m518,sling blade,m,?
@@ -7705,7 +7705,7 @@ u7704,SUSAN MARIE,m520,snow falling on cedars,f,?
 u7705,WHALEY,m520,snow falling on cedars,m,?
 u7706,CHURCH,m521,soldier,m,?
 u7707,MEKUM,m521,soldier,m,?
-u7708,BELLHOP,m522,some like it hot,f,?
+u7708,BELLHOP,m522,some like it hot,m,?
 u7709,BIENSTOCK,m522,some like it hot,m,?
 u7710,DOLORES,m522,some like it hot,f,?
 u7711,FIRST HENCHMAN,m522,some like it hot,m,?
@@ -7748,11 +7748,11 @@ u7747,MRS. BOATWRIGHT,m524,sounder,f,?
 u7748,NATHAN LEE,m524,sounder,m,2
 u7749,PREACHER,m524,sounder,m,?
 u7750,REBECCA,m524,sounder,f,1
-u7751,SHERIFF YOUNG,m524,sounder,m,?
+u7751,SHERIFF YOUNG,m524,sounder,f,?
 u7752,BIG THING,m525,south park: bigger longer & uncut,m,?
 u7753,CANADIAN MINISTER OF MOVIES,m525,south park: bigger longer & uncut,f,?
 u7754,CARTMAN,m525,south park: bigger longer & uncut,m,1
-u7755,CARTMAN'S MOTHER,m525,south park: bigger longer & uncut,f,?
+u7755,CARTMAN'S MOTHER,m525,south park: bigger longer & uncut,m,?
 u7756,CHEF,m525,south park: bigger longer & uncut,m,?
 u7757,DOCTOR PANGLOSS,m525,south park: bigger longer & uncut,m,?
 u7758,GREGORY,m525,south park: bigger longer & uncut,m,?
@@ -7804,7 +7804,7 @@ u7803,WOMAN,m527,spare me,m,?
 u7804,ARTHUR,m528,sphere,f,?
 u7805,BARNES,m528,sphere,m,4
 u7806,BETH,m528,sphere,f,2
-u7807,EDMUNDS,m528,sphere,m,?
+u7807,EDMUNDS,m528,sphere,f,?
 u7808,FLETCHER,m528,sphere,m,?
 u7809,HARRY,m528,sphere,m,3
 u7810,NAVY SEAMAN,m528,sphere,m,?
@@ -7812,10 +7812,10 @@ u7811,NORMAN,m528,sphere,m,1
 u7812,OFFICER,m528,sphere,m,?
 u7813,PILOT,m528,sphere,m,?
 u7814,TED,m528,sphere,m,5
-u7815,WIFE,m528,sphere,m,?
+u7815,WIFE,m528,sphere,f,?
 u7816,BEN,m529,star wars,m,5
 u7817,BIGGS,m529,star wars,m,?
-u7818,BLUE LEADER,m529,star wars,m,?
+u7818,BLUE LEADER,m529,star wars,f,?
 u7819,COMMANDER,m529,star wars,m,?
 u7820,CONTROLLER,m529,star wars,m,?
 u7821,HAN,m529,star wars,m,2
@@ -7831,7 +7831,7 @@ u7830,CARL,m530,starship troopers,m,5
 u7831,CARMEN,m530,starship troopers,f,3
 u7832,DELADIER,m530,starship troopers,m,?
 u7833,DIZZY,m530,starship troopers,f,2
-u7834,FATHER,m530,starship troopers,m,?
+u7834,FATHER,m530,starship troopers,f,?
 u7835,GILLESPIE,m530,starship troopers,m,?
 u7836,INTELLIGENCE OFFICER,m530,starship troopers,f,?
 u7837,JOHNNY,m530,starship troopers,m,1
@@ -7855,10 +7855,10 @@ u7854,SULU,m531,star trek: the motion picture,m,?
 u7855,UHURA,m531,star trek: the motion picture,f,?
 u7856,ANN,m532,state and main,f,6
 u7857,BARTENDER,m532,state and main,m,?
-u7858,BELLHOP,m532,state and main,f,?
+u7858,BELLHOP,m532,state and main,m,?
 u7859,BILL,m532,state and main,m,?
 u7860,BOB,m532,state and main,m,41
-u7861,CAL,m532,state and main,f,?
+u7861,CAL,m532,state and main,m,?
 u7862,CARLA,m532,state and main,f,?
 u7863,CLAIRE,m532,state and main,f,43
 u7864,CLERK,m532,state and main,m,?
@@ -7915,7 +7915,7 @@ u7914,"COLONEL ""BAT"" GUANO",m536,dr. strangelove or: how i learned to stop wor
 u7915,COLONEL GUANO,m536,dr. strangelove or: how i learned to stop worrying and love the bomb,m,?
 u7916,COLONEL PUNTRICH,m536,dr. strangelove or: how i learned to stop worrying and love the bomb,m,?
 u7917,"GENERAL ""BUCK"" SCHMUCK",m536,dr. strangelove or: how i learned to stop worrying and love the bomb,m,?
-u7918,GENERAL FACEMAN,m536,dr. strangelove or: how i learned to stop worrying and love the bomb,f,?
+u7918,GENERAL FACEMAN,m536,dr. strangelove or: how i learned to stop worrying and love the bomb,m,?
 u7919,GENERAL JACK D. RIPPER,m536,dr. strangelove or: how i learned to stop worrying and love the bomb,m,?
 u7920,GENERAL RIPPER,m536,dr. strangelove or: how i learned to stop worrying and love the bomb,M,?
 u7921,GENERAL SCHMUCK,m536,dr. strangelove or: how i learned to stop worrying and love the bomb,M,?
@@ -7938,11 +7938,11 @@ u7937,NAZEER,m537,suburbia,m,4
 u7938,PONY,m537,suburbia,m,1
 u7939,SCUFF,m537,suburbia,m,?
 u7940,SOOZE,m537,suburbia,f,2
-u7941,SOOZE'S MOM,m537,suburbia,m,?
+u7941,SOOZE'S MOM,m537,suburbia,f,?
 u7942,TIM,m537,suburbia,m,3
 u7943,CLEO,m538,sugar & spice,f,?
 u7944,DIANE,m538,sugar & spice,f,2
-u7945,DIM SUM CHARLIE,m538,sugar & spice,m,?
+u7945,DIM SUM CHARLIE,m538,sugar & spice,f,?
 u7946,GRANDMOTHER,m538,sugar & spice,m,?
 u7947,HANK,m538,sugar & spice,m,?
 u7948,HANNAH,m538,sugar & spice,f,?
@@ -7982,7 +7982,7 @@ u7981,ZOR-EL,m540,supergirl,m,?
 u7982,BRAD,m541,superman iii,m,?
 u7983,CLARK,m541,superman iii,m,1
 u7984,CLERK,m541,superman iii,m,?
-u7985,FRED,m541,superman iii,m,?
+u7985,FRED,m541,superman iii,f,?
 u7986,GUS,m541,superman iii,m,2
 u7987,JIMMY,m541,superman iii,m,?
 u7988,LANA,m541,superman iii,f,5
@@ -8007,7 +8007,7 @@ u8006,OTIS,m542,superman ii,m,?
 u8007,PERRY,m542,superman ii,m,?
 u8008,PRESIDENT,m542,superman ii,m,?
 u8009,SECOND CONTROLLER,m542,superman ii,m,?
-u8010,SECOND REPORTER,m542,superman ii,f,?
+u8010,SECOND REPORTER,m542,superman ii,m,?
 u8011,SPOKESMAN,m542,superman ii,m,?
 u8012,SUPERMAN,m542,superman ii,m,?
 u8013,URSA,m542,superman ii,f,?
@@ -8050,7 +8050,7 @@ u8049,SAM,m545,the sweet hereafter,m,4
 u8050,SCHWARTZ,m545,the sweet hereafter,m,23
 u8051,STEWARDESS,m545,the sweet hereafter,m,?
 u8052,WANDA,m545,the sweet hereafter,f,?
-u8053,WENDELL,m545,the sweet hereafter,f,?
+u8053,WENDELL,m545,the sweet hereafter,m,?
 u8054,ZOE,m545,the sweet hereafter,m,2
 u8055,BARTHA,m546,sweet smell of success,f,?
 u8056,CAPTAIN,m546,sweet smell of success,m,?
@@ -8067,7 +8067,7 @@ u8066,STEVE,m546,sweet smell of success,m,4
 u8067,SUSAN,m546,sweet smell of success,f,3
 u8068,TEMPLE,m546,sweet smell of success,f,?
 u8069,WELDON,m546,sweet smell of success,m,?
-u8070,WIFE,m546,sweet smell of success,m,?
+u8070,WIFE,m546,sweet smell of success,f,?
 u8071,DYSON,m547,terminator 2: judgment day,m,?
 u8072,JOHN,m547,terminator 2: judgment day,m,3
 u8073,REESE,m547,terminator 2: judgment day,m,?
@@ -8079,9 +8079,9 @@ u8078,TIM,m547,terminator 2: judgment day,m,?
 u8079,VIDEO SARAH,m547,terminator 2: judgment day,f,?
 u8080,VIDEO SILBERMAN,m547,terminator 2: judgment day,m,?
 u8081,DAVID,m548,taking sides,m,3
-u8082,DYMSHITZ,m548,taking sides,f,?
+u8082,DYMSHITZ,m548,taking sides,m,?
 u8083,EMMI,m548,taking sides,f,4
-u8084,FURTWÄNGLER,m548,taking sides,M,?
+u8084,FURTWƒNGLER,m548,taking sides,M,?
 u8085,MARTIN,m548,taking sides,m,?
 u8086,RODE,m548,taking sides,m,5
 u8087,SCHLEE,m548,taking sides,f,?
@@ -8108,7 +8108,7 @@ u8107,FEINGOLD,m550,the game,m,4
 u8108,GIRL,m550,the game,f,?
 u8109,HOTEL MANAGER,m550,the game,m,?
 u8110,ILSA,m550,the game,f,6
-u8111,MAITRE D',m550,the game,f,?
+u8111,MAITRE D',m550,the game,m,?
 u8112,MANAGER,m550,the game,m,?
 u8113,MARIA,m550,the game,f,?
 u8114,NICHOLAS,m550,the game,m,1
@@ -8151,7 +8151,7 @@ u8150,ED,m553,the man who wasn't there,m,1
 u8151,FRANK,m553,the man who wasn't there,m,3
 u8152,KREBS,m553,the man who wasn't there,m,?
 u8153,MAN,m553,the man who wasn't there,m,?
-u8154,PERSKY,m553,the man who wasn't there,m,?
+u8154,PERSKY,m553,the man who wasn't there,f,?
 u8155,RIEDENSCHNEIDER,m553,the man who wasn't there,m,9
 u8156,WALTER,m553,the man who wasn't there,f,?
 u8157,YOUNG MAN,m553,the man who wasn't there,m,?
@@ -8165,7 +8165,7 @@ u8164,FROCK,m554,the relic,m,4
 u8165,HENRY,m554,the relic,f,?
 u8166,IPPOLITO,m554,the relic,m,?
 u8167,JONATHAN,m554,the relic,m,?
-u8168,KAWAKITA,m554,the relic,m,?
+u8168,KAWAKITA,m554,the relic,f,?
 u8169,LARRY,m554,the relic,m,?
 u8170,MARGO,m554,the relic,f,1
 u8171,PENDERGAST,m554,the relic,M,?
@@ -8196,7 +8196,7 @@ u8195,FIELD AGENT,m556,the x files,m,?
 u8196,KURTZWEIL,m556,the x files,m,5
 u8197,MULDER,m556,the x files,m,1
 u8198,SCULLY,m556,the x files,f,2
-u8199,SKINNER,m556,the x files,m,?
+u8199,SKINNER,m556,the x files,f,?
 u8200,STRUGHOLD,m556,the x files,m,?
 u8201,WELL-MANICURED MAN,m556,the x files,m,3
 u8202,YOUNG NAVAL GUARD,m556,the x files,m,?
@@ -8239,10 +8239,10 @@ u8238,CARLETON,m560,the believer,m,?
 u8239,CURTIS,m560,the believer,m,6
 u8240,DANNY,m560,the believer,m,1
 u8241,DRAKE,m560,the believer,m,?
-u8242,FATHER,m560,the believer,m,?
+u8242,FATHER,m560,the believer,f,?
 u8243,FIRST WAITER,m560,the believer,m,?
 u8244,GUY,m560,the believer,m,16
-u8245,HATE COUNSELOR,m560,the believer,m,?
+u8245,HATE COUNSELOR,m560,the believer,f,?
 u8246,KYLE,m560,the believer,m,18
 u8247,LINA,m560,the believer,f,?
 u8248,LINDA,m560,the believer,f,?
@@ -8300,7 +8300,7 @@ u8299,JANE,m564,the lost son,f,?
 u8300,LOMBARD,m564,the lost son,m,1
 u8301,MAN ON DAIS,m564,the lost son,m,?
 u8302,MAN WITH ITALIAN ACCENT,m564,the lost son,f,?
-u8303,MAN’S VOICE,m564,the lost son,f,?
+u8303,MANíS VOICE,m564,the lost son,f,?
 u8304,MARTIN,m564,the lost son,m,13
 u8305,MOREAU,m564,the lost son,m,?
 u8306,MRS SPITZ,m564,the lost son,f,?
@@ -8337,8 +8337,8 @@ u8336,TREMOILLE,m565,the messenger,m,?
 u8337,XAINTRAILLES,m565,the messenger,m,?
 u8338,YOLANDE,m565,the messenger,f,?
 u8339,BENEK,m566,the pianist,m,?
-u8340,DOROTA,m566,the pianist,m,?
-u8341,FATHER,m566,the pianist,m,?
+u8340,DOROTA,m566,the pianist,f,?
+u8341,FATHER,m566,the pianist,f,?
 u8342,GEBCZYNSKI,m566,the pianist,m,?
 u8343,HALINA,m566,the pianist,f,?
 u8344,HELLER,m566,the pianist,f,?
@@ -8423,7 +8423,7 @@ u8422,BEV,m572,ticker,m,?
 u8423,DISPATCHER VOICE,m572,ticker,f,?
 u8424,GLASS,m572,ticker,m,3
 u8425,MARY,m572,ticker,f,?
-u8426,PLUCHINSKY,m572,ticker,m,?
+u8426,PLUCHINSKY,m572,ticker,f,?
 u8427,POOCH,m572,ticker,m,?
 u8428,REILLY,m572,ticker,m,?
 u8429,RICE,m572,ticker,m,?
@@ -8433,7 +8433,7 @@ u8432,WINTERS,m572,ticker,m,?
 u8433,BOLSHEVIK,m573,trouble in paradise,m,?
 u8434,BUTLER,m573,trouble in paradise,m,?
 u8435,CLOSE SHOT  GASTON,m573,trouble in paradise,m,?
-u8436,FRANÇOIS,m573,trouble in paradise,m,?
+u8436,FRAN«OIS,m573,trouble in paradise,m,?
 u8437,GASTON,m573,trouble in paradise,m,3
 u8438,GASTON'S VOICE,m573,trouble in paradise,f,?
 u8439,GIRON,m573,trouble in paradise,m,6
@@ -8482,7 +8482,7 @@ u8481,BILLY,m576,tombstone,m,?
 u8482,CURLY BILL,m576,tombstone,m,?
 u8483,DAKE,m576,tombstone,m,?
 u8484,DOC,m576,tombstone,m,2
-u8485,HIGH ROLLER,m576,tombstone,m,?
+u8485,HIGH ROLLER,m576,tombstone,f,?
 u8486,JOHNSON,m576,tombstone,m,?
 u8487,JOSEPHINE,m576,tombstone,f,12
 u8488,JOYCE,m576,tombstone,f,?
@@ -8508,7 +8508,7 @@ u8507,HELMSMAN,m577,tomorrow never dies,m,?
 u8508,JENNY WU,m577,tomorrow never dies,m,?
 u8509,M,m577,tomorrow never dies,m,?
 u8510,MINISTER JOHNSTONE,m577,tomorrow never dies,f,?
-u8511,MONEYPENNY,m577,tomorrow never dies,m,?
+u8511,MONEYPENNY,m577,tomorrow never dies,f,?
 u8512,NUMBER THREE,m577,tomorrow never dies,f,?
 u8513,PARIS,m577,tomorrow never dies,m,?
 u8514,Q,m577,tomorrow never dies,m,?
@@ -8574,7 +8574,7 @@ u8573,SETH,m581,traffic,m,?
 u8574,SHERIDAN,m581,traffic,m,?
 u8575,SKETCH,m581,traffic,m,?
 u8576,SOCIAL WORKER,m581,traffic,f,?
-u8577,SPECIAL-AGENT-IN-CHARGE,m581,traffic,m,?
+u8577,SPECIAL-AGENT-IN-CHARGE,m581,traffic,f,?
 u8578,VANESSA,m581,traffic,f,?
 u8579,BEGBIE,m582,trainspotting,f,?
 u8580,DIANE,m582,trainspotting,f,6
@@ -8598,14 +8598,14 @@ u8597,J'ONN,m583,star trek v: the final frontier,m,?
 u8598,KIRK,m583,star trek v: the final frontier,m,1
 u8599,KLAA,m583,star trek v: the final frontier,f,?
 u8600,RIDER,m583,star trek v: the final frontier,m,?
-u8601,SCOTTY,m583,star trek v: the final frontier,m,?
+u8601,SCOTTY,m583,star trek v: the final frontier,f,?
 u8602,SPOCK,m583,star trek v: the final frontier,m,2
 u8603,SULU,m583,star trek v: the final frontier,m,?
 u8604,SYBOK,m583,star trek v: the final frontier,m,9
 u8605,UHURA,m583,star trek v: the final frontier,f,?
 u8606,VIXIS,m583,star trek v: the final frontier,f,?
 u8607,ALAN,m584,tron,m,?
-u8608,BIT,m584,tron,m,?
+u8608,BIT,m584,tron,f,?
 u8609,DILLINGER,m584,tron,m,3
 u8610,DUMONT,m584,tron,m,?
 u8611,FLYNN,m584,tron,m,1
@@ -8651,18 +8651,18 @@ u8650,NICHOLSON,m586,true romance,m,18
 u8651,RAVENCROFT,m586,true romance,m,?
 u8652,VIRGIL,m586,true romance,m,?
 u8653,WILSON,m586,true romance,m,?
-u8654,ASTROPHYSICIST,m587,twelve monkeys,m,?
+u8654,ASTROPHYSICIST,m587,twelve monkeys,f,?
 u8655,BEN,m587,twelve monkeys,m,?
 u8656,BOTANIST,m587,twelve monkeys,m,?
 u8657,COLE,m587,twelve monkeys,m,1
 u8658,DR. FLETCHER,m587,twelve monkeys,m,?
 u8659,DR. MASON,m587,twelve monkeys,m,?
 u8660,ENGINEER,m587,twelve monkeys,f,?
-u8661,FALE,m587,twelve monkeys,m,?
+u8661,FALE,m587,twelve monkeys,f,?
 u8662,FRANKI,m587,twelve monkeys,f,?
 u8663,JEFFREY,m587,twelve monkeys,m,18
 u8664,JOSE,m587,twelve monkeys,m,?
-u8665,MICROBIOLOGIST,m587,twelve monkeys,m,?
+u8665,MICROBIOLOGIST,m587,twelve monkeys,f,?
 u8666,RAILLY,m587,twelve monkeys,f,13
 u8667,WOMAN CABBIE,m587,twelve monkeys,m,?
 u8668,BLIND MAN,m588,u-turn,M,?
@@ -8700,15 +8700,15 @@ u8699,ELIJAH'S MOTHER,m590,unbreakable,m,?
 u8700,JEREMY,m590,unbreakable,m,?
 u8701,MAN IN SCRUBS,m590,unbreakable,m,?
 u8702,MEGAN,m590,unbreakable,f,?
-u8703,WALKIE,m590,unbreakable,m,?
+u8703,WALKIE,m590,unbreakable,f,?
 u8704,WOMAN,m590,unbreakable,m,?
 u8705,ALICE,m591,unforgiven,f,?
 u8706,BARBER,m591,unforgiven,m,?
 u8707,CHARLEY,m591,unforgiven,f,?
 u8708,CLYDE,m591,unforgiven,f,?
 u8709,DELILAH,m591,unforgiven,f,8
-u8710,ENGLISH BOB,m591,unforgiven,f,?
-u8711,FUZZY,m591,unforgiven,f,?
+u8710,ENGLISH BOB,m591,unforgiven,m,?
+u8711,FUZZY,m591,unforgiven,m,?
 u8712,LITTLE BILL,m591,unforgiven,m,2
 u8713,LITTLE SUE,m591,unforgiven,f,12
 u8714,MUNNY,m591,unforgiven,m,1
@@ -8718,10 +8718,10 @@ u8717,THE KID,m591,unforgiven,M,?
 u8718,WILL,m591,unforgiven,m,1
 u8719,WW,m591,unforgiven,F,?
 u8720,BAER,m592,the usual suspects,m,?
-u8721,BODI,m592,the usual suspects,f,?
+u8721,BODI,m592,the usual suspects,m,?
 u8722,EDIE,m592,the usual suspects,m,?
 u8723,FENSTER,m592,the usual suspects,m,?
-u8724,HOCKNEY,m592,the usual suspects,m,?
+u8724,HOCKNEY,m592,the usual suspects,f,?
 u8725,KEATON,m592,the usual suspects,m,2
 u8726,KOBAYASHI,m592,the usual suspects,f,?
 u8727,KOVASH,m592,the usual suspects,m,?
@@ -8747,14 +8747,14 @@ u8746,JIMMY,m593,verdict,m,?
 u8747,JUDGE,m593,verdict,m,?
 u8748,KATHY,m593,verdict,f,?
 u8749,LAURA,m593,verdict,F,?
-u8750,MAID,m593,verdict,f,?
+u8750,MAID,m593,verdict,m,?
 u8751,MARY ROONEY,m593,verdict,f,?
 u8752,MICKEY,m593,verdict,M,?
 u8753,ROONEY,m593,verdict,m,?
 u8754,SALLY,m593,verdict,f,?
 u8755,TOWLER,m593,verdict,m,?
 u8756,VOICE,m593,verdict,f,?
-u8757,YOUNG LAWYER,m593,verdict,f,?
+u8757,YOUNG LAWYER,m593,verdict,m,?
 u8758,DOCTOR,m594,vertigo,m,?
 u8759,ELSTER,m594,vertigo,f,2
 u8760,ELSTER'S VOICE,m594,vertigo,f,?
@@ -8782,14 +8782,14 @@ u8781,DON AMALIO,m596,viridiana,m,?
 u8782,DON JAIME,m596,viridiana,m,3
 u8783,ENEDINA,m596,viridiana,f,?
 u8784,FOREMAN,m596,viridiana,m,?
-u8785,HOBBLY,m596,viridiana,m,?
+u8785,HOBBLY,m596,viridiana,f,?
 u8786,JORGE,m596,viridiana,m,2
 u8787,LEPER,m596,viridiana,m,?
 u8788,LUCIA,m596,viridiana,f,?
 u8789,MAYOR,m596,viridiana,m,?
 u8790,MONCHO,m596,viridiana,m,?
 u8791,MOTHER SUPERIOR,m596,viridiana,m,?
-u8792,PEASANT,m596,viridiana,f,?
+u8792,PEASANT,m596,viridiana,m,?
 u8793,PELON,m596,viridiana,m,?
 u8794,POCA,m596,viridiana,f,?
 u8795,RAMONA,m596,viridiana,f,?
@@ -8806,7 +8806,7 @@ u8805,SID 6.7,m597,virtuosity,m,3
 u8806,WALLACE,m597,virtuosity,m,?
 u8807,AIDE,m598,wag the dog,f,?
 u8808,AMES,m598,wag the dog,f,3
-u8809,ANGLE,m598,wag the dog,m,?
+u8809,ANGLE,m598,wag the dog,f,?
 u8810,BREAN,m598,wag the dog,m,2
 u8811,CAIN,m598,wag the dog,f,?
 u8812,ENGINEER,m598,wag the dog,f,?
@@ -8874,7 +8874,7 @@ u8873,DEBORAH,m603,the witching hour,f,?
 u8874,DOCTOR,m603,the witching hour,m,?
 u8875,GIFFORD,m603,the witching hour,m,?
 u8876,LASHER,m603,the witching hour,f,?
-u8877,LASHER THE MAN,m603,the witching hour,f,?
+u8877,LASHER THE MAN,m603,the witching hour,m,?
 u8878,MAN'S VOICE [IN HER HEAD],m603,the witching hour,m,?
 u8879,MICHAEL,m603,the witching hour,M,?
 u8880,ROWAN,m603,the witching hour,M,?
@@ -9018,7 +9018,7 @@ u9017,FREDDY,m615,young frankenstein,M,?
 u9018,HERR FALKSTEIN,m615,young frankenstein,m,?
 u9019,IGOR,m615,young frankenstein,m,3
 u9020,INGA,m615,young frankenstein,f,5
-u9021,MAITRE D',m615,young frankenstein,f,?
+u9021,MAITRE D',m615,young frankenstein,m,?
 u9022,MEDICAL STUDENT,m615,young frankenstein,m,9
 u9023,MONSTER,m615,young frankenstein,m,?
 u9024,OLD VIOLINIST,m615,young frankenstein,m,?
