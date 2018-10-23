@@ -14,6 +14,14 @@ for i in range(len(movie_lines_df)):
 	# print 'tokens:',tokens
 
 	pos_tags=nltk.pos_tag(tokens)
+
 	# print 'pos_tags:', pos_tags
+	# adjectives=[]
+	# verbs=[]
+	# nouns=[]
+
+	# for j in pos_tags:
+	# 	if j[1]=='':
+	# # 		print j 
 	movie_line_pos[movie_lines_df.Line_Id[i]]=pos_tags
 print movie_line_pos
