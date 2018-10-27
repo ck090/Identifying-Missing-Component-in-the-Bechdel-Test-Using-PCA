@@ -16,4 +16,4 @@ Dataset derived from the Cornell Movie-Dialogue Corpus
 - [ ] Linking the overall sentiments of the movie with the genres of the movie.
 - [ ] Identifying how all these above parameters affect the ROI of the particular movie.
 <br>Score = b1\*P1 + b2\*P2 + b3\*P3 ..
-- [ ] Finally find out the existing Bechdel score and prove how this score is better at identifying the gender equality in any particular movie.
+- [ ] Finally find out the existing Bechdel score and prove how this score is better at identifying the gender equality or gender diversity in that particular movie.
