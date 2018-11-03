@@ -1,0 +1,354 @@
+,Movie_Number,Movie_Name,Year_of_Release,IMDB_Rating,Number_of_Votes,Genres,rating,year,id,imdbid
+0,m0,10 things i hate about you,1999,6.9,62847,"['comedy', 'romance']",3,1999,374,147800.0
+1,m3,2001: a space odyssey,1968,8.4,163227,"['adventure', 'mystery', 'sci-fi']",0,1968,919,62622.0
+2,m4,48 hrs.,1982,6.9,22289,"['action', 'comedy', 'crime', 'drama', 'thriller']",2,1982,5355,83511.0
+3,m6,8mm,1999,6.3,48212,"['crime', 'mystery', 'thriller']",1,1999,146,134273.0
+4,m7,a nightmare on elm street 4: the dream master,1988,5.2,13590,"['fantasy', 'horror', 'thriller']",3,1988,6020,95742.0
+5,m11,air force one,1997,6.3,61978,"['action', 'drama', 'thriller']",1,1997,1068,118571.0
+6,m13,airplane!,1980,7.8,57692,"['comedy', 'romance']",3,1980,873,80339.0
+7,m14,alien nation,1988,6.1,5590,"['crime', 'drama', 'sci-fi', 'thriller']",1,1988,2784,94631.0
+8,m15,aliens,1986,8.5,173518,"['action', 'sci-fi', 'thriller']",3,1986,283,90605.0
+9,m16,amadeus,1984,8.4,99138,"['biography', 'drama', 'music']",3,1984,613,86879.0
+10,m17,an american werewolf in london,1981,7.5,24443,"['horror', 'romance']",2,1981,2873,82010.0
+11,m19,american outlaws,2001,5.7,7425,"['action', 'western']",1,2001,1112,244000.0
+12,m20,american psycho,2000,7.4,101357,"['drama', 'thriller']",1,2000,64,144084.0
+13,m21,antitrust,2001,6.0,16453,"['drama', 'thriller']",2,2001,154,218817.0
+14,m22,austin powers: international man of mystery,1997,7.1,75240,"['action', 'adventure', 'comedy', 'crime']",2,1997,5,118655.0
+15,m24,bachelor party,1984,5.9,14050,"['comedy', 'romance']",3,1984,6309,86927.0
+16,m28,barry lyndon,1975,8.1,40622,"['drama', 'romance', 'war']",1,1975,2317,72684.0
+17,m29,basic,2003,6.3,26295,"['crime', 'drama', 'mystery', 'thriller']",3,2003,5567,264395.0
+18,m30,big fish,2003,8.1,144264,"['adventure', 'drama', 'fantasy']",1,2003,2402,319061.0
+19,m34,blade runner,1982,8.3,188735,"['drama', 'sci-fi', 'thriller']",1,1982,234,83658.0
+20,m35,blast from the past,1999,6.4,23489,"['comedy', 'drama', 'romance']",3,1999,5342,124298.0
+21,m36,blue velvet,1986,7.8,54576,"['crime', 'mystery', 'thriller']",1,1986,2662,90756.0
+22,m40,braveheart,1995,8.4,245652,"['action', 'biography', 'drama', 'history', 'war']",2,1995,205,112573.0
+23,m42,casablanca,1942,8.8,170874,"['drama', 'romance', 'war']",1,1942,1076,34583.0
+24,m43,cast away,2000,7.5,104477,"['adventure', 'drama']",2,2000,3795,162222.0
+25,m47,dark star,1974,6.5,8303,"['comedy', 'sci-fi', 'thriller']",0,1974,1814,69945.0
+26,m50,donnie darko,2001,8.3,215194,"['drama', 'mystery', 'sci-fi']",3,2001,887,246578.0
+27,m51,drop dead gorgeous,1999,6.3,16417,"['comedy', 'adult']",3,1999,1844,157503.0
+28,m52,duck soup,1933,8.1,27112,"['comedy', 'musical']",1,1933,5185,23969.0
+29,m55,eternal sunshine of the spotless mind,2004,8.5,224838,"['drama', 'romance', 'sci-fi']",2,2004,133,338013.0
+30,m56,even cowgirls get the blues,1993,4.0,3947,"['comedy', 'drama', 'romance', 'western']",3,1993,1790,106834.0
+31,m57,event horizon,1997,6.4,45497,"['horror', 'mystery', 'mystery', 'sci-fi', 'sci-fi']",3,1997,662,119081.0
+32,m58,fantastic four,2005,5.7,72581,"['action', 'adventure', 'fantasy', 'sci-fi', 'fantasy']",1,2005,2541,120667.0
+33,m58,fantastic four,2005,5.7,72581,"['action', 'adventure', 'fantasy', 'sci-fi', 'fantasy']",0,2015,6392,1502712.0
+34,m59,fast times at ridgemont high,1982,7.2,31710,"['comedy', 'drama', 'romance']",2,1982,1934,83929.0
+35,m60,fear and loathing in las vegas,1998,7.6,82748,"['drama', 'fantasy']",1,1998,506,120669.0
+36,m62,frances,1982,7.2,2756,"['biography', 'drama']",3,1982,4844,83967.0
+37,m63,frankenstein,1931,8.0,23522,"['drama', 'horror', 'sci-fi']",1,1931,1317,21884.0
+38,m64,friday the 13th,2009,5.6,27499,['horror'],3,1980,4569,80761.0
+39,m64,friday the 13th,2009,5.6,27499,['horror'],2,2009,4570,758746.0
+40,m65,from dusk till dawn,1996,7.1,81559,"['action', 'crime', 'horror', 'thriller']",1,1996,448,116367.0
+41,m66,g.i. jane,1997,5.6,24068,"['action', 'drama']",3,1997,524,119173.0
+42,m67,godzilla,1998,4.9,60310,"['action', 'horror', 'sci-fi', 'thriller']",3,1998,2238,120685.0
+43,m67,godzilla,1998,4.9,60310,"['action', 'horror', 'sci-fi', 'thriller']",2,2014,5466,831387.0
+44,m68,galaxy quest,1999,7.2,53004,"['action', 'adventure', 'comedy', 'sci-fi']",1,1999,1053,177789.0
+45,m72,ghost world,2001,7.7,43550,"['comedy', 'drama']",3,2001,226,162346.0
+46,m74,ghostbusters ii,1989,6.1,45450,"['action', 'adventure', 'comedy', 'fantasy', 'sci-fi', 'action', 'adventure', 'comedy', 'sci-fi']",2,1989,1540,97428.0
+47,m75,ghostbusters,1986,6.9,237,"['animation', 'comedy', 'fantasy', 'sci-fi', 'horror']",2,1984,376,87332.0
+48,m75,ghostbusters,1986,6.9,237,"['animation', 'comedy', 'fantasy', 'sci-fi', 'horror']",3,2016,6977,1289401.0
+49,m76,gladiator,2000,8.4,286067,"['action', 'adventure', 'drama']",0,2000,1163,172495.0
+50,m78,grand hotel,1932,7.7,6088,"['drama', 'romance']",3,1932,1328,22958.0
+51,m80,halloween h20: 20 years later,1998,5.4,22353,"['drama', 'horror', 'thriller']",3,1998,4709,120694.0
+52,m84,harold and maude,1971,8.1,28689,"['comedy', 'romance']",3,1971,2159,67185.0
+53,m85,hellbound: hellraiser ii,1988,6.2,11273,"['drama', 'horror', 'thriller']",1,1988,5261,95294.0
+54,m86,hellboy,2004,6.8,68619,"['action', 'adventure', 'fantasy']",1,2004,4338,167190.0
+55,m87,hellraiser,1987,7.0,22922,['horror'],3,1987,3582,93177.0
+56,m88,high fidelity,2000,7.6,70464,"['comedy', 'drama', 'music', 'romance']",2,2000,1006,146882.0
+57,m89,highlander,1986,7.2,41243,"['action', 'fantasy']",3,1986,1604,91203.0
+58,m90,his girl friday,1940,8.1,20870,"['comedy', 'drama', 'romance']",3,1940,3033,32599.0
+59,m91,hope and glory,1987,7.4,4965,"['drama', 'war']",3,1987,7035,93209.0
+60,m92,house of 1000 corpses,2003,5.6,27033,['horror'],3,2003,7512,251736.0
+61,m93,human nature,2001,6.3,10017,"['comedy', 'drama']",3,2001,1459,219822.0
+62,m95,i am legend,2007,7.1,156084,"['drama', 'sci-fi', 'thriller']",3,2007,549,480249.0
+63,m97,independence day,1996,6.6,151698,"['action', 'adventure', 'sci-fi', 'thriller']",3,1996,444,116629.0
+64,m98,indiana jones and the last crusade,1989,8.3,174947,"['action', 'adventure', 'thriller', 'action', 'adventure', 'fantasy']",0,1989,1049,97576.0
+65,m99,indiana jones and the temple of doom,1984,7.5,112054,"['action', 'adventure']",0,1984,1048,87469.0
+66,m102,intolerable cruelty,2003,6.4,36739,"['comedy', 'romance', 'crime']",3,2003,5806,138524.0
+67,m103,it happened one night,1934,8.3,25577,"['comedy', 'romance']",3,1934,621,25316.0
+68,m104,jfk,1991,8.0,60406,"['biography', 'drama', 'history', 'mystery', 'thriller']",3,1991,7200,102138.0
+69,m105,jackie brown,1997,7.6,85496,"['crime', 'drama', 'thriller']",3,1997,2176,119396.0
+70,m107,jason x,2001,4.4,18199,"['horror', 'sci-fi']",3,2001,93,211443.0
+71,m108,jaws,1975,8.3,140982,['thriller'],3,1975,2561,73195.0
+72,m109,juno,2007,7.9,152436,"['comedy', 'drama']",3,2007,9,467406.0
+73,m111,kids,1995,6.8,26546,"['crime', 'drama']",3,1995,5771,113540.0
+74,m113,krull,1983,5.9,8246,"['fantasy', 'action', 'adventure', 'sci-fi']",1,1983,6126,85811.0
+75,m117,legally blonde,2001,6.2,44558,['comedy'],3,2001,733,250494.0
+76,m118,legend,1985,6.2,20907,"['fantasy', 'adventure', 'romance']",3,1985,3986,89469.0
+77,m118,legend,1985,6.2,20907,"['fantasy', 'adventure', 'romance']",3,2015,6671,3569230.0
+78,m121,little nicky,2000,5.0,35489,"['fantasy', 'comedy', 'romance', 'animation', 'comedy', 'fantasy', 'horror']",1,2000,3471,185431.0
+79,m123,lost highway,1997,7.6,42998,"['drama', 'horror', 'mystery', 'thriller']",1,1997,4154,116922.0
+80,m124,lost horizon,1937,7.8,5509,"['adventure', 'drama', 'fantasy', 'mystery']",2,1937,1336,29162.0
+81,m125,men in black,1997,7.0,121719,"['action', 'adventure', 'comedy', 'sci-fi']",1,1997,83,119654.0
+82,m126,minority report,2002,7.7,137009,"['action', 'crime', 'mystery', 'sci-fi', 'thriller', 'action', 'animation', 'drama', 'mystery', 'sci-fi', 'thriller']",1,2002,115,181689.0
+83,m128,malcolm x,1992,7.7,23317,"['biography', 'drama', 'history']",3,1992,4391,104797.0
+84,m130,marty,1955,7.7,6379,"['drama', 'romance']",3,1955,4442,48356.0
+85,m132,meet john doe,1941,7.7,4841,"['comedy', 'drama', 'romance']",3,1941,3717,33891.0
+86,m134,metropolis,1927,8.4,40730,"['adventure', 'drama', 'sci-fi']",1,1927,1267,17136.0
+87,m137,monkeybone,2001,4.5,8258,"['animation', 'comedy', 'fantasy', 'romance']",3,2001,3616,166276.0
+88,m139,mr. smith goes to washington,1939,8.4,33984,['drama'],2,1939,5946,31679.0
+89,m140,mr. deeds goes to town,1936,8.0,7594,"['comedy', 'romance']",3,1936,1992,27996.0
+90,m143,mystery men,1999,5.9,31817,"['action', 'comedy', 'fantasy']",1,1999,4230,132347.0
+91,m145,next friday,2000,5.4,10267,['comedy'],2,2000,7792,195945.0
+92,m146,nick of time,1995,6.2,15945,"['crime', 'drama', 'thriller']",3,1995,7651,113972.0
+93,m148,a nightmare on elm street,1984,7.4,47161,['horror'],3,1984,4182,87800.0
+94,m148,a nightmare on elm street,1984,7.4,47161,['horror'],3,2010,6047,1179056.0
+95,m149,ninotchka,1939,7.9,6951,"['comedy', 'romance']",3,1939,1259,31725.0
+96,m151,no country for old men,2007,8.3,202649,"['crime', 'drama', 'mystery', 'thriller', 'western']",3,2007,686,477348.0
+97,m153,"o brother, where art thou?",2000,7.8,95628,"['comedy', 'adventure', 'crime', 'music']",0,2000,3455,190590.0
+98,m154,an officer and a gentleman,1982,6.8,16883,"['drama', 'romance']",3,1982,7244,84434.0
+99,m155,panic room,2002,6.9,69824,['thriller'],3,2002,2508,258000.0
+100,m162,pleasantville,1998,7.5,49669,"['comedy', 'drama', 'fantasy']",3,1998,1109,120789.0
+101,m163,punch-drunk love,2002,7.4,50312,"['comedy', 'drama', 'romance']",1,2002,5227,272338.0
+102,m166,raging bull,1980,8.4,91851,"['biography', 'drama', 'sport']",1,1980,1437,81398.0
+103,m167,rear window,1954,8.7,121165,"['crime', 'mystery', 'romance', 'thriller']",3,1954,2132,47396.0
+104,m168,rebel without a cause,1955,7.9,27791,"['drama', 'romance']",1,1955,2926,48545.0
+105,m170,reservoir dogs,1992,8.4,217185,"['crime', 'mystery', 'thriller']",0,1992,18,105236.0
+106,m172,scary movie 2,2001,4.7,44511,['comedy'],3,2001,6429,257106.0
+107,m173,serial mom,1994,6.4,11077,"['comedy', 'thriller']",3,1994,6477,111127.0
+108,m175,"sex, lies, and videotape",1989,7.1,18505,['drama'],2,1989,2065,98724.0
+109,m177,shock treatment,1981,5.4,1884,"['comedy', 'musical']",3,1981,7732,83067.0
+110,m178,sideways,2004,7.8,70349,"['comedy', 'drama', 'romance']",3,2004,2249,375063.0
+111,m179,signs,2002,6.9,113119,"['drama', 'mystery', 'sci-fi', 'thriller']",1,2002,5170,286106.0
+112,m184,slither,2006,6.6,26497,"['comedy', 'horror', 'sci-fi']",3,2006,1702,439815.0
+113,m187,solaris,2002,6.2,33541,"['drama', 'mystery', 'romance', 'sci-fi']",1,2002,4784,307479.0
+114,m189,spider-man,2002,7.4,169898,"['action', 'adventure', 'fantasy', 'sci-fi', 'action', 'adventure', 'sci-fi', 'thriller']",1,2002,1730,145487.0
+115,m190,stalag 17,1953,8.2,21182,"['drama', 'war']",0,1953,1883,46359.0
+116,m192,star trek iii: the search for spock,1984,6.5,22466,"['action', 'adventure', 'sci-fi', 'thriller']",1,1984,1304,88170.0
+117,m193,star trek: the wrath of khan,1982,7.8,36503,"['action', 'adventure', 'sci-fi', 'thriller']",3,1982,896,84726.0
+118,m195,star trek: insurrection,1998,6.3,26728,"['action', 'adventure', 'sci-fi', 'thriller']",3,1998,1056,120844.0
+119,m196,star trek: first contact,1996,7.6,45429,"['action', 'adventure', 'sci-fi', 'thriller']",3,1996,3402,117731.0
+120,m197,star trek vi: the undiscovered country,1991,7.2,23751,"['action', 'mystery', 'sci-fi', 'thriller']",2,1991,3592,102975.0
+121,m198,star trek: nemesis,2002,6.4,28682,"['action', 'sci-fi', 'thriller']",1,2002,138,253754.0
+122,m199,starman,1984,6.9,14204,"['adventure', 'drama', 'romance', 'sci-fi']",0,1984,5796,88172.0
+123,m200,strange days,1995,7.1,27744,"['action', 'crime', 'drama', 'fantasy', 'music', 'mystery', 'sci-fi', 'thriller']",3,1995,675,114558.0
+124,m202,swingers,1996,7.6,32427,"['comedy', 'drama']",2,1996,5413,117802.0
+125,m205,taxi driver,1976,8.6,159525,"['drama', 'thriller']",1,1976,2223,75314.0
+126,m218,thirteen days,2000,7.3,23732,"['drama', 'history', 'thriller']",1,2000,3551,146309.0
+127,m220,top gun,1986,6.5,81087,"['action', 'drama', 'romance']",2,1986,1703,92099.0
+128,m221,total recall,1990,7.4,71383,"['action', 'adventure', 'sci-fi', 'thriller']",1,1990,118,100802.0
+129,m221,total recall,1990,7.4,71383,"['action', 'adventure', 'sci-fi', 'thriller']",1,2012,3535,1386703.0
+130,m222,tremors,1990,7.1,30553,"['action', 'comedy', 'horror', 'thriller']",3,1990,1663,100814.0
+131,m224,twin peaks: fire walk with me,1992,7.0,21274,"['drama', 'horror', 'mystery', 'thriller']",3,1992,2432,105665.0
+132,m227,new nightmare,1994,6.3,14975,"['fantasy', 'horror', 'mystery', 'thriller']",3,1994,6029,111686.0
+133,m229,wild at heart,1990,7.2,29388,"['crime', 'romance', 'thriller']",2,1990,2577,100935.0
+134,m234,agnes of god,1985,6.5,3490,"['drama', 'mystery', 'thriller']",3,1985,602,88683.0
+135,m236,alien,1979,8.5,184471,"['adventure', 'horror', 'sci-fi', 'thriller']",3,1979,13,78748.0
+136,m238,all about eve,1950,8.5,35597,['drama'],3,1950,139,42192.0
+137,m240,american pie,1999,6.9,107961,"['comedy', 'romance']",2,1999,2311,163651.0
+138,m241,an american werewolf in paris,1997,4.9,10158,"['horror', 'romance', 'thriller', 'comedy']",1,1997,7675,118604.0
+139,m242,anastasia,1997,6.6,16844,"['animation', 'adventure', 'drama', 'family', 'musical', 'animation', 'family']",3,1997,1218,118617.0
+140,m243,annie hall,1977,8.3,66781,"['comedy', 'drama', 'romance']",3,1977,1469,75686.0
+141,m245,antz,1998,6.8,37825,"['animation', 'adventure', 'comedy', 'family']",3,1998,8088,120587.0
+142,m247,apocalypse now,1979,8.6,176465,"['drama', 'war']",0,1979,2227,78788.0
+143,m248,arctic blue,1993,4.8,464,"['action', 'thriller']",1,1993,7055,106303.0
+144,m249,as good as it gets,1997,7.8,93201,"['comedy', 'drama', 'romance']",3,1997,936,119822.0
+145,m250,assassins,1995,6.0,23681,"['action', 'thriller', 'crime']",1,1995,4640,112401.0
+146,m252,a walk to remember,2002,7.1,38751,"['drama', 'romance']",3,2002,5254,281358.0
+147,m253,back to the future,1985,8.4,207376,"['adventure', 'family', 'sci-fi']",2,1985,149,88763.0
+148,m254,badlands,1973,7.9,16753,"['crime', 'drama', 'romance', 'thriller']",0,1973,269,69762.0
+149,m256,barton fink,1991,7.8,33119,"['drama', 'mystery', 'thriller']",1,1991,2315,101410.0
+150,m257,basic instinct,1992,6.9,57615,"['mystery', 'romance', 'thriller']",1,1992,4940,103772.0
+151,m258,basquiat,1996,6.7,8016,"['biography', 'drama']",2,1996,6074,115632.0
+152,m259,batman returns,1992,6.9,79770,"['action', 'crime', 'fantasy', 'thriller', 'animation', 'crime', 'fantasy', 'action', 'thriller']",0,1992,1025,103776.0
+153,m261,batman forever,1995,5.4,77223,"['action', 'crime', 'fantasy', 'thriller']",1,1995,1024,112462.0
+154,m262,batman,1989,7.6,112731,"['crime', 'drama', 'thriller', 'action', 'adventure', 'crime']",1,1989,1023,96895.0
+155,m264,beavis and butt-head do america,1996,6.6,23149,"['animation', 'adventure', 'comedy', 'crime']",1,1996,5493,115641.0
+156,m265,beetle juice,1988,7.3,62164,"['comedy', 'fantasy']",3,1988,647,94721.0
+157,m266,being there,1979,8.0,25085,"['drama', 'comedy']",2,1979,1699,78841.0
+158,m267,being john malkovich,1999,7.9,115008,"['comedy', 'drama', 'fantasy', 'romance']",3,1999,917,120601.0
+159,m268,beloved,1998/I,5.6,4014,"['drama', 'mystery']",3,1998,4400,120603.0
+160,m271,blade ii,2002,6.6,51826,"['action', 'fantasy', 'horror', 'thriller', 'action', 'adventure', 'horror']",1,2002,2151,187738.0
+161,m272,blade,1998,7.0,65885,"['action', 'adventure', 'fantasy', 'horror', 'thriller']",1,1998,42,120611.0
+162,m274,blood simple.,1984,7.8,28901,"['crime', 'drama', 'thriller']",1,1984,5731,86979.0
+163,m276,blow,2001,7.4,71334,"['biography', 'crime', 'drama']",1,2001,4934,221027.0
+164,m277,la battaglia di algeri,1966,8.2,14339,"['drama', 'history', 'war']",1,1966,658,58946.0
+165,m278,body of evidence,1993,4.1,6052,"['drama', 'romance', 'thriller']",3,1993,5243,106453.0
+166,m281,bound,1996,7.5,23772,"['crime', 'drama', 'thriller']",3,1996,182,115736.0
+167,m281,bound,1996,7.5,23772,"['crime', 'drama', 'thriller']",3,2015,6229,4145324.0
+168,m283,brazil,1985,8.0,77350,"['drama', 'fantasy', 'sci-fi']",3,1985,880,88846.0
+169,m285,broadcast news,1987,7.1,10559,"['comedy', 'drama', 'romance']",3,1987,5310,92699.0
+170,m286,a bucket of blood,1959,6.8,1892,"['comedy', 'horror']",2,1959,4065,52655.0
+171,m287,buffy the vampire slayer,1992,5.3,16206,"['horror', 'comedy', 'action']",3,1992,748,103893.0
+172,m289,casino,1995,8.1,111223,"['biography', 'crime', 'drama']",2,1995,2220,112641.0
+173,m290,catwoman,2004,3.2,35065,"['action', 'crime', 'fantasy']",3,2004,1027,327554.0
+174,m291,cellular,2004,6.5,32920,"['action', 'crime', 'thriller']",3,2004,2921,337921.0
+175,m293,charade,1963,8.0,22815,"['comedy', 'mystery', 'romance', 'thriller']",2,1963,1984,56923.0
+176,m294,cherry falls,2000,4.8,5669,"['horror', 'mystery', 'thriller']",3,2000,4821,175526.0
+177,m296,chinatown,1974,8.5,80698,"['crime', 'drama', 'mystery', 'thriller']",2,1974,2237,71315.0
+178,m298,citizen kane,1941,8.6,140517,"['drama', 'mystery']",1,1941,1266,33467.0
+179,m299,clerks.,1994,8.0,90972,['comedy'],1,1994,488,109445.0
+180,m300,cliffhanger,1993,6.2,34880,"['action', 'adventure', 'thriller']",1,1993,3369,106582.0
+181,m301,a clockwork orange,1971,8.5,197372,"['crime', 'drama', 'sci-fi']",1,1971,1039,66921.0
+182,m302,collateral,2004,7.8,106866,"['crime', 'drama', 'thriller']",1,2004,2544,369339.0
+183,m303,conspiracy theory,1997,6.5,36045,"['action', 'crime', 'mystery', 'romance', 'thriller']",2,1997,318,118883.0
+184,m304,contact,1997,7.4,75043,"['drama', 'mystery', 'sci-fi', 'thriller']",3,1997,904,118884.0
+185,m305,cool hand luke,1967,8.3,46514,"['crime', 'drama']",1,1967,301,61512.0
+186,m306,copycat,1995,6.5,17335,"['crime', 'mystery', 'thriller']",3,1995,2100,112722.0
+187,m307,crash,2004/I,8.0,174003,"['crime', 'drama']",3,1996,5551,115964.0
+188,m307,crash,2004/I,8.0,174003,"['crime', 'drama']",3,2004,3609,375679.0
+189,m312,cruel intentions,1999,6.7,67532,"['drama', 'romance', 'thriller']",3,1999,2617,139134.0
+190,m315,dark city,1998,7.8,64262,"['mystery', 'sci-fi', 'thriller']",1,1998,1855,118929.0
+191,m316,dave,1993,6.8,20807,"['comedy', 'romance']",3,1993,1133,106673.0
+192,m317,day of the dead,1985,7.0,22746,"['horror', 'sci-fi']",0,1985,3802,88993.0
+193,m317,day of the dead,1985,7.0,22746,"['horror', 'sci-fi']",3,2008,3128,489018.0
+194,m318,dead poets society,1989,7.8,90842,['drama'],1,1989,2361,97165.0
+195,m321,demolition man,1993,6.3,46318,"['action', 'crime', 'sci-fi']",0,1993,117,106697.0
+196,m323,die hard,1988,8.3,185430,"['action', 'crime', 'thriller']",3,1988,619,95016.0
+197,m324,dog day afternoon,1975,8.2,61120,"['crime', 'drama']",3,1975,3799,72890.0
+198,m325,domino,2005,5.9,32949,"['action', 'crime', 'drama', 'thriller']",3,2005,2292,421054.0
+199,m326,do the right thing,1989,7.9,27164,['drama'],2,1989,6594,97216.0
+200,m328,dune,1984,6.5,38954,"['action', 'adventure', 'sci-fi']",3,1984,1534,87182.0
+201,m328,dune,1984,6.5,38954,"['action', 'adventure', 'sci-fi']",3,2000,4716,142032.0
+202,m329,ed wood,1994,8.1,75704,"['biography', 'comedy', 'drama']",3,1994,1920,109707.0
+203,m330,edtv,1999,6.1,21865,['comedy'],1,1999,5545,131369.0
+204,m331,election,1999,7.4,37868,"['comedy', 'drama']",3,1999,867,126886.0
+205,m332,l.a. confidential,1997,8.4,168009,"['crime', 'drama', 'mystery', 'thriller']",1,1997,2236,119488.0
+206,m333,enemy of the state,1998,7.2,67504,"['action', 'drama', 'thriller']",1,1998,4955,120660.0
+207,m336,erin brockovich,2000,7.2,55641,"['biography', 'drama', 'romance']",3,2000,452,195685.0
+208,m338,escape from the planet of the apes,1971,6.1,7754,"['sci-fi', 'thriller']",1,1971,2893,67065.0
+209,m339,escape from l.a.,1996,5.3,23551,"['action', 'adventure', 'sci-fi', 'thriller']",1,1996,1428,116225.0
+210,m343,face/off,1997,7.3,103386,"['action', 'crime', 'drama', 'sci-fi', 'thriller']",1,1997,5329,119094.0
+211,m346,fantastic voyage,1966,6.8,5231,"['adventure', 'sci-fi']",0,1966,2625,60397.0
+212,m347,fargo,1996,8.3,168176,"['crime', 'drama', 'thriller']",2,1996,1852,116282.0
+213,m348,fight club,1999,8.8,391697,"['crime', 'drama', 'mystery', 'thriller']",1,1999,210,137523.0
+214,m349,final destination 2,2003,6.4,36312,"['horror', 'thriller']",3,2003,2821,309593.0
+215,m350,final destination,2000,6.8,53422,"['horror', 'thriller']",1,2000,4557,195714.0
+216,m351,rambo: first blood part ii,1985,5.8,39147,"['action', 'adventure', 'thriller']",0,1985,6840,89880.0
+217,m353,five easy pieces,1970,7.5,11969,['drama'],3,1970,2984,65724.0
+218,m355,fletch,1985,6.7,17336,"['comedy', 'crime', 'mystery']",1,1985,1832,89155.0
+219,m359,friday the 13th part iii,1982,5.1,11718,['horror'],3,1982,4573,83972.0
+220,m362,friday the 13th part viii: jason takes manhattan,1989,3.9,10288,['horror'],3,1989,6675,97388.0
+221,m365,gattaca,1997,7.8,72063,"['drama', 'romance', 'sci-fi', 'thriller']",1,1997,77,119177.0
+222,m367,get carter,2000,4.8,14319,"['action', 'crime', 'drama', 'thriller']",1,1971,7518,67128.0
+223,m368,glengarry glen ross,1992,7.9,32882,['drama'],0,1992,450,104348.0
+224,m371,gone in sixty seconds,2000,6.0,74474,"['action', 'crime', 'thriller']",1,2000,2917,187078.0
+225,m372,goodfellas,1990,8.8,234582,"['crime', 'drama', 'thriller']",3,1990,2211,99685.0
+226,m373,good will hunting,1997,8.1,154419,['drama'],0,1997,623,119217.0
+227,m375,grosse pointe blank,1997,7.4,41877,"['comedy', 'crime', 'romance', 'thriller']",3,1997,1000,119229.0
+228,m377,hackers,1995,5.8,27009,"['action', 'crime', 'drama', 'thriller']",2,1995,97,113243.0
+229,m379,halloween,1978,7.9,64690,"['horror', 'thriller']",3,1978,2815,77651.0
+230,m379,halloween,1978,7.9,64690,"['horror', 'thriller']",3,2007,3655,373883.0
+231,m379,halloween,1978,7.9,64690,"['horror', 'thriller']",3,2018,8452,1502407.0
+232,m380,hannah and her sisters,1986,7.9,21088,"['comedy', 'drama', 'romance']",3,1986,1017,91167.0
+233,m381,hannibal,2001,6.4,75788,"['crime', 'thriller']",3,2001,4210,212985.0
+234,m381,hannibal,2001,6.4,75788,"['crime', 'thriller']",3,2012,4190,2243973.0
+235,m383,heathers,1989,7.3,25236,"['comedy', 'crime']",3,1988,859,97493.0
+236,m384,heavenly creatures,1994,7.6,27211,"['crime', 'drama', 'fantasy', 'thriller']",3,1994,567,110005.0
+237,m386,hero,1992/I,6.3,10573,"['comedy', 'drama']",1,1992,4999,104412.0
+238,m391,house on haunted hill,1999,5.3,23127,"['horror', 'mystery', 'thriller']",3,1959,4373,51744.0
+239,m393,hellraiser iii: hell on earth,1992,5.1,7716,['horror'],3,1992,6397,104409.0
+240,m394,hudson hawk,1991,5.4,22116,"['action', 'adventure', 'comedy', 'action', 'adventure', 'comedy', 'crime']",3,1991,3544,102070.0
+241,m396,i walked with a zombie,1943,7.3,3420,['horror'],3,1943,1955,36027.0
+242,m398,insomnia,2002/I,7.3,69635,"['crime', 'drama', 'mystery', 'thriller']",1,2002,121,278504.0
+243,m400,i still know what you did last summer,1998,4.1,23543,"['horror', 'mystery', 'thriller']",3,1998,5844,130018.0
+244,m401,isle of the dead,1945,6.6,1405,"['drama', 'horror', 'mystery', 'thriller']",3,1945,2004,37820.0
+245,m403,jaws 2,1978,5.6,18995,['thriller'],2,1978,7223,77766.0
+246,m404,jaws 3-d,1983,3.3,12839,['thriller'],3,1983,7243,85750.0
+247,m405,jaws: the revenge,1987,2.6,15727,['thriller'],3,1987,6920,93300.0
+248,m408,jerry maguire,1996,7.3,79706,"['comedy', 'drama', 'romance', 'sport']",2,1996,8008,116695.0
+249,m409,jurassic park iii,2001,5.7,62564,"['action', 'adventure', 'sci-fi', 'thriller']",2,2001,6333,163025.0
+250,m411,jurassic park,1993,7.9,153737,"['action', 'adventure', 'family', 'sci-fi', 'action', 'adventure', 'fantasy', 'sci-fi']",3,1993,109,107290.0
+251,m412,freddy vs. jason,2003,5.8,39850,"['horror', 'thriller']",3,2003,8242,329101.0
+252,m414,king kong,2005,7.6,134187,"['adventure', 'drama', 'romance']",0,1933,2229,24216.0
+253,m414,king kong,2005,7.6,134187,"['adventure', 'drama', 'romance']",0,2005,706,360717.0
+254,m415,klute,1971,7.2,6901,"['mystery', 'romance', 'thriller']",3,1971,6804,67309.0
+255,m416,kramer vs. kramer,1979,7.7,25836,['drama'],1,1979,7645,79417.0
+256,m421,leviathan,1989,5.3,4751,"['adventure', 'horror', 'mystery', 'sci-fi', 'thriller']",3,1989,3932,97737.0
+257,m421,leviathan,1989,5.3,4751,"['adventure', 'horror', 'mystery', 'sci-fi', 'thriller']",3,2014,5978,2802154.0
+258,m422,"lock, stock and two smoking barrels",1998,8.2,129117,"['crime', 'thriller']",1,1998,1668,120735.0
+259,m423,lone star,1996,7.6,14666,"['drama', 'mystery', 'romance', 'western']",2,1996,5295,116905.0
+260,m425,lost in translation,2003,7.9,132645,"['drama', 'romance']",3,2003,1041,335266.0
+261,m428,magnolia,1999,8.0,123476,['drama'],1,1999,2346,175880.0
+262,m431,manhunter,1986,7.2,21649,"['crime', 'thriller']",1,1986,6298,91474.0
+263,m432,man on the moon,1999,7.4,49915,"['biography', 'comedy', 'drama']",1,1999,5305,125664.0
+264,m435,meet joe black,1998,6.9,56839,"['drama', 'fantasy', 'mystery', 'romance']",1,1998,7646,119643.0
+265,m436,memento,2000,8.7,281027,"['crime', 'drama', 'mystery', 'thriller']",1,2000,52,209144.0
+266,m438,midnight cowboy,1969,8.0,34405,['drama'],1,1969,3406,64665.0
+267,m439,midnight express,1978,7.6,24103,"['biography', 'crime', 'drama', 'thriller']",0,1978,3419,77928.0
+268,m441,misery,1990,7.8,41563,['thriller'],1,1990,459,100157.0
+269,m442,mission: impossible ii,2000,5.7,86452,"['action', 'adventure', 'thriller']",0,2000,5605,120755.0
+270,m443,mission: impossible,1996,6.9,87677,"['action', 'adventure', 'thriller']",1,1996,445,117060.0
+271,m444,moonstruck,1987,7.1,15879,"['comedy', 'romance', 'drama']",3,1987,2744,93565.0
+272,m445,monty python and the holy grail,1975,8.4,157683,"['adventure', 'comedy']",2,1975,1839,71853.0
+273,m448,mulholland dr.,2001,8.0,105859,"['drama', 'mystery', 'thriller']",3,2001,568,166924.0
+274,m451,my girl,1991,6.4,17967,"['comedy', 'drama', 'family', 'romance']",3,1991,5265,102492.0
+275,m453,nashville,1975,7.7,9315,"['drama', 'music']",3,1975,4517,73440.0
+276,m454,natural born killers,1994,7.1,73047,"['action', 'crime', 'drama', 'romance', 'thriller']",3,1994,5459,110632.0
+277,m458,never been kissed,1999,5.7,27409,"['comedy', 'drama', 'romance']",3,1999,3269,151738.0
+278,m461,a nightmare on elm street 3: dream warriors,1987,6.3,17734,"['fantasy', 'horror', 'thriller']",3,1987,5767,93629.0
+279,m462,notting hill,1999,6.9,67217,"['comedy', 'romance']",3,1999,3495,125439.0
+280,m465,on the waterfront,1954,8.4,42010,"['crime', 'drama', 'romance']",0,1954,1812,47296.0
+281,m467,out of sight,1998,7.2,38595,"['comedy', 'crime', 'romance', 'thriller']",2,1998,2247,120780.0
+282,m468,pearl harbor,2001,5.4,97519,"['action', 'drama', 'romance', 'war']",2,2001,2675,213149.0
+283,m469,peggy sue got married,1986,6.3,12574,"['comedy', 'drama', 'fantasy', 'romance']",3,1986,2070,91738.0
+284,m471,philadelphia,1993,7.6,54221,['drama'],2,1993,5919,107818.0
+285,m472,pitch black,2000,7.0,55982,"['action', 'sci-fi', 'thriller']",3,2000,319,134847.0
+286,m473,planet of the apes,2001,5.5,73596,"['action', 'adventure', 'sci-fi', 'thriller', 'animation', 'action', 'adventure', 'sci-fi']",1,1968,599,63442.0
+287,m473,planet of the apes,2001,5.5,73596,"['action', 'adventure', 'sci-fi', 'thriller', 'animation', 'action', 'adventure', 'sci-fi']",3,2001,6218,133152.0
+288,m474,platoon,1986,8.2,110867,"['action', 'drama', 'war']",0,1986,3558,91763.0
+289,m477,point break,1991,6.9,37722,"['action', 'adventure', 'crime', 'drama', 'sport', 'thriller']",0,1991,512,102685.0
+290,m477,point break,1991,6.9,37722,"['action', 'adventure', 'crime', 'drama', 'sport', 'thriller']",0,2015,6632,2058673.0
+291,m478,predator,1987,7.8,90730,"['action', 'adventure', 'sci-fi', 'thriller']",0,1987,1928,93773.0
+292,m479,pretty woman,1990,6.7,61642,"['comedy', 'romance']",3,1990,2156,100405.0
+293,m482,psycho,1960,8.7,146915,"['drama', 'horror', 'mystery', 'thriller', 'thriller']",1,1960,2039,54215.0
+294,m483,maniac,1980,6.2,3382,"['drama', 'horror', 'thriller']",3,1934,4702,25465.0
+295,m483,maniac,1980,6.2,3382,"['drama', 'horror', 'thriller']",3,1980,8402,81114.0
+296,m484,vampyr,1932,7.6,4005,"['fantasy', 'horror']",3,1932,5910,23649.0
+297,m489,star wars: episode vi - return of the jedi,1983,8.3,215058,"['action', 'adventure', 'fantasy', 'sci-fi']",1,1983,671,86190.0
+298,m491,rocky,1976,8.1,100022,"['drama', 'romance', 'sport']",1,1976,2267,75148.0
+299,m492,who framed roger rabbit,1988,7.6,54375,"['animation', 'comedy', 'crime', 'family', 'fantasy', 'mystery', 'animation', 'adventure', 'action', 'fantasy']",1,1988,136,96438.0
+300,m493,romeo and juliet,1968/I,7.8,12360,"['drama', 'romance']",3,1936,4069,28203.0
+301,m493,romeo and juliet,1968/I,7.8,12360,"['drama', 'romance']",3,1968,1249,63518.0
+302,m494,ronin,1998,7.2,58201,"['action', 'crime', 'thriller']",1,1998,6339,122690.0
+303,m496,rush hour 2,2001,6.5,52716,"['action', 'comedy', 'crime', 'thriller']",0,2001,7493,266915.0
+304,m497,rush hour,1998,6.8,56376,"['action', 'comedy', 'thriller', 'crime']",3,1998,1392,120812.0
+305,m499,sleepless in seattle,1993,6.6,44179,"['comedy', 'romance', 'drama']",2,1993,556,108160.0
+306,m500,salt of the earth,1954,7.6,1085,"['drama', 'history']",3,1954,5356,47443.0
+307,m502,saving private ryan,1998,8.5,275666,"['action', 'drama', 'history', 'war']",0,1998,1090,120815.0
+308,m503,say anything...,1989,7.5,25220,"['comedy', 'drama', 'romance']",2,1989,4270,98258.0
+309,m505,scream 2,1997,5.9,48988,"['horror', 'mystery', 'thriller']",3,1997,4643,120082.0
+310,m506,scream 3,2000,5.3,38870,"['horror', 'mystery', 'thriller']",3,2000,4644,134084.0
+311,m507,scream,1996/I,7.2,92543,"['crime', 'horror', 'mystery', 'thriller']",3,1996,649,117571.0
+312,m511,shakespeare in love,1998,7.4,78654,"['comedy', 'drama', 'romance']",3,1998,1926,138097.0
+313,m516,sister act,1992,5.9,25196,"['comedy', 'crime', 'music']",3,1992,1352,105417.0
+314,m517,sleepy hollow,1999,7.5,108951,"['fantasy', 'mystery', 'thriller']",3,1999,124,162661.0
+315,m522,some like it hot,1959,8.4,68749,['comedy'],3,1959,2023,53291.0
+316,m528,sphere,1998,5.6,31924,"['drama', 'horror', 'mystery', 'sci-fi', 'thriller']",1,1998,446,120184.0
+317,m529,star wars,1977,8.8,326619,"['action', 'adventure', 'fantasy', 'sci-fi']",1,1977,669,76759.0
+318,m530,starship troopers,1997,7.1,84874,"['action', 'adventure', 'sci-fi', 'thriller']",3,1997,107,120201.0
+319,m531,star trek: the motion picture,1979,6.2,25723,"['adventure', 'fantasy', 'mystery', 'sci-fi']",1,1979,1300,79945.0
+320,m533,stepmom,1998,6.2,18714,"['comedy', 'drama']",3,1998,1553,120686.0
+321,m536,dr. strangelove or: how i learned to stop worrying and love the bomb,1964,8.6,158529,"['comedy', 'drama']",0,1964,341,57012.0
+322,m539,sunset blvd.,1950,8.7,55994,"['drama', 'film-noir']",1,1950,608,43014.0
+323,m540,supergirl,1984,4.1,6576,"['action', 'adventure', 'sci-fi']",3,1984,2000,88206.0
+324,m541,superman iii,1983,4.7,18340,"['action', 'adventure', 'comedy', 'fantasy', 'sci-fi']",3,1983,4283,86393.0
+325,m542,superman ii,1980,6.7,29941,"['action', 'adventure', 'fantasy', 'romance', 'sci-fi']",3,1980,4282,81573.0
+326,m543,superman iv: the quest for peace,1987,3.4,15332,"['action', 'adventure', 'family', 'fantasy', 'sci-fi']",3,1987,4297,94074.0
+327,m544,superman,1978,7.3,51172,"['action', 'family', 'sci-fi']",1,1978,1999,78346.0
+328,m546,sweet smell of success,1957,8.2,9014,"['drama', 'film-noir']",1,1957,2301,51036.0
+329,m571,thx 1138,1971,6.8,15741,"['drama', 'mystery', 'sci-fi', 'thriller']",0,1971,626,66434.0
+330,m574,titanic,1997,7.4,244771,"['drama', 'history', 'romance']",3,1997,345,120338.0
+331,m576,tombstone,1993,7.7,44204,"['action', 'drama', 'history', 'romance', 'western']",3,1993,3180,108358.0
+332,m579,toy story,1995,8.2,156231,"['animation', 'adventure', 'comedy', 'family', 'fantasy']",1,1995,87,114709.0
+333,m581,traffic,2000,7.8,86662,"['crime', 'drama', 'thriller']",3,2000,7929,181865.0
+334,m582,trainspotting,1996,8.2,153782,"['crime', 'drama']",2,1996,137,117951.0
+335,m583,star trek v: the final frontier,1989,5.0,20749,"['action', 'adventure', 'sci-fi', 'thriller']",1,1989,1201,98382.0
+336,m584,tron,1982,6.7,25903,"['action', 'adventure', 'sci-fi', 'thriller', 'sci-fi']",0,1982,1002,84827.0
+337,m585,true lies,1994,7.2,81801,"['action', 'thriller']",3,1994,1098,111503.0
+338,m586,true romance,1993,7.9,74762,"['crime', 'romance', 'thriller']",1,1993,6349,108399.0
+339,m587,twelve monkeys,1995,8.1,173320,"['mystery', 'sci-fi', 'thriller']",1,1995,2864,114746.0
+340,m590,unbreakable,2000,7.3,98767,"['drama', 'fantasy', 'mystery', 'thriller']",0,2000,1114,217869.0
+341,m591,unforgiven,1992,8.3,101270,"['drama', 'western']",3,1992,7006,105695.0
+342,m594,vertigo,1958,8.6,93524,"['crime', 'mystery', 'romance', 'thriller']",1,1958,609,52357.0
+343,m601,what lies beneath,2000,6.5,46195,"['drama', 'horror', 'mystery', 'thriller']",3,2000,1071,161081.0
+344,m602,what women want,2000,6.3,55269,"['comedy', 'fantasy', 'romance']",1,2000,1083,207201.0
+345,m606,wild things,1998,6.6,40523,"['crime', 'mystery', 'thriller']",3,1998,4752,120890.0
+346,m607,wild wild west,1999,4.3,54943,"['action', 'western', 'comedy', 'sci-fi']",2,1999,1134,120891.0
+347,m608,willow,1988,7.1,33506,"['action', 'adventure', 'drama', 'fantasy', 'romance']",3,1988,739,96446.0
+348,m609,witness,1985,7.6,30705,"['drama', 'romance', 'thriller']",3,1985,5632,90329.0
+349,m612,watchmen,2009,7.8,135229,"['action', 'crime', 'fantasy', 'mystery', 'sci-fi', 'thriller']",3,2009,358,409459.0
+350,m613,xxx,2002,5.6,53505,"['action', 'adventure', 'crime']",1,2002,2268,295701.0
+351,m614,x-men,2000,7.4,122149,"['action', 'sci-fi']",1,2000,101,120903.0
+352,m615,young frankenstein,1974,8.0,57618,"['comedy', 'sci-fi']",2,1974,1077,72431.0
