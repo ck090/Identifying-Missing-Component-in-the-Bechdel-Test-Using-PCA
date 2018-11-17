@@ -8,14 +8,14 @@ Dataset derived from the Cornell Movie-Dialogue Corpus
 
 - [x] Explore the data.
 - [x] Creating and Finding out features.
-- [ ] Gathering data from the Crew as well and linking it with the existing dataset.
+- [x] Gathering data from the Crew as well and linking it with the existing dataset.
 - [x] Number of dialogues a Female has spoken in the movie - Percentage.
 - [x] Dialgoues in the form of f-f, f-m, m-f should be considered.
 - [x] Identifying Parts of Speech (POS) tags per movie, and understanding how many f-f, f-m and m-f utterances can be found.
 - [x] Identifying the sentiments of each utternaces in the movie by understanding what are the sentiments like for f-f, f-m and m-f characters.
 - [x] Linking the overall sentiments of the movie with the genres of the movie.
 - [ ] Identifying how all these above parameters affect the ROI of the particular movie.
-- [ ] We define ROI as the ratio of the 'Budget Of The Movie' to its 'Revenue'
+- [x] We define ROI as the ratio of the 'Budget Of The Movie' to its 'Revenue'
 - [ ] We obtain principal components from the various parameters we obtain from the above steps, in order to depict the variability in the independent variables(features).
 - [ ] We then compute the participation of each of the features in the first few components of the principal components, and use that to establish a score which would be as follows
 <br>Score = b1\*P1 + b2\*P2 + b3\*P3 ..
